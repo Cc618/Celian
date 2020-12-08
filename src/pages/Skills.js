@@ -1,14 +1,15 @@
 // Experiences, skills, languages...
 
 import './Skills.scss';
+import SkillCard from '../widgets/SkillCard';
 
 function Skills() {
   return (
     <div className="Skills" id="Skills">
-      <p>Skill LT</p>
-      <p>Skill RT</p>
-      <p>Skill LB</p>
-      <p>Skill RB</p>
+      <SkillCard title="1" />
+      <SkillCard title="2" />
+      <SkillCard title="3" />
+      <SkillCard title="4" />
     </div>
   );
 }
