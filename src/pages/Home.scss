@@ -1,0 +1,6 @@
+@import "../common/style.scss";
+
+.Home {
+    @extend .page;
+    @extend .primary;
+}

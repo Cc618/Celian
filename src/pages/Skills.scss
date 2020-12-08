@@ -1,0 +1,8 @@
+@import "../common/style.scss";
+
+.Skills {
+    @extend .page;
+
+    background-color: $grey;
+    color: $black;
+}

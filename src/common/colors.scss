@@ -1,0 +1,26 @@
+// Palette
+
+$primary: #2196F3;
+$accent: #FF6E40;
+$white: #FAFAFA;
+// TODO : Verify grey[300] not grey[200]
+$grey: #EEEEEE;
+$black: #212121;
+
+.primary {
+    background-color: $primary;
+    color: $white;
+}
+
+.text-primary {
+    color: $primary;
+}
+
+.accent {
+    background-color: $accent;
+    color: $white;
+}
+
+.text-accent {
+    color: $accent;
+}
