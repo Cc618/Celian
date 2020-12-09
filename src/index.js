@@ -9,6 +9,11 @@ ReactDOM.render(
   <React.StrictMode>
     <Home />
     <Skills />
+    
+    <div class="card shadow4"></div>
+    <div class="card shadow8"></div>
+    <div class="card shadow12"></div>
+    <div class="card shadow16"></div>
   </React.StrictMode>,
   document.getElementById('root')
 );
