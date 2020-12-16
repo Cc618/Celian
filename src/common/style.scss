@@ -1,5 +1,6 @@
 @import 'colors.scss';
 @import 'text.scss';
+@import 'shadows.scss';
 
 body, html {
   width: 100%;
@@ -12,8 +13,8 @@ body, html {
   scroll-behavior: smooth;
   overflow-x: hidden;
 
-  // background-color: blue;
   font-family: 'Roboto', sans-serif;
+  background-color: $white;
 }
 
 .page {

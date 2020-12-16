@@ -1,0 +1,60 @@
+// Shadows in dps
+
+.shadow4 {
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, .2);
+}
+
+.shadow8 {
+    box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, .2);
+}
+
+.shadow12 {
+    box-shadow: 0px 7px 8px -4px rgba(0, 0, 0, .2);
+}
+
+.shadow16 {
+    box-shadow: 0px 8px 10px -5px rgba(0, 0, 0, .2);
+}
+
+.shadow20 {
+    box-shadow: 0px 10px 13px -6px rgba(0, 0, 0, .2);
+}
+
+.shadow24 {
+    box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, .2);
+}
+
+.card {
+    background-color: $white;
+    border-radius: 4px;
+}
+
+.card4 {
+    @extend .shadow4;
+    @extend .card;
+}
+
+.card8 {
+    @extend .shadow8;
+    @extend .card;
+}
+
+.card12 {
+    @extend .shadow12;
+    @extend .card;
+}
+
+.card16 {
+    @extend .shadow16;
+    @extend .card;
+}
+
+.card20 {
+    @extend .shadow20;
+    @extend .card;
+}
+
+.card24 {
+    @extend .shadow24;
+    @extend .card;
+}

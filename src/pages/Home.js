@@ -10,7 +10,7 @@ function Home(props) {
     <div className="Home">
 
       <div class="picture-card">
-        <img class="picture" alt="Picture" src={picture} />
+        <img class="picture" src={picture} />
       </div>
 
       <h1>Célian Raimbault</h1>

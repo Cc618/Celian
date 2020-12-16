@@ -1,5 +1,6 @@
 @import "../common/style.scss";
 
+// TODO : Gradient
 .Home {
     @extend .page;
 
@@ -19,7 +20,11 @@
 }
 
 .picture-card {
-    // @extend .card;
+    @extend .card8;
+
+    // Full white like the picture
+    background-color: #ffffff;
+
     border-radius: 50%;
     padding: 4px;
 }
