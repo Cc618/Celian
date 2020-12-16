@@ -8,6 +8,9 @@ function Home(props) {
   // TODO : Lang
   return (
     <div className="Home">
+      <header>
+        <i class="material-icons">call</i>
+      </header>
 
       <div class="picture-card">
         <img class="picture" src={picture} />
