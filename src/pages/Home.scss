@@ -2,8 +2,24 @@
 
 .Home {
     @extend .page;
-    @extend .primary;
+
+    background-image: linear-gradient(to right, $primary, $primary-light);
+
+    color: $white;
 
     display: flex;
     flex-direction: column;
+}
+
+.picture {
+    width: 33vh;
+    height: 33vh;
+
+    border-radius: 50%;
+}
+
+.picture-card {
+    // @extend .card;
+    border-radius: 50%;
+    padding: 4px;
 }
