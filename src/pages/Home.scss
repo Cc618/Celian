@@ -3,4 +3,7 @@
 .Home {
     @extend .page;
     @extend .primary;
+
+    display: flex;
+    flex-direction: column;
 }

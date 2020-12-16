@@ -4,10 +4,10 @@ let lang = "en";
 
 const fullData = {
     "en": {
-        "hello": "Hello",
+        "job": "Software Developer",
     },
     "fr": {
-        "hello": "Bonjour",
+        "job": "Développeur logiciel",
     },
 };
 

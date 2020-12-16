@@ -1,5 +1,6 @@
 // Wraps main pages
 
+import '../common/style.scss';
 import React from 'react';
 import Home from './Home';
 import Skills from './Skills';
