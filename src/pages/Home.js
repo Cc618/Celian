@@ -1,11 +1,13 @@
 // Contact + menu
 
 import './Home.scss';
+import {data} from '../common/data';
 
-function Home() {
+function Home(props) {
   return (
     <div className="Home">
-      <h1>Célian Raimbault</h1>
+      <h1>Célian Raimbault : {data.hello}</h1>
+      <button onClick={props.onChangeLang}>LANG</button>
     </div>
   );
 }

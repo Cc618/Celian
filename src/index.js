@@ -1,14 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './common/style.scss';
-import Home from './pages/Home';
-import Skills from './pages/Skills';
+import App from './pages/App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Home />
-    <Skills />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
