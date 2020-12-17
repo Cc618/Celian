@@ -9,15 +9,23 @@ function Home(props) {
   return (
     <div className="Home">
       <header>
-        <i class="material-icons">call</i>
+          {/* TODO : Github, Linkedin... + Make class */}
+        <button class="icon-card">
+          <i class="material-icons">call</i>
+        </button>
+        {/* <div class="icon-card">
+          <span class="material-icons">mail</span>
+        </div> */}
       </header>
 
-      <div class="picture-card">
-        <img class="picture" src={picture} />
-      </div>
+      <div class="content">
+        <div class="picture-card">
+          <img alt="" class="picture" src={picture} />
+        </div>
 
-      <h1>Célian Raimbault</h1>
-      <h2>{data.job}</h2>
+        <h1>Célian Raimbault</h1>
+        <h2>{data.job}</h2>
+      </div>
     </div>
   );
 }

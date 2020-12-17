@@ -1,6 +1,7 @@
 @import 'colors.scss';
 @import 'text.scss';
 @import 'shadows.scss';
+@import 'anim.scss';
 
 body, html {
   width: 100%;
@@ -12,9 +13,15 @@ body, html {
 
   scroll-behavior: smooth;
   overflow-x: hidden;
+  // TODO : Rm if using custom bar
+  overflow-y: hidden;
 
   font-family: 'Roboto', sans-serif;
   background-color: $white;
+}
+
+i {
+  color: $black;
 }
 
 .page {

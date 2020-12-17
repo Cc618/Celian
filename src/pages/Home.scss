@@ -1,6 +1,6 @@
 @import "../common/style.scss";
 
-// TODO : Gradient
+// --- Page ---
 .Home {
     @extend .page;
 
@@ -10,6 +10,55 @@
 
     display: flex;
     flex-direction: column;
+}
+
+// --- Header ---
+header {
+    width: 100vw;
+
+    padding-right: 16px;
+    padding-top: 8px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.icon-card {
+    @extend .card8;
+    @extend .transition100;
+
+    text-decoration: none;
+    border: none;
+
+    // border-radius: 50%;
+    padding: 8px;
+    margin: 8px;
+
+    cursor: pointer;
+
+    .material-icons {
+        color: $black;
+        font-size: 48px;
+    }
+}
+
+.icon-card:hover {
+    @extend .shadow16;
+}
+
+.icon-card:active {
+    @extend .shadow24;
+
+    background-color: $grey;
+}
+
+// --- Content ---
+.content {
+    flex: 2;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .picture {
@@ -26,5 +75,7 @@
     background-color: #ffffff;
 
     border-radius: 50%;
-    padding: 4px;
+    padding: 6px;
 }
+
+// --- Footer ---
