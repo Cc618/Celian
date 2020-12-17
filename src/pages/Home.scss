@@ -35,14 +35,37 @@ header {
 
     cursor: pointer;
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+
     .material-icons {
         color: $black;
         font-size: 48px;
+    }
+
+    .hint {
+        @extend .card16;
+        @extend .transition200;
+
+        opacity: 0%;
+
+        position: fixed;
+        top: #{48 * 1.5}px;
+
+        text-align: center;
+        white-space: nowrap;
     }
 }
 
 .icon-card:hover {
     @extend .shadow16;
+
+    // TODO : Not hover when cursor on hint
+    .hint {
+        opacity: 100%;
+    }
 }
 
 .icon-card:active {
