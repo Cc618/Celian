@@ -6,13 +6,16 @@ import picture from '../res/picture.jpg';
 
 function IconButton(props) {
   return (
-    <button class="icon-card" onClick={props.onClick}>
-      <i class="material-icons">{props.icon}</i>
-      {/* <div class="hint"> */}
-      {/* TODO : Hint can be null */}
-        <p class="hint">{props.hint}</p>
-      {/* </div> */}
-    </button>
+    <div class="icon-button">
+      <button class="icon-card" onClick={props.onClick}>
+        <i class="material-icons idle">{props.icon}</i>
+        <i class="material-icons onhover">{props.iconHover}</i>
+        {/* <div class="hint"> */}
+        {/* TODO : Hint can be null */}
+        {/* </div> */}
+      </button>
+      <p class="hint">{props.hint}</p>
+    </div>
   );
 }
 
@@ -21,11 +24,14 @@ function Home(props) {
   return (
     <div className="Home">
       <header>
-          {/* TODO : Clicks + hints */}
-          {/* TODO : Github, Linkedin... + Make class */}
-          <IconButton icon="call" hint="06 06 06 06 06"
+          {/* TODO : Clicks */}
+          {/* TODO : Github, Linkedin... */}
+          <IconButton icon="call" hint={data.phone}
+            iconHover="content_copy"
             onClick={() => console.log("call")} />
-          {/* <IconButton icon="mail" onClick={() => console.log("mail")} /> */}
+          <IconButton icon="mail" hint={data.mail}
+            iconHover="content_copy"
+            onClick={() => console.log("mail")} />
       </header>
 
       <div class="content">
