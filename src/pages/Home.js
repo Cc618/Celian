@@ -27,6 +27,10 @@ function Home(props) {
       <header>
           {/* TODO : Clicks */}
           {/* TODO : Github, Linkedin... */}
+          <IconButton icon="translate"
+            iconHover="translate"
+            hint={data.translate_lang}
+            onClick={props.onChangeLang} />
           <IconButton icon="call" hint={data.phone}
             iconHover="content_copy"
             onClick={() => console.log("call")} />
@@ -34,10 +38,6 @@ function Home(props) {
             iconHover="content_copy"
             onClick={() => console.log("mail")} />
             {/* TODO : Display next language */}
-          <IconButton icon="translate"
-            iconHover="translate"
-            hint={data.translate_lang}
-            onClick={props.onChangeLang} />
       </header>
 
       <div class="content">
@@ -48,6 +48,16 @@ function Home(props) {
         <h1>Célian Raimbault</h1>
         <h2>{data.job}</h2>
       </div>
+
+      <nav>
+        <div class="nav-button">
+          <a href="#skills">{data.career}</a>
+        </div>
+
+        <div class="nav-button">
+          <a href="#projects">{data.projects}</a>
+        </div>
+      </nav>
     </div>
   );
 }
