@@ -38,6 +38,8 @@ header {
 
     padding: 8px;
     margin: 8px;
+    position: relative;
+    top: 0px;
 
     cursor: pointer;
 
@@ -67,6 +69,10 @@ header {
 .icon-card:hover {
     @extend .shadow16;
 
+    background-color: $grey200;
+
+    top: -4px;
+
     .idle {
         opacity: 0%;
     }
@@ -74,8 +80,6 @@ header {
     .onhover {
         opacity: 100%;
     }
-
-    background-color: $grey200;
 }
 
 .icon-card:active {

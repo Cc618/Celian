@@ -4,6 +4,7 @@ import './Home.scss';
 import {data} from '../common/data';
 import picture from '../res/picture.jpg';
 
+// Icon buttons within the header
 function IconButton(props) {
   return (
     <div class="icon-button">
@@ -14,7 +15,7 @@ function IconButton(props) {
         {/* TODO : Hint can be null */}
         {/* </div> */}
       </button>
-      <p class="hint">{props.hint}</p>
+      {props.hint !== undefined && <p class="hint">{props.hint}</p>}
     </div>
   );
 }
@@ -32,6 +33,11 @@ function Home(props) {
           <IconButton icon="mail" hint={data.mail}
             iconHover="content_copy"
             onClick={() => console.log("mail")} />
+            {/* TODO : Display next language */}
+          <IconButton icon="translate"
+            iconHover="translate"
+            hint={data.translate_lang}
+            onClick={props.onChangeLang} />
       </header>
 
       <div class="content">
