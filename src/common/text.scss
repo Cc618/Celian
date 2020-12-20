@@ -36,3 +36,9 @@ p {
 a {
     @extend .text;
 }
+
+.button-text {
+    font-size: 14;
+    font-weight: medium;
+    letter-spacing: 1.25;
+}

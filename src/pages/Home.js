@@ -50,8 +50,14 @@ function Home(props) {
       </div>
 
       <nav>
-        <div class="nav-button">
-          <a href="#skills">{data.career}</a>
+        {/* TODO : Use p not a, button clickable */}
+        <div>
+          <div class="nav-button">
+            <a href="#skills">{data.career}</a>
+
+          </div>
+
+          <div class="arrow-down"></div>
         </div>
 
         <div class="nav-button">
