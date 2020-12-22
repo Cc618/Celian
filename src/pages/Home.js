@@ -1,10 +1,12 @@
 // Contact + menu
 
 import './Home.scss';
-import {data} from '../common/data';
+import {data, lang} from '../common/data';
 import picture from '../res/picture.jpg';
 import github from '../res/github.png';
 import linkedin from '../res/linkedin.png';
+import en from '../res/en.png';
+import fr from '../res/fr.png';
 
 // Icon buttons within the header
 function IconButton(props) {
@@ -39,27 +41,26 @@ function NavButton(props) {
 }
 
 function Home(props) {
-  // TODO : Lang
   return (
     <div className="Home">
       <header>
+          <IconButton image={lang == "en" ? fr : en}
+            hint={data.translate}
+            onClick={props.onChangeLang} />
+          <div style={{flex: 1}} />
+          <IconButton icon="mail" hint={data.mail}
+            iconHover="content_copy"
+            onClick={() => console.log("mail")} />
+            {/* TODO : Copy + snack bar */}
+          <IconButton icon="call" hint={data.phone}
+            iconHover="content_copy"
+            onClick={() => console.log("call")} />
           <IconButton image={github}
             hint="GitHub"
             onClick={() => window.open(data.url_github)} />
           <IconButton image={linkedin}
             hint="LinkedIn"
             onClick={() => window.open(data.url_linkedin)} />
-            {/* TODO : Display next language + To right */}
-          <IconButton icon="translate"
-            iconHover="translate"
-            hint={data.translate_lang}
-            onClick={props.onChangeLang} />
-          <IconButton icon="call" hint={data.phone}
-            iconHover="content_copy"
-            onClick={() => console.log("call")} />
-          <IconButton icon="mail" hint={data.mail}
-            iconHover="content_copy"
-            onClick={() => console.log("mail")} />
       </header>
 
       <div class="content">

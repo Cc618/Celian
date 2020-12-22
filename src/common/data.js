@@ -10,6 +10,7 @@ const fullData = {
         "url_linkedin": "https://www.linkedin.com/in/c%C3%A9lian-raimbault-53269a1b2",
         // Home
         "translate_lang": "Version française",
+        "translate": "Translate",
         "mail": "celian.pro.78@gmail.com",
         "phone": "+33 (0)6 61 24 71 01",
         "job": "Software Developer",
@@ -23,9 +24,10 @@ const fullData = {
         "url_linkedin": "https://www.linkedin.com/in/c%C3%A9lian-raimbault-53269a1b2",
         // Home
         "translate_lang": "English version",
+        "translate": "Traduire",
         "mail": "celian.pro.78@gmail.com",
         "phone": "+33 (0)6 61 24 71 01",
-        "job": "Développeur logiciel",
+        "job": "Développeur Logiciel",
         "career": "Parcours",
         "projects": "Projets",
     },
@@ -42,3 +44,4 @@ function changeLang() {
 
 export default changeLang;
 export {data};
+export {lang};
