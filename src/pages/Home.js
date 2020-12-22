@@ -27,14 +27,15 @@ function NavButton(props) {
   // TODO : Link
   return (
     <div class="nav-button-wrapper">
-          <div class="nav-button">
-            <p>{props.title}</p>
-          </div>
+      <div class="nav-button"
+        onClick={() => document.querySelector(props.link).scrollIntoView({behavior: 'smooth'})}>
+        <p>{props.title}</p>
+      </div>
 
-          <div class="arrow-down-wrapper">
-            <div class="arrow-down"></div>
-          </div>
-        </div>
+      <div class="arrow-down-wrapper">
+        <div class="arrow-down"></div>
+      </div>
+    </div>
   );
 }
 

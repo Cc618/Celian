@@ -31,8 +31,7 @@
 }
 
 .icon-card {
-    @extend .card8;
-    @extend .transition100;
+    @extend .raised-button;
 
     text-decoration: none;
     border: none;
@@ -68,10 +67,6 @@
 }
 
 .icon-card:hover {
-    @extend .shadow16;
-
-    background-color: $grey200;
-
     top: -4px;
 
     .idle {
@@ -81,12 +76,6 @@
     .onhover {
         opacity: 100%;
     }
-}
-
-.icon-card:active {
-    @extend .shadow24;
-
-    background-color: $grey300;
 }
 
 // Hint
@@ -141,8 +130,6 @@
 // --- Nav ---
 .Home nav {
     display: flex;
-    // align-items: center;
-    // justify-content: center;
     justify-content: space-around;
 
     margin-bottom: 48px;
@@ -154,31 +141,22 @@
 
         // Button
         .nav-button {
-            @extend .transition150;
-            @extend .card20;
+            @extend .raised-button;
 
             border-radius: 32px;
             padding: 8px 16px 8px 16px;
-            cursor: pointer;
 
             p {
                 @extend .button-text;
 
                 // TODO : Update
                 font-size: 24px;
+                font-weight: 500;
                 display: inline;
                 text-transform: uppercase;
 
                 color: $black;
             }
-        }
-
-        .nav-button:hover {
-            background-color: $grey200;
-        }
-
-        .nav-button:active {
-            background-color: $grey300;
         }
 
         // Arrow
