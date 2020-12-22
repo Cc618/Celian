@@ -48,13 +48,13 @@ function Home(props) {
             hint={data.translate}
             onClick={props.onChangeLang} />
           <div style={{flex: 1}} />
+          {/* TODO : Snack bar : Copied ! */}
           <IconButton icon="mail" hint={data.mail}
             iconHover="content_copy"
-            onClick={() => console.log("mail")} />
-            {/* TODO : Copy + snack bar */}
+            onClick={() => clipCopy(data.mail)} />
           <IconButton icon="call" hint={data.phone}
             iconHover="content_copy"
-            onClick={() => console.log("call")} />
+            onClick={() => clipCopy(data.phone)} />
           <IconButton image={github}
             hint="GitHub"
             onClick={() => window.open(data.url_github)} />
@@ -78,6 +78,11 @@ function Home(props) {
       </nav>
     </div>
   );
+}
+
+// Copy to clipboard
+function clipCopy(text) {
+  navigator.clipboard.writeText(text);
 }
 
 export default Home;
