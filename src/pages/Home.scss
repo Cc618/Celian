@@ -147,51 +147,56 @@
 
     margin-bottom: 48px;
 
-    .nav-button {
-        @extend .card20;
+    .nav-button-wrapper {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
 
-        border-radius: 32px;
-        padding: 8px 16px 8px 16px;
+        .nav-button {
+            @extend .card20;
 
-        a {
-            @extend .button-text;
+            border-radius: 32px;
+            padding: 8px 16px 8px 16px;
 
-            // TODO : Update
-            font-size: 24px;
-            text-transform: uppercase;
+            a {
+                @extend .button-text;
 
-            text-decoration: none;
-            color: $black;
+                // TODO : Update
+                font-size: 24px;
+                text-transform: uppercase;
+
+                text-decoration: none;
+                color: $black;
+            }
+        }
+
+        .arrow-down {
+            margin-top: 16px;
+
+            background-color: $white;
+        }
+        .arrow-down:before,
+        .arrow-down:after {
+            content: '';
+            position: absolute;
+            background-color: inherit;
+        }
+        .arrow-down,
+        .arrow-down:before,
+        .arrow-down:after {
+            width:  12px;
+            height: 12px;
+            border-top-right-radius: 50%;
+        }
+
+        .arrow-down {
+            transform: rotate(120deg) skewX(-30deg) scale(1,.866);
+        }
+        .arrow-down:before {
+            transform: rotate(-135deg) skewX(-45deg) scale(1.414,.707) translate(0,-50%);
+        }
+        .arrow-down:after {
+            transform: rotate(135deg) skewY(-45deg) scale(.707,1.414) translate(50%);
         }
     }
-
-}
-
-
-.nav-button + .arrow-down {
-	position: relative;
-	background-color: #333;
-}
-.nav-button + .arrow-down:before,
-.nav-button + .arrow-down:after {
-	content: '';
-	position: absolute;
-	background-color: inherit;
-}
-.nav-button + .arrow-down,
-.nav-button + .arrow-down:before,
-.nav-button + .arrow-down:after {
-	width:  10em;
-	height: 10em;
-	border-top-right-radius: 30%;
-}
-
-.nav-button + .arrow-down {
-	transform: rotate(-60deg) skewX(-30deg) scale(1,.866);
-}
-.nav-button + .arrow-down:before {
-	transform: rotate(-135deg) skewX(-45deg) scale(1.414,.707) translate(0,-50%);
-}
-.nav-button + .arrow-down:after {
-	transform: rotate(135deg) skewY(-45deg) scale(.707,1.414) translate(50%);
 }

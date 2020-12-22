@@ -50,11 +50,10 @@ function Home(props) {
       </div>
 
       <nav>
-        {/* TODO : Use p not a, button clickable */}
-        <div>
+        {/* TODO : Button on click -> go to skills */}
+        <div class="nav-button-wrapper">
           <div class="nav-button">
-            <a href="#skills">{data.career}</a>
-
+            <a>{data.career}</a>
           </div>
 
           <div class="arrow-down"></div>
