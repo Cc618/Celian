@@ -20,6 +20,24 @@ function IconButton(props) {
   );
 }
 
+// Buttons at the bottom for the navigation
+// - title
+// - link
+function NavButton(props) {
+  // TODO : Link
+  return (
+    <div class="nav-button-wrapper">
+          <div class="nav-button">
+            <p>{props.title}</p>
+          </div>
+
+          <div class="arrow-down-wrapper">
+            <div class="arrow-down"></div>
+          </div>
+        </div>
+  );
+}
+
 function Home(props) {
   // TODO : Lang
   return (
@@ -50,18 +68,8 @@ function Home(props) {
       </div>
 
       <nav>
-        {/* TODO : Button on click -> go to skills */}
-        <div class="nav-button-wrapper">
-          <div class="nav-button">
-            <a>{data.career}</a>
-          </div>
-
-          <div class="arrow-down"></div>
-        </div>
-
-        <div class="nav-button">
-          <a href="#projects">{data.projects}</a>
-        </div>
+        <NavButton title={data.career} link="#skills" />
+        <NavButton title={data.projects} link="#projects" />
       </nav>
     </div>
   );

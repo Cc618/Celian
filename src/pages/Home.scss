@@ -152,24 +152,49 @@
         align-items: center;
         flex-direction: column;
 
+        // Button
         .nav-button {
+            @extend .transition150;
             @extend .card20;
 
             border-radius: 32px;
             padding: 8px 16px 8px 16px;
+            cursor: pointer;
 
-            a {
+            p {
                 @extend .button-text;
 
                 // TODO : Update
                 font-size: 24px;
+                display: inline;
                 text-transform: uppercase;
 
-                text-decoration: none;
                 color: $black;
             }
         }
 
+        .nav-button:hover {
+            background-color: $grey200;
+        }
+
+        .nav-button:active {
+            background-color: $grey300;
+        }
+
+        // Arrow
+        .arrow-down-wrapper {
+            @extend .transition150;
+
+            position: relative;
+            top: 0;
+        }
+
+        .nav-button:hover + .arrow-down-wrapper {
+            top: 12px;
+        }
+
+        // Some transformations to make a triangle
+        // with rounded borders
         .arrow-down {
             margin-top: 16px;
 
