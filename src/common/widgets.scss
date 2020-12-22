@@ -1,0 +1,20 @@
+@import 'anim.scss';
+@import 'colors.scss';
+
+.raised-button {
+    @extend .transition150;
+    @extend .card16;
+
+    cursor: pointer;
+    background-color: $white;
+}
+
+.raised-button:hover {
+    @extend .shadow24;
+
+    background-color: $grey200;
+}
+
+.raised-button:active {
+    background-color: $grey300;
+}
