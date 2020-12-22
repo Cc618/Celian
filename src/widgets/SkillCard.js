@@ -10,7 +10,7 @@ function SkillCard(props) {
     <div className="SkillCard">
       <h4>{props.title}</h4>
       <ul>
-          { items.map((s) => ( <li>{s}</li> )) }
+          { items.map((s) => ( <li key={s}>{s}</li> )) }
       </ul>
     </div>
   );
