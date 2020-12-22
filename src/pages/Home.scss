@@ -91,6 +91,25 @@
     }
 }
 
+.icon-card ~ .copied {
+    opacity: 0;
+
+    position: relative;
+    top: 24px;
+
+    transition-delay: 250ms;
+    transition-duration: 200ms;
+    transform: scale(1);
+}
+
+.icon-card:active ~ .copied {
+    opacity: 100%;
+    transition-delay: 0ms;
+    transition-duration: 0ms;
+    transform: scale(1.25);
+}
+
+
 // Hint
 .icon-card + .hint {
     @extend .card16;

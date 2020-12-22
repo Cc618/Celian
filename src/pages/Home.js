@@ -18,6 +18,7 @@ function IconButton(props) {
         {props.image !== undefined && <img src={props.image} />}
       </button>
       {props.hint !== undefined && <p class="hint">{props.hint}</p>}
+      {props.canCopy !== undefined && <p class="copied">{data.copied}</p>}
     </div>
   );
 }
@@ -48,12 +49,13 @@ function Home(props) {
             hint={data.translate}
             onClick={props.onChangeLang} />
           <div style={{flex: 1}} />
-          {/* TODO : Snack bar : Copied ! */}
           <IconButton icon="mail" hint={data.mail}
             iconHover="content_copy"
+            canCopy="true"
             onClick={() => clipCopy(data.mail)} />
           <IconButton icon="call" hint={data.phone}
             iconHover="content_copy"
+            canCopy="true"
             onClick={() => clipCopy(data.phone)} />
           <IconButton image={github}
             hint="GitHub"

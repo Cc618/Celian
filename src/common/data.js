@@ -11,6 +11,7 @@ const fullData = {
         // Home
         "translate_lang": "Version française",
         "translate": "Translate",
+        "copied": "Copied !",
         "mail": "celian.pro.78@gmail.com",
         "phone": "+33 (0)6 61 24 71 01",
         "job": "Software Developer",
@@ -25,6 +26,7 @@ const fullData = {
         // Home
         "translate_lang": "English version",
         "translate": "Traduire",
+        "copied": "Copié !",
         "mail": "celian.pro.78@gmail.com",
         "phone": "+33 (0)6 61 24 71 01",
         "job": "Développeur Logiciel",
