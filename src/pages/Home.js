@@ -3,17 +3,17 @@
 import './Home.scss';
 import {data} from '../common/data';
 import picture from '../res/picture.jpg';
+import github from '../res/github.png';
+import linkedin from '../res/linkedin.png';
 
 // Icon buttons within the header
 function IconButton(props) {
   return (
     <div class="icon-button">
       <button class="icon-card" onClick={props.onClick}>
-        <i class="material-icons idle">{props.icon}</i>
-        <i class="material-icons onhover">{props.iconHover}</i>
-        {/* <div class="hint"> */}
-        {/* TODO : Hint can be null */}
-        {/* </div> */}
+        {props.icon !== undefined && <i class="material-icons idle">{props.icon}</i>}
+        {props.iconHover !== undefined && <i class="material-icons onhover">{props.iconHover}</i>}
+        {props.image !== undefined && <img src={props.image} />}
       </button>
       {props.hint !== undefined && <p class="hint">{props.hint}</p>}
     </div>
@@ -24,7 +24,6 @@ function IconButton(props) {
 // - title
 // - link
 function NavButton(props) {
-  // TODO : Link
   return (
     <div class="nav-button-wrapper">
       <div class="nav-button"
@@ -44,8 +43,13 @@ function Home(props) {
   return (
     <div className="Home">
       <header>
-          {/* TODO : Clicks */}
-          {/* TODO : Github, Linkedin... */}
+          <IconButton image={github}
+            hint="GitHub"
+            onClick={() => window.open(data.url_github)} />
+          <IconButton image={linkedin}
+            hint="LinkedIn"
+            onClick={() => window.open(data.url_linkedin)} />
+            {/* TODO : Display next language + To right */}
           <IconButton icon="translate"
             iconHover="translate"
             hint={data.translate_lang}
@@ -56,7 +60,6 @@ function Home(props) {
           <IconButton icon="mail" hint={data.mail}
             iconHover="content_copy"
             onClick={() => console.log("mail")} />
-            {/* TODO : Display next language */}
       </header>
 
       <div class="content">

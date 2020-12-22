@@ -48,6 +48,11 @@
     align-items: center;
     justify-items: center;
 
+    img {
+        width: 48px;
+        height: 48px;
+    }
+
     .material-icons {
         color: $black;
         font-size: 48px;
@@ -144,7 +149,9 @@
             @extend .raised-button;
 
             border-radius: 32px;
-            padding: 8px 16px 8px 16px;
+            padding: 8px 32px 8px 32px;
+            top: 0px;
+            position: relative;
 
             p {
                 @extend .button-text;
@@ -159,6 +166,10 @@
             }
         }
 
+        .nav-button:hover {
+            top: -4px;
+        }
+
         // Arrow
         .arrow-down-wrapper {
             @extend .transition150;
@@ -168,7 +179,7 @@
         }
 
         .nav-button:hover + .arrow-down-wrapper {
-            top: 12px;
+            top: 8px;
         }
 
         // Some transformations to make a triangle

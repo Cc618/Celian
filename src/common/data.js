@@ -2,8 +2,12 @@
 
 let lang = "en";
 
+// TODO : Shared section to avoid duplicates
 const fullData = {
     "en": {
+        // Misc
+        "url_github": "https://github.com/Cc618",
+        "url_linkedin": "https://www.linkedin.com/in/c%C3%A9lian-raimbault-53269a1b2",
         // Home
         "translate_lang": "Version française",
         "mail": "celian.pro.78@gmail.com",
@@ -14,6 +18,9 @@ const fullData = {
         "projects": "Projects",
     },
     "fr": {
+        // Misc
+        "url_github": "https://github.com/Cc618",
+        "url_linkedin": "https://www.linkedin.com/in/c%C3%A9lian-raimbault-53269a1b2",
         // Home
         "translate_lang": "English version",
         "mail": "celian.pro.78@gmail.com",
