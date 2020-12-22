@@ -11,14 +11,14 @@ import fr from '../res/fr.png';
 // Icon buttons within the header
 function IconButton(props) {
   return (
-    <div class="icon-button">
-      <button class="icon-card" onClick={props.onClick}>
-        {props.icon !== undefined && <i class="material-icons idle">{props.icon}</i>}
-        {props.iconHover !== undefined && <i class="material-icons onhover">{props.iconHover}</i>}
-        {props.image !== undefined && <img src={props.image} />}
+    <div className="icon-button">
+      <button className="icon-card" onClick={props.onClick}>
+        {props.icon !== undefined && <i className="material-icons idle">{props.icon}</i>}
+        {props.iconHover !== undefined && <i className="material-icons onhover">{props.iconHover}</i>}
+        {props.image !== undefined && <img alt="" src={props.image} />}
       </button>
-      {props.hint !== undefined && <p class="hint">{props.hint}</p>}
-      {props.canCopy !== undefined && <p class="copied">{data.copied}</p>}
+      {props.hint !== undefined && <p className="hint">{props.hint}</p>}
+      {props.canCopy !== undefined && <p className="copied">{data.copied}</p>}
     </div>
   );
 }
@@ -28,14 +28,14 @@ function IconButton(props) {
 // - link
 function NavButton(props) {
   return (
-    <div class="nav-button-wrapper">
-      <div class="nav-button"
+    <div className="nav-button-wrapper">
+      <div className="nav-button"
         onClick={() => document.querySelector(props.link).scrollIntoView({behavior: 'smooth'})}>
         <p>{props.title}</p>
       </div>
 
-      <div class="arrow-down-wrapper">
-        <div class="arrow-down"></div>
+      <div className="arrow-down-wrapper">
+        <div className="arrow-down"></div>
       </div>
     </div>
   );
@@ -45,7 +45,7 @@ function Home(props) {
   return (
     <div className="Home">
       <header>
-          <IconButton image={lang == "en" ? fr : en}
+          <IconButton image={lang === "en" ? fr : en}
             hint={data.translate}
             onClick={props.onChangeLang} />
           <div style={{flex: 1}} />
@@ -65,9 +65,9 @@ function Home(props) {
             onClick={() => window.open(data.url_linkedin)} />
       </header>
 
-      <div class="content">
-        <div class="picture-card">
-          <img alt="" class="picture" src={picture} />
+      <div className="content">
+        <div className="picture-card">
+          <img alt="" className="picture" src={picture} />
         </div>
 
         <h1>Célian Raimbault</h1>
