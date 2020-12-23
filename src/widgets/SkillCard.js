@@ -5,13 +5,18 @@ import './SkillCard.scss';
 
 function SkillCard(props) {
   // TODO
-  let items = ['1', '2', '3'];
+  let skill = props.skill;
   return (
     <div className="SkillCard">
-      <h4>{props.title}</h4>
-      <ul>
-          { items.map((s) => ( <li key={s}>{s}</li> )) }
-      </ul>
+      <div className="skill-card">
+        <div className="decoration" />
+        <div className="content">
+          <h4>{skill.title}</h4>
+          <ul>
+            { skill.items.map((s) => ( <li key={s}>{s}</li> )) }
+          </ul>
+        </div>
+      </div>
     </div>
   );
 }

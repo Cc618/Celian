@@ -18,6 +18,40 @@ const fullData = {
         // TODO : Verify career
         "career": "Career",
         "projects": "Projects",
+        // Skills
+        // TODO : Update and translate to french
+        "skills": [
+            {
+                "title": "Title 1",
+                "items": [
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                    "Fusce id velit ut tortor pretium viverra suspendisse.",
+                    "Pellentesque habitant morbi tristique senectus et.",
+                    "Netus et malesuada fames ac turpis egestas maecenas pharetra.",
+                    "Malesuada bibendum arcu vitae elementum curabitur vitae nunc sed velit."
+                ],
+            },
+            {
+                "title": "Title 2",
+                "items": [
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                    "Fusce id velit ut tortor pretium viverra suspendisse.",
+                    "Pellentesque habitant morbi tristique senectus et.",
+                    "Malesuada bibendum arcu vitae elementum curabitur vitae nunc sed velit."
+                ],
+            },
+            {
+                "title": "Title 3",
+                "items": [
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                    "Fusce id velit ut tortor pretium viverra suspendisse.",
+                    "Pellentesque habitant morbi tristique senectus et.",
+                    "Netus et malesuada fames ac turpis egestas maecenas pharetra.",
+                    "Fusce id velit ut tortor pretium viverra suspendisse.",
+                    "Malesuada bibendum arcu vitae elementum curabitur vitae nunc sed velit."
+                ],
+            },
+        ]
     },
     "fr": {
         // Misc
