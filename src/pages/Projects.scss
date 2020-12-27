@@ -16,9 +16,18 @@
     }
 
     footer {
+        color: $white;
         background-color: $black;
 
-        // TODO : Rm
-        height: 25vh;
+        padding: 5vw 24px 24px 24px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        h4 {
+            font-weight: 300;
+            font-size: 36px;
+        }
     }
 }

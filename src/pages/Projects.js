@@ -3,6 +3,7 @@
 import './Projects.scss';
 import {data} from '../common/data';
 import Dots from '../widgets/Dots';
+import github from '../res/github_light.png';
 
 function Projects(props) {
   return (
@@ -11,7 +12,12 @@ function Projects(props) {
       <Dots leftColor="accent" rightColor="grey" />
       <div className="bg-accent"></div>
       <Dots leftColor="black" rightColor="accent" />
-      <footer></footer>
+      <footer>
+        {/* TODO : Link to current github */}
+        <a href="https://github.com/Cc618"><img className="github" src={github} /></a>
+        <h4>{data.copyright}</h4>
+        <p>Made with...</p>
+      </footer>
     </div>
   );
 }
