@@ -136,8 +136,6 @@ const fullData = {
 let data = fullData[lang];
 
 function changeLang() {
-    console.log("CHANGED");
-
     lang = lang === "fr" ? "en" : "fr";
     data = fullData[lang];
 }

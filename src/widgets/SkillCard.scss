@@ -56,7 +56,15 @@ $skill-border-radius: 24px;
                 justify-content: center;
 
                 li {
+                    // TODO : Dot before custom ?
+                    font-size: 18px;
                     padding: 4px 0 4px 0;
+                    line-height: #{18 * 1.5px};
+
+                    a {
+                        // TODO : Visited color affected ?
+                        color: $primary;
+                    }
                 }
             }
         }
