@@ -31,23 +31,27 @@ let lang = "fr";
 + Motivation
 */
 
-// TODO : Shared section to avoid duplicates
+// Shared data between all languages
+const sharedData = {
+    // Misc
+    "url_github": "https://github.com/Cc618",
+    "url_linkedin": "https://www.linkedin.com/in/c%C3%A9lian-raimbault-53269a1b2",
+    // Home
+    "mail": "celian.pro.78@gmail.com",
+    "phone": "+33 (0)6 61 24 71 01",
+};
+
+// Language specific data
 const fullData = {
     "en": {
-        // Misc
-        "url_github": "https://github.com/Cc618",
-        "url_linkedin": "https://www.linkedin.com/in/c%C3%A9lian-raimbault-53269a1b2",
         // Home
         "translate_lang": "Version française",
         "translate": "Translate",
         "copied": "Copied !",
-        "mail": "celian.pro.78@gmail.com",
-        "phone": "+33 (0)6 61 24 71 01",
         "job": "Software Developer",
         "background": "Background",
         "projects": "Projects",
         // Skills
-        // TODO : Update
         "skills": [
             {
                 "title": "Experiences",
@@ -57,7 +61,7 @@ const fullData = {
             },
             {
                 // TODO : Verify studies
-                "title": "Studies",
+                "title": "Curriculum",
                 "items": [
                     "Actually in second year after graduation at <a href=\"https://www.epita.fr\">EPITA</a>",
                     // TODO : Translate
@@ -85,15 +89,11 @@ const fullData = {
         ]
     },
     "fr": {
-        // Misc
-        "url_github": "https://github.com/Cc618",
-        "url_linkedin": "https://www.linkedin.com/in/c%C3%A9lian-raimbault-53269a1b2",
         // Home
         "translate_lang": "English version",
         "translate": "Traduire",
         "copied": "Copié !",
-        "mail": "celian.pro.78@gmail.com",
-        "phone": "+33 (0)6 61 24 71 01",
+
         "job": "Développeur Logiciel",
         "background": "Parcours",
         "projects": "Projets",
@@ -133,11 +133,15 @@ const fullData = {
     },
 };
 
-let data = fullData[lang];
+let data = genData();
 
 function changeLang() {
     lang = lang === "fr" ? "en" : "fr";
-    data = fullData[lang];
+    data = genData();
+}
+
+function genData() {
+    return { ...fullData[lang], ...sharedData };
 }
 
 export default changeLang;
