@@ -1,0 +1,11 @@
+@import "../common/style.scss";
+
+.Projects {
+    @extend .page;
+
+    background-color: $grey;
+    color: $black;
+
+    display: flex;
+    flex-wrap: wrap;
+}
