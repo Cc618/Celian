@@ -1,11 +1,17 @@
 @import "../common/style.scss";
 
 .Projects {
-    @extend .page;
+    .bg-grey {
+        background-color: $grey;
 
-    background-color: $grey;
-    color: $black;
+        margin: 0;
 
-    display: flex;
-    flex-wrap: wrap;
+        height: 75vh;
+    }
+
+    .bg-accent {
+        background-color: $accent;
+
+        height: #{66 * 2vh};
+    }
 }
