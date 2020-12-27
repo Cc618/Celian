@@ -4,6 +4,7 @@ import '../common/style.scss';
 import React from 'react';
 import Home from './Home';
 import Skills from './Skills';
+import Projects from './Projects';
 import changeLang from '../common/data';
 
 class App extends React.Component {
@@ -14,6 +15,7 @@ class App extends React.Component {
                 this.setState({});
             }} />
             <Skills />
+            <Projects />
 		</div>;
     }
 }

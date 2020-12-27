@@ -4,8 +4,8 @@
 import './SkillCard.scss';
 
 function SkillCard(props) {
-  // TODO
   let skill = props.skill;
+
   return (
     <div className="SkillCard">
       <div className="skill-card">
