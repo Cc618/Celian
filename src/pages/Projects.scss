@@ -14,4 +14,11 @@
 
         height: #{66 * 2vh};
     }
+
+    footer {
+        background-color: $black;
+
+        // TODO : Rm
+        height: 25vh;
+    }
 }

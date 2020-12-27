@@ -2,6 +2,8 @@
 
 let lang = "fr";
 
+// TODO : Projects button in content page ? Home button in footer ?
+
 /* TODO
 ## Experiences
 - Stage Webdyn : Decrire + link to app

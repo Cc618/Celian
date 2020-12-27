@@ -7,15 +7,11 @@ import Dots from '../widgets/Dots';
 function Projects(props) {
   return (
     <div className="Projects" id="projects">
-      <div className="bg-grey">
-
-      </div>
-
+      <div className="bg-grey"></div>
       <Dots leftColor="accent" rightColor="grey" />
-
-      <div className="bg-accent">
-
-      </div>
+      <div className="bg-accent"></div>
+      <Dots leftColor="black" rightColor="accent" />
+      <footer></footer>
     </div>
   );
 }
