@@ -13,6 +13,7 @@ let lang = "fr";
 - Lycee
 - Concours lyceen
 - Epita
+- Projets Epita ?
 
 ## Passions
 - Prog depuis 5 ans
@@ -23,35 +24,11 @@ let lang = "fr";
 - MAO
 - Learning new skills
 
-## Skills
+## TODO : Skills
 + Languages : French = mother tongue, English = Good command, C1
 + Team work (Epita projects)
 + Organization
 + Motivation
-
-
-## Experiences
-TODO : Links (webdyn, app)
-- Stage de deux mois à <a href="https://www.webdyn.com">Webdyn</a> en 2020. Le but a été de créer une application mobile permettant la configuration des boitiers WebdynEasy. Faite avec Flutter en Dart, l'application est disponible sur le <a href="https://play.google.com/store/apps/details?id=com.webdyn.WebdynEasy">Google Play Store</a>
-
-## Cursus
-TODO : Links (EPITA)
-- "Actuellement en 2e année de classe préparatoire à <a href=\"https://www.epita.fr\">EPITA</a>"
-- "Baccalauréat S mention bien"
-- "Diplôme National du Brevet"
-- "Participation à l’épreuve de maths du concours général des lycéens"
-- "Terminale S option SI spé ISN au lycée Charles de Gaulle à Poissy"
-- "Passion de l’informatique et des maths"
-- "Programmation depuis 5 ans"
-
-## Activites
-- "Compétitions de programmation (<a href=\"https://codingcompetitions.withgoogle.com/kickstart\">Google Kickstart</a>)"
-- "Création d’intelligences artificielles"
-- "Conception d’applications mobiles"
-- "Lecture d’articles scientifiques en anglais"
-- "Création de musique électronique"
-- "Voyages (Irlande, Japon, France...)"
-- "Bénévolat (couverture photo sportives et du chef patissier François Faidy)"
 */
 
 // TODO : Shared section to avoid duplicates
@@ -73,33 +50,36 @@ const fullData = {
         // TODO : Update
         "skills": [
             {
-                "title": "Title 1",
+                "title": "Experiences",
                 "items": [
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-                    "Fusce id velit ut tortor pretium viverra suspendisse.",
-                    "Pellentesque habitant morbi tristique senectus et.",
-                    "Netus et malesuada fames ac turpis egestas maecenas pharetra.",
-                    "Malesuada bibendum arcu vitae elementum curabitur vitae nunc sed velit."
+                    "Two months internship at <a href=\"https://www.webdyn.com/en/\">Webdyn</a> in 2020. The goal was to create a mobile application to configure WebdynEasy hardware. Made with Flutter in Dart, this application is available on the <a href=\"https://play.google.com/store/apps/details?id=com.webdyn.WebdynEasy\">Google Play Store</a>"
                 ],
             },
             {
-                "title": "Title 2",
+                // TODO : Verify studies
+                "title": "Studies",
                 "items": [
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-                    "Fusce id velit ut tortor pretium viverra suspendisse.",
-                    "Pellentesque habitant morbi tristique senectus et.",
-                    "Malesuada bibendum arcu vitae elementum curabitur vitae nunc sed velit."
+                    "Actually in second year after graduation at <a href=\"https://www.epita.fr\">EPITA</a>",
+                    // TODO : Translate
+                    "Baccalauréat S",
+                    "Diplôme National du Brevet",
+                    // TODO : Verify
+                    "Participated at the general high school french contest in math section",
+                    "Scientific high school, IT speciality",
+                    "IT and math passion",
+                    "Programming since 5 years",
                 ],
             },
             {
-                "title": "Title 3",
+                "title": "Activities",
                 "items": [
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-                    "Fusce id velit ut tortor pretium viverra suspendisse.",
-                    "Pellentesque habitant morbi tristique senectus et.",
-                    "Netus et malesuada fames ac turpis egestas maecenas pharetra.",
-                    "Fusce id velit ut tortor pretium viverra suspendisse.",
-                    "Malesuada bibendum arcu vitae elementum curabitur vitae nunc sed velit."
+                    "Competitive programming (<a href=\"https://codingcompetitions.withgoogle.com/kickstart\">Google Kickstart</a>)",
+                    "Artificial intelligence",
+                    "Mobile apps",
+                    "English research papers reading",
+                    "Electronic music",
+                    "Travels (Ireland, Japan, France...)",
+                    "Volunteering (sport and culinary events photography)",
                 ],
             },
         ]
