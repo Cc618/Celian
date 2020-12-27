@@ -15,8 +15,7 @@ const fullData = {
         "mail": "celian.pro.78@gmail.com",
         "phone": "+33 (0)6 61 24 71 01",
         "job": "Software Developer",
-        // TODO : Verify career
-        "career": "Career",
+        "background": "Background",
         "projects": "Projects",
         // Skills
         // TODO : Update and translate to french
@@ -64,7 +63,7 @@ const fullData = {
         "mail": "celian.pro.78@gmail.com",
         "phone": "+33 (0)6 61 24 71 01",
         "job": "Développeur Logiciel",
-        "career": "Parcours",
+        "background": "Parcours",
         "projects": "Projets",
     },
 };
