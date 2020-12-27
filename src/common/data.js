@@ -1,6 +1,6 @@
 // Content data
 
-let lang = "en";
+let lang = "fr";
 
 /* TODO
 ## Experiences
@@ -32,27 +32,26 @@ let lang = "en";
 
 ## Experiences
 TODO : Links (webdyn, app)
-- Stage de deux mois à Webdyn en 2020. Le but à été de créer une application mobile permettant la configuration des boitiers WebdynEasy. Faite avec Flutter en Dart, l'application est disponible sur le Google Play Store
+- Stage de deux mois à <a href="https://www.webdyn.com">Webdyn</a> en 2020. Le but a été de créer une application mobile permettant la configuration des boitiers WebdynEasy. Faite avec Flutter en Dart, l'application est disponible sur le <a href="https://play.google.com/store/apps/details?id=com.webdyn.WebdynEasy">Google Play Store</a>
 
 ## Cursus
 TODO : Links (EPITA)
-- Actuellement en 2e année de classe préparatoire à EPITA
-- Baccalauréat S mention bien
-- Diplôme National du Brevet
-- Participation à l’épreuve de maths du concours général des lycéens
-- Terminale S option SI spé ISN au lycée Charles de Gaulle à Poissy
-- Passion de l’informatique et des maths
-- Programmation depuis 5 ans
+- "Actuellement en 2e année de classe préparatoire à <a href=\"https://www.epita.fr\">EPITA</a>"
+- "Baccalauréat S mention bien"
+- "Diplôme National du Brevet"
+- "Participation à l’épreuve de maths du concours général des lycéens"
+- "Terminale S option SI spé ISN au lycée Charles de Gaulle à Poissy"
+- "Passion de l’informatique et des maths"
+- "Programmation depuis 5 ans"
 
 ## Activites
-- Compétitions de programmation (Google Kickstart)
-- Création d’intelligences artificielles
-- Conception d’applications mobiles
-- Participation à des Capture The Flag (Root-Me)
-- Lecture d’articles scientifiques en anglais
-- Création de musique électronique
-- Voyages (Irlande, Japon, France...)
-- Bénévolat (couverture photo sportives et du chef patissier François Faidy)
+- "Compétitions de programmation (<a href=\"https://codingcompetitions.withgoogle.com/kickstart\">Google Kickstart</a>)"
+- "Création d’intelligences artificielles"
+- "Conception d’applications mobiles"
+- "Lecture d’articles scientifiques en anglais"
+- "Création de musique électronique"
+- "Voyages (Irlande, Japon, France...)"
+- "Bénévolat (couverture photo sportives et du chef patissier François Faidy)"
 */
 
 // TODO : Shared section to avoid duplicates
@@ -121,33 +120,33 @@ const fullData = {
         // TODO : Update
         "skills": [
             {
-                "title": "Title 1",
+                "title": "Expériences",
                 "items": [
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-                    "Fusce id velit ut tortor pretium viverra suspendisse.",
-                    "Pellentesque habitant morbi tristique senectus et.",
-                    "Netus et malesuada fames ac turpis egestas maecenas pharetra.",
-                    "Malesuada bibendum arcu vitae elementum curabitur vitae nunc sed velit."
+                    "Stage de deux mois à <a href=\"https://www.webdyn.com/en/\">Webdyn</a> en 2020. Le but a été de créer une application mobile permettant la configuration des boitiers WebdynEasy. Faite avec Flutter en Dart, l'application est disponible sur le <a href=\"https://play.google.com/store/apps/details?id=com.webdyn.WebdynEasy\">Google Play Store</a>"
                 ],
             },
             {
-                "title": "Title 2",
+                "title": "Cursus",
                 "items": [
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-                    "Fusce id velit ut tortor pretium viverra suspendisse.",
-                    "Pellentesque habitant morbi tristique senectus et.",
-                    "Malesuada bibendum arcu vitae elementum curabitur vitae nunc sed velit."
+                    "Actuellement en 2e année de classe préparatoire à <a href=\"https://www.epita.fr\">EPITA</a>",
+                    "Baccalauréat S mention bien",
+                    "Diplôme National du Brevet",
+                    "Participation à l’épreuve de maths du concours général des lycéens",
+                    "Terminale S option SI spé ISN au lycée Charles de Gaulle à Poissy",
+                    "Passion de l’informatique et des maths",
+                    "Programmation depuis 5 ans",
                 ],
             },
             {
-                "title": "Title 3",
+                "title": "Activités",
                 "items": [
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-                    "Fusce id velit ut tortor pretium viverra suspendisse.",
-                    "Pellentesque habitant morbi tristique senectus et.",
-                    "Netus et malesuada fames ac turpis egestas maecenas pharetra.",
-                    "Fusce id velit ut tortor pretium viverra suspendisse.",
-                    "Malesuada bibendum arcu vitae elementum curabitur vitae nunc sed velit."
+                    "Compétitions de programmation (<a href=\"https://codingcompetitions.withgoogle.com/kickstart\">Google Kickstart</a>)",
+                    "Création d’intelligences artificielles",
+                    "Conception d’applications mobiles",
+                    "Lecture d’articles scientifiques en anglais",
+                    "Création de musique électronique",
+                    "Voyages (Irlande, Japon, France...)",
+                    "Bénévolat (couverture photo sportives et du chef patissier François Faidy)",
                 ],
             },
         ]

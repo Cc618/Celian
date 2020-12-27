@@ -13,7 +13,7 @@ function SkillCard(props) {
         <div className="content">
           <h4>{skill.title}</h4>
           <ul>
-            { skill.items.map((s) => ( <li key={s}>{s}</li> )) }
+            { skill.items.map((s, i) => ( <li key={i} dangerouslySetInnerHTML={{__html: s}}></li> )) }
           </ul>
         </div>
       </div>
