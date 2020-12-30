@@ -14,7 +14,7 @@ function Projects(props) {
       <Dots leftColor="black" rightColor="accent" />
       <footer>
         {/* TODO : Link to current github */}
-        <a href="https://github.com/Cc618"><img className="github" src={github} /></a>
+        <a href="https://github.com/Cc618"><img className="github" src={github} alt="" /></a>
         <h4>{data.copyright}</h4>
         <div>
           {/* TODO : Images */}

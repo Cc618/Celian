@@ -72,11 +72,25 @@ $skill-border-radius: 24px;
                 flex: 1;
                 width: 100%;
 
-                // align-items: center;
-                // justify-content: space-around;
+                .item-center {
+                    text-align: center;
+                }
 
                 img {
                     height: 48px;
+                    text-align: center;
+                }
+
+                .ratio {
+                    width: 92px;
+
+                    .bar {
+                        height: 8px;
+                        border-radius: 8px;
+
+                        // TODO
+                        background-color: $accent;
+                    }
                 }
             }
         }

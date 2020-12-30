@@ -34,11 +34,12 @@ function SkillCard(props) {
 function IconSkillRow(props) {
   return (
     <tr className="row">
-      <th><img src={props.langIcon} alt="" /></th>
+      <td className="item-center"><img src={props.langIcon} alt="" /></td>
       {/* TODO : Hint */}
-      {/* TODO : Ratio */}
-      <th><img src={props.softIcon} alt="" /></th>
-      <th><p>{props.skill}</p></th>
+      {/* TODO : Ratio color */}
+      <td className="item-center"><div className="ratio"><div className="bar" style={{width: `${props.ratio * 100}%`}} /></div></td>
+      <td className="item-center"><img src={props.softIcon} alt="" /></td>
+      <td><p>{props.skill}</p></td>
     </tr>
   );
 }
