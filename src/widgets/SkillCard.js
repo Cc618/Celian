@@ -42,8 +42,6 @@ function IconSkillRow(props) {
           </div>
         </div>
       </td>
-      {/* TODO : Hint */}
-      {/* TODO : Ratio color */}
       <td className="item-center">
         <div className="ratio">
           <div className="bar" style={{width: `${props.ratio * 100}%`, backgroundColor: props.ratioColor}} />
@@ -70,20 +68,21 @@ function IconSkillCard(props) {
         <div className="decoration" />
         <div className="content">
           <h4>{data.icon_skills.title}</h4>
-          {/* TODO : tbody error */}
           <table>
-            <IconSkillRow langIcon={python} langHint="Python" ratio={1}
-              ratioColor="#F44336" softIcon={linux} softHint="Linux"
-              skill={data.icon_skills.oop} />
-            <IconSkillRow langIcon={cpp} langHint="C++" ratio={1}
-              ratioColor="#9C27B0" softIcon={vim} softHint="Vim"
-              skill={data.icon_skills.func_prog} />
-            <IconSkillRow langIcon={flutter} langHint="Dart / Flutter" ratio={6 / 10}
-              ratioColor="#2196F3" softIcon={vscode} softHint="VS Code"
-              skill={data.icon_skills.data_struct} />
-            <IconSkillRow langIcon={julia} langHint="Julia" ratio={5 / 10}
-              ratioColor="#4CAF50" softIcon={git} softHint="Git"
-              skill={data.icon_skills.proj_manag} />
+            <tbody>
+              <IconSkillRow langIcon={python} langHint="Python" ratio={1}
+                ratioColor="#F44336" softIcon={linux} softHint="Linux"
+                skill={data.icon_skills.oop} />
+              <IconSkillRow langIcon={cpp} langHint="C++" ratio={1}
+                ratioColor="#9C27B0" softIcon={vim} softHint="Vim"
+                skill={data.icon_skills.func_prog} />
+              <IconSkillRow langIcon={flutter} langHint="Dart / Flutter" ratio={6 / 10}
+                ratioColor="#2196F3" softIcon={vscode} softHint="VS Code"
+                skill={data.icon_skills.data_struct} />
+              <IconSkillRow langIcon={julia} langHint="Julia" ratio={5 / 10}
+                ratioColor="#4CAF50" softIcon={git} softHint="Git"
+                skill={data.icon_skills.proj_manag} />
+            </tbody>
           </table>
         </div>
       </div>

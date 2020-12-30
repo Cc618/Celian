@@ -8,7 +8,6 @@ function Skills() {
   return (
     <div className="Skills" id="skills">
       {data.skills.map((skill, i) => <SkillCard key={i} skill={skill} />)}
-      {/* TODO : Icon skills card */}
       <IconSkillCard />
     </div>
   );
