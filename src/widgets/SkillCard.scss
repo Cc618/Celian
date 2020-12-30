@@ -11,6 +11,7 @@ $skill-border-radius: 24px;
 
     .skill-card {
         @extend .card8;
+        @extend .transition200;
 
         border-radius: $skill-border-radius;
 
@@ -133,5 +134,9 @@ $skill-border-radius: 24px;
                 }
             }
         }
+    }
+
+    .skill-card:hover {
+        @extend .shadow16;
     }
 }
