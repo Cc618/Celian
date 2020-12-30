@@ -36,6 +36,7 @@
     flex-direction: column;
     align-items: center;
     justify-items: center;
+    position: relative;
 }
 
 .icon-card {
@@ -73,7 +74,7 @@
     .onhover {
         @extend .transition200;
 
-        position: fixed;
+        position: absolute;
 
         opacity: 0%;
     }
@@ -100,7 +101,7 @@
     opacity: 0%;
 
     border-radius: 12px;
-    position: fixed;
+    position: absolute;
     top: #{48 * 1.5}px;
     padding-left: 12px;
     padding-right: 12px;
