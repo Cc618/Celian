@@ -30,15 +30,33 @@ function SkillCard(props) {
   );
 }
 
-// langIcon, hint, ratio, softIcon, skill
+// langIcon, langHint, ratio, ratioColor, softIcon, softHint, skill
 function IconSkillRow(props) {
   return (
     <tr className="row">
-      <td className="item-center"><img src={props.langIcon} alt="" /></td>
+      <td className="item-center hint">
+        <img src={props.langIcon} alt="" />
+        <div>
+          <div className="hint-card">
+            <p>{props.langHint}</p>
+          </div>
+        </div>
+      </td>
       {/* TODO : Hint */}
       {/* TODO : Ratio color */}
-      <td className="item-center"><div className="ratio"><div className="bar" style={{width: `${props.ratio * 100}%`}} /></div></td>
-      <td className="item-center"><img src={props.softIcon} alt="" /></td>
+      <td className="item-center">
+        <div className="ratio">
+          <div className="bar" style={{width: `${props.ratio * 100}%`, backgroundColor: props.ratioColor}} />
+        </div>
+      </td>
+      <td className="item-center hint">
+        <img src={props.softIcon} alt="" />
+        <div>
+          <div className="hint-card">
+            <p>{props.softHint}</p>
+          </div>
+        </div>
+      </td>
       <td><p>{props.skill}</p></td>
     </tr>
   );
@@ -52,11 +70,20 @@ function IconSkillCard(props) {
         <div className="decoration" />
         <div className="content">
           <h4>{data.icon_skills.title}</h4>
+          {/* TODO : tbody error */}
           <table>
-            <IconSkillRow langIcon={python} hint="Python" ratio={1} softIcon={linux} skill={data.icon_skills.oop} />
-            <IconSkillRow langIcon={cpp} hint="C++" ratio={1} softIcon={vim} skill={data.icon_skills.func_prog} />
-            <IconSkillRow langIcon={flutter} hint="Dart / Flutter" ratio={6 / 10} softIcon={vscode} skill={data.icon_skills.data_struct} />
-            <IconSkillRow langIcon={julia} hint="Julia" ratio={5 / 10} softIcon={git} skill={data.icon_skills.proj_manag} />
+            <IconSkillRow langIcon={python} langHint="Python" ratio={1}
+              ratioColor="#F44336" softIcon={linux} softHint="Linux"
+              skill={data.icon_skills.oop} />
+            <IconSkillRow langIcon={cpp} langHint="C++" ratio={1}
+              ratioColor="#9C27B0" softIcon={vim} softHint="Vim"
+              skill={data.icon_skills.func_prog} />
+            <IconSkillRow langIcon={flutter} langHint="Dart / Flutter" ratio={6 / 10}
+              ratioColor="#2196F3" softIcon={vscode} softHint="VS Code"
+              skill={data.icon_skills.data_struct} />
+            <IconSkillRow langIcon={julia} langHint="Julia" ratio={5 / 10}
+              ratioColor="#4CAF50" softIcon={git} softHint="Git"
+              skill={data.icon_skills.proj_manag} />
           </table>
         </div>
       </div>

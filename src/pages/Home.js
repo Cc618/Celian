@@ -8,6 +8,7 @@ import linkedin from '../res/linkedin.png';
 import en from '../res/en.png';
 import fr from '../res/fr.png';
 
+// TODO : Display issue when scroll not at top and hover
 // Icon buttons within the header
 function IconButton(props) {
   return (

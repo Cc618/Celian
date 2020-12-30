@@ -9,7 +9,6 @@ function Dots(props) {
   for (let i = 0; i < npairs; ++i) {
     dots.push(<div key={i * 2} className={"dot dot-" + props.leftColor}></div>);
     dots.push(<div key={i * 2 + 1} className={"dot dot-" + props.rightColor}></div>);
-    console.log(i);
   }
 
   return (
