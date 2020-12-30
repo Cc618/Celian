@@ -67,6 +67,20 @@ $skill-border-radius: 24px;
                     }
                 }
             }
+
+            table {
+                background-color: red;
+
+                flex: 1;
+                width: 100%;
+
+                // align-items: center;
+                // justify-content: space-around;
+
+                img {
+                    height: 48px;
+                }
+            }
         }
     }
 }
