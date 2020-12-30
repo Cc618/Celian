@@ -1,6 +1,6 @@
 // Content data
 
-let lang = "fr";
+let lang = "en";
 
 // TODO : Projects button in content page ? Home button in footer ?
 
@@ -64,25 +64,21 @@ const fullData = {
                 ],
             },
             {
-                // TODO : Verify studies
-                "title": "Curriculum",
+                "title": "Education",
                 "items": [
                     "Actually in second year after graduation at <a href=\"https://www.epita.fr\">EPITA</a>",
-                    // TODO : Translate
-                    "Baccalauréat S",
-                    "Diplôme National du Brevet",
-                    // TODO : Verify
-                    "Participated at the general high school french contest in math section",
-                    "Scientific high school, IT speciality",
-                    "IT and math passion",
-                    "Programming since 5 years",
+                    "A Level: Science",
+                    "Attendee to the general high school contest related to math",
+                    "Scientific high school, option IT",
                 ],
             },
             {
                 "title": "Activities",
                 "items": [
+                    "Passionate in IT and math",
+                    "Programming since 5 years",
                     "Competitive programming (<a href=\"https://codingcompetitions.withgoogle.com/kickstart\">Google Kickstart</a>)",
-                    "Artificial intelligence",
+                    "Artificial Intelligence",
                     "Mobile apps",
                     "English research papers reading",
                     "Electronic music",
@@ -90,7 +86,10 @@ const fullData = {
                     "Volunteering (sport and culinary events photography)",
                 ],
             },
-        ]
+        ],
+        // Projects
+        // Footer
+        "made_with": "Made with",
     },
     "fr": {
         // Home
@@ -101,7 +100,6 @@ const fullData = {
         "job": "Développeur Logiciel",
         "background": "Parcours",
         "projects": "Projets",
-        // TODO : Update
         "skills": [
             {
                 "title": "Expériences",
@@ -117,13 +115,13 @@ const fullData = {
                     "Diplôme National du Brevet",
                     "Participation à l’épreuve de maths du concours général des lycéens",
                     "Terminale S option SI spé ISN au lycée Charles de Gaulle à Poissy",
-                    "Passion de l’informatique et des maths",
-                    "Programmation depuis 5 ans",
                 ],
             },
             {
                 "title": "Activités",
                 "items": [
+                    // TODO : Too much items : overflow (either rm items or 2 bars layout)
+                    "Passion et pratique de l’informatique et des maths depuis 5 ans",
                     "Compétitions de programmation (<a href=\"https://codingcompetitions.withgoogle.com/kickstart\">Google Kickstart</a>)",
                     "Création d’intelligences artificielles",
                     "Conception d’applications mobiles",
@@ -133,7 +131,18 @@ const fullData = {
                     "Bénévolat (couverture photo sportives et du chef patissier François Faidy)",
                 ],
             },
-        ]
+        ],
+        // "icon_skills": {
+        //     "title": "Compétences",
+        //     "rows": [
+        //         {
+        //             "name": "Python",
+        //             "icon": "python",
+        //             "ratio": "10",
+        //         }
+        //     ],
+        // },
+        "made_with": "Fait avec",
     },
 };
 

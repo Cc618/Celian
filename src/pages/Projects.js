@@ -16,7 +16,10 @@ function Projects(props) {
         {/* TODO : Link to current github */}
         <a href="https://github.com/Cc618"><img className="github" src={github} /></a>
         <h4>{data.copyright}</h4>
-        <p>Made with...</p>
+        <div>
+          {/* TODO : Images */}
+          <p>{data.made_with} HTML, CSS & React</p>
+        </div>
       </footer>
     </div>
   );
