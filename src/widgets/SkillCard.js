@@ -2,6 +2,7 @@
 // TODO : Language skill card
 
 import './SkillCard.scss';
+import {data} from '../common/data';
 import python from '../res/python.png';
 import cpp from '../res/cpp.png';
 import flutter from '../res/flutter.png';
@@ -49,14 +50,12 @@ function IconSkillCard(props) {
       <div className="skill-card">
         <div className="decoration" />
         <div className="content">
-          {/* TODO : Translate */}
-          <h4>Compétences</h4>
-          {/* TODO : Translate */}
+          <h4>{data.icon_skills.title}</h4>
           <table>
-            <IconSkillRow langIcon={python} hint="Python" ratio={1} softIcon={linux} skill="OOP" />
-            <IconSkillRow langIcon={cpp} hint="C++" ratio={1} softIcon={vim} skill="Functional Programming" />
-            <IconSkillRow langIcon={flutter} hint="Dart / Flutter" ratio={6 / 10} softIcon={vscode} skill="Data Structures" />
-            <IconSkillRow langIcon={julia} hint="Julia" ratio={5 / 10} softIcon={git} skill="Project Management" />
+            <IconSkillRow langIcon={python} hint="Python" ratio={1} softIcon={linux} skill={data.icon_skills.oop} />
+            <IconSkillRow langIcon={cpp} hint="C++" ratio={1} softIcon={vim} skill={data.icon_skills.func_prog} />
+            <IconSkillRow langIcon={flutter} hint="Dart / Flutter" ratio={6 / 10} softIcon={vscode} skill={data.icon_skills.data_struct} />
+            <IconSkillRow langIcon={julia} hint="Julia" ratio={5 / 10} softIcon={git} skill={data.icon_skills.proj_manag} />
           </table>
         </div>
       </div>

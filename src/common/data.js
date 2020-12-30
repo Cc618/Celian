@@ -87,6 +87,13 @@ const fullData = {
                 ],
             },
         ],
+        "icon_skills": {
+            "title": "Skills",
+            "oop": "OOP",
+            "func_prog": "Functional Programming",
+            "data_struct": "Data Structures",
+            "proj_manag": "Project Management",
+        },
         // Projects
         // Footer
         "made_with": "Made with",
@@ -132,16 +139,15 @@ const fullData = {
                 ],
             },
         ],
-        // "icon_skills": {
-        //     "title": "Compétences",
-        //     "rows": [
-        //         {
-        //             "name": "Python",
-        //             "icon": "python",
-        //             "ratio": "10",
-        //         }
-        //     ],
-        // },
+        "icon_skills": {
+            "title": "Compétences",
+            "oop": "POO",
+            "func_prog": "Programmation Fonctionelle",
+            "data_struct": "Structures de Données",
+            "proj_manag": "Gestion de Projets",
+        },
+        // Projects
+        // Footer
         "made_with": "Fait avec",
     },
 };
