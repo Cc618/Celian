@@ -5,6 +5,7 @@
 
 $project-card-radius: 48px;
 $project-card-height: 85vh;
+$project-fab-size: 64px;
 
 .Projects {
     .bg {
@@ -66,7 +67,7 @@ $project-card-height: 85vh;
 }
 
 .project-card {
-    @extend .card16;
+    @extend .card24;
     @extend .transition200;
 
     box-sizing: border-box;
@@ -125,6 +126,8 @@ $project-card-height: 85vh;
         max-height: 75%;
 
         display: flex;
+        flex-direction: column;
+        align-items: center;
         justify-content: center;
 
         .image {
@@ -134,9 +137,37 @@ $project-card-height: 85vh;
 
             border-radius: #{$project-card-radius / 2};
         }
+
+        .image-fab-wrapper {
+            position: relative;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            top: -50%;
+
+            .image-fab {
+                @extend .shadow8;
+
+                position: absolute;
+
+                background-color: $primary;
+                padding: 8px;
+                border-radius: 50%;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .image-fab-icon {
+                    height: $project-fab-size;
+                }
+            }
+        }
     }
 }
 
 .project-card:hover {
-    @extend .shadow24;
+    @extend .shadow32;
 }

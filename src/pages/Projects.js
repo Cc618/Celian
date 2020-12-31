@@ -29,6 +29,11 @@ function ProjectCard(props) {
         </div>
         <div className="image-wrapper">
           <img src={props.image} className="image" alt="" />
+          <div className="image-fab-wrapper">
+            <div className="image-fab">
+              <img src={github} className="image-fab-icon" />
+            </div>
+          </div>
         </div>
         <p>{props.description}</p>
         {/* TODO : trailing : props.trailing !== undefined && */}
