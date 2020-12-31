@@ -40,7 +40,7 @@ const sharedData = {
     "url_linkedin": "https://www.linkedin.com/in/c%C3%A9lian-raimbault-53269a1b2",
     // Home
     "mail": "celian.pro.78@gmail.com",
-    "phone": "+33 (0)6 61 24 71 01",
+    "phone": "(+33) 06 61 24 71 01",
     // Footer
     "copyright": "Célian Raimbault - 2021",
 };
@@ -83,7 +83,7 @@ const fullData = {
                     "English research papers reading",
                     "Electronic music",
                     "Travels (Ireland, Japan, France...)",
-                    "Volunteering (sport and culinary events photography)",
+                    "Volunteering (sport / culinary events photography)",
                 ],
             },
         ],

@@ -1,4 +1,3 @@
-// TODO : Stateful
 // TODO : Language skill card
 
 import './SkillCard.scss';

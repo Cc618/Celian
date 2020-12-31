@@ -56,12 +56,28 @@ $skill-border-radius: 24px;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
+                align-items: stretch;
+
+                flex-wrap: wrap;
+
+                width: 100%;
+                box-sizing: border-box;
+
+                // TODO : Useless now
+                li.compact {
+                    height: 25%;
+                    width: 50%;
+                    box-sizing: border-box;
+                }
 
                 li {
-                    // TODO : Dot before custom ?
+                    // TODO : Customize dot ?
                     font-size: 18px;
-                    padding: 4px 0 4px 0;
+                    flex: 1;
                     line-height: #{18 * 1.5px};
+
+                    // TODO : Not working
+                    vertical-align: middle;
 
                     a {
                         // TODO : Visited color affected ?
