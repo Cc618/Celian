@@ -8,9 +8,50 @@ import github from '../res/github_light.png';
 function Projects(props) {
   return (
     <div className="Projects" id="projects">
-      <div className="bg-grey"></div>
+      <div className="bg bg-grey">
+
+        {/* TODO : rm blue / green */}
+        <div className="project-wrapper blue">
+          <div className="project-card">
+
+          </div>
+        </div>
+
+        <div className="project-wrapper green">
+          <div className="project-card">
+
+          </div>
+        </div>
+
+      </div>
       <Dots leftColor="accent" rightColor="grey" />
-      <div className="bg-accent"></div>
+      <div className="bg bg-accent">
+
+        <div className="project-wrapper blue">
+          <div className="project-card">
+
+          </div>
+        </div>
+
+        <div className="project-wrapper green">
+          <div className="project-card">
+
+          </div>
+        </div>
+
+        <div className="project-wrapper green">
+          <div className="project-card">
+
+          </div>
+        </div>
+
+        <div className="project-wrapper blue">
+          <div className="project-card">
+
+          </div>
+        </div>
+
+      </div>
       <Dots leftColor="black" rightColor="accent" />
       <footer>
         {/* TODO : Link to current github */}

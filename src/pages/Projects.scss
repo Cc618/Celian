@@ -1,18 +1,51 @@
 @import "../common/style.scss";
+@import "../widgets/Dots.scss";
 
 .Projects {
+    .bg {
+        box-sizing: border-box;
+
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        .project-wrapper {
+            width: 50%;
+            box-sizing: border-box;
+        }
+
+        .blue {
+            background-color: lightblue;
+        }
+
+        .green {
+            background-color: lightgreen;
+        }
+    }
+
     .bg-grey {
         background-color: $grey;
 
-        margin: 0;
-
         height: 75vh;
+
+        padding-bottom: #{$ndots / 2}vw;
+
+        .project-wrapper {
+            height: 100%;
+        }
     }
 
     .bg-accent {
         background-color: $accent;
 
         height: #{66 * 2vh};
+
+        padding-top: #{$ndots / 2}vw;
+        padding-bottom: #{$ndots / 2}vw;
+
+        .project-wrapper {
+            height: 50%;
+        }
     }
 
     footer {
@@ -30,4 +63,6 @@
             font-size: 36px;
         }
     }
+
+
 }
