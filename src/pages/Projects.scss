@@ -1,11 +1,8 @@
 @import "../common/style.scss";
 @import "../widgets/Dots.scss";
+@import "../widgets/ProjectCard.scss";
 
 // TODO : Change layout on tiny width devices
-
-$project-card-radius: 48px;
-$project-card-height: 85vh;
-$project-fab-size: 64px;
 
 .Projects {
     .bg {
@@ -63,133 +60,5 @@ $project-fab-size: 64px;
             font-weight: 300;
             font-size: 36px;
         }
-    }
-}
-
-.project-card {
-    @extend .card16;
-    @extend .transition200;
-
-    box-sizing: border-box;
-    width: 100%;
-    height: 100%;
-
-    padding: $project-card-radius;
-    border-radius: $project-card-radius;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    cursor: pointer;
-
-    // Header
-    .header {
-        display: flex;
-        align-items: center;
-
-        // TODO : Padding
-
-        h4 {
-            color: $primary;
-            font-size: 32px;
-            font-weight: 400;
-
-            padding: 0;
-            margin: 0;
-        }
-
-        .tag {
-            color: $accent;
-
-            border: solid 1px $accent;
-            border-radius: 24px;
-
-            padding: 4px 16px;
-            margin: 0 8px;
-
-            text-align: center;
-        }
-
-        .spacer {
-            flex: 1;
-        }
-
-        .icon {
-            height: 48px;
-
-            padding-left: 8px;
-        }
-    }
-
-    // Image
-    .image-wrapper {
-        max-width: 100%;
-        max-height: 75%;
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-
-        .image {
-            @extend .transition150;
-
-            aspect-ratio: 1 / 1;
-            max-width: 100%;
-            max-height: 100%;
-
-            border-radius: #{$project-card-radius / 2};
-        }
-
-        .image-fab-wrapper {
-            position: relative;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            top: -50%;
-
-            .image-fab {
-                @extend .transition200;
-                @extend .shadow8;
-
-                position: absolute;
-
-                background-color: $primary;
-                padding: 8px;
-                border-radius: 50%;
-
-                display: flex;
-                align-items: center;
-                justify-content: center;
-
-                .image-fab-icon {
-                    height: $project-fab-size;
-                }
-            }
-        }
-    }
-}
-
-// Animatables
-.image-fab {
-    opacity: 0;
-}
-
-.image {
-    opacity: 100%;
-}
-
-.project-card:hover {
-    @extend .shadow32;
-
-    .image {
-        opacity: 20%;
-    }
-
-    .image-fab {
-        opacity: 100%;
     }
 }
