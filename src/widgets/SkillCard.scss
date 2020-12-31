@@ -3,6 +3,12 @@
 $skill-border-radius: 24px;
 
 .SkillCard {
+    width: 50%;
+    height: 50%;
+    box-sizing: border-box;
+
+    padding: 24px;
+
     display: flex;
     flex-direction: row;
 
