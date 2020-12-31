@@ -1,7 +1,10 @@
 @import "../common/style.scss";
 @import "../widgets/Dots.scss";
 
+// TODO : Change layout on tiny width devices
+
 $project-card-radius: 48px;
+$project-card-height: 85vh;
 
 .Projects {
     .bg {
@@ -15,14 +18,14 @@ $project-card-radius: 48px;
             width: 50%;
             box-sizing: border-box;
 
-            padding: 48px;
+            padding: 48px 96px;
         }
     }
 
     .bg-grey {
         background-color: $grey;
 
-        height: 75vh;
+        height: $project-card-height;
 
         padding-bottom: #{$ndots / 2}vw;
 
@@ -35,7 +38,7 @@ $project-card-radius: 48px;
         background-color: $accent;
 
         // TODO : Update height
-        height: #{75 * 2vh};
+        height: #{$project-card-height * 2};
 
         padding-top: #{$ndots / 2}vw;
         padding-bottom: #{$ndots / 2}vw;
@@ -75,13 +78,62 @@ $project-card-radius: 48px;
 
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 
+    // Header
     .header {
         display: flex;
+        align-items: center;
+
+        // TODO : Padding
+
+        h4 {
+            color: $primary;
+            font-size: 32px;
+            font-weight: 400;
+
+            padding: 0;
+            margin: 0;
+        }
+
+        .tag {
+            color: $accent;
+
+            border: solid 1px $accent;
+            border-radius: 24px;
+
+            padding: 4px 16px;
+            margin: 0 8px;
+
+            text-align: center;
+        }
+
+        .spacer {
+            flex: 1;
+        }
+
+        .icon {
+            height: 48px;
+
+            padding-left: 8px;
+        }
     }
 
-    .icon {
-        height: 48px;
+    // Image
+    .image-wrapper {
+        max-width: 100%;
+        max-height: 75%;
+
+        display: flex;
+        justify-content: center;
+
+        .image {
+            aspect-ratio: 1 / 1;
+            max-width: 100%;
+            max-height: 100%;
+
+            border-radius: #{$project-card-radius / 2};
+        }
     }
 }
 

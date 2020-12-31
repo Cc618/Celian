@@ -5,8 +5,16 @@ import {data} from '../common/data';
 import Dots from '../widgets/Dots';
 import github from '../res/github_light.png';
 import dart from '../res/flutter.png';
+// TODO : C not C++ icon
+import c from '../res/cpp.png';
+import cpp from '../res/cpp.png';
+import python from '../res/python.png';
+import julia from '../res/julia.png';
 import quick_shop from '../res/quick_shop.jpg';
+import os2020 from '../res/os2020.gif';
 import google_play_badge from '../res/google_play_badge.png';
+
+// TODO : Add used languages section ?
 
 // title tags icon image description trailing
 function ProjectCard(props) {
@@ -15,10 +23,13 @@ function ProjectCard(props) {
       <div className="project-card">
         <div className="header">
           <h4>{props.title}</h4>
+          <div className="spacer" />
           {props.tags.map((tag, i) => <p className="tag" key={i}>{tag}</p>)}
-          <img src={props.icon} className="icon" />
+          <img src={props.icon} className="icon" alt="" />
         </div>
-        <img src={props.image} />
+        <div className="image-wrapper">
+          <img src={props.image} className="image" alt="" />
+        </div>
         <p>{props.description}</p>
         {/* TODO : trailing : props.trailing !== undefined && */}
       </div>
@@ -38,11 +49,8 @@ function Projects(props) {
         <ProjectCard title="Quick-Shop" tags={["Flutter", "Mobile App"]}
           icon={dart} image={quick_shop} description={description} />
 
-        <div className="project-wrapper">
-          <div className="project-card">
-
-          </div>
-        </div>
+        <ProjectCard title="Os2020" tags={["C", "Assembly", "OS"]}
+          icon={c} image={os2020} description={description} />
 
       </div>
       <Dots leftColor="accent" rightColor="grey" />
