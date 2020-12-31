@@ -33,30 +33,30 @@ function SkillCard(props) {
 // langIcon, langHint, ratio, ratioColor, softIcon, softHint, skill
 function IconSkillRow(props) {
   return (
-    <tr className="row">
-      <td className="item-center hint">
+    <div className="row">
+      <div className="item-center hint">
         <img src={props.langIcon} alt="" />
-        <div>
+        <div className="hint-wrapper">
           <div className="hint-card">
             <p>{props.langHint}</p>
           </div>
         </div>
-      </td>
-      <td className="item-center">
+      </div>
+      <div className="item-start">
         <div className="ratio">
           <div className="bar" style={{width: `${props.ratio * 100}%`, backgroundColor: props.ratioColor}} />
         </div>
-      </td>
-      <td className="item-center hint">
+      </div>
+      <div className="item-center hint">
         <img src={props.softIcon} alt="" />
         <div>
           <div className="hint-card">
             <p>{props.softHint}</p>
           </div>
         </div>
-      </td>
-      <td><p>{props.skill}</p></td>
-    </tr>
+      </div>
+      <div><p>{props.skill}</p></div>
+    </div>
   );
 }
 
@@ -68,8 +68,7 @@ function IconSkillCard(props) {
         <div className="decoration" />
         <div className="content">
           <h4>{data.icon_skills.title}</h4>
-          <table>
-            <tbody>
+          <div className="table">
               <IconSkillRow langIcon={python} langHint="Python" ratio={1}
                 ratioColor="#F44336" softIcon={linux} softHint="Linux"
                 skill={data.icon_skills.oop} />
@@ -82,8 +81,7 @@ function IconSkillCard(props) {
               <IconSkillRow langIcon={julia} langHint="Julia" ratio={5 / 10}
                 ratioColor="#4CAF50" softIcon={git} softHint="Git"
                 skill={data.icon_skills.proj_manag} />
-            </tbody>
-          </table>
+          </div>
         </div>
       </div>
     </div>

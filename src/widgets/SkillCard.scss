@@ -70,16 +70,42 @@ $skill-border-radius: 24px;
                 }
             }
 
-            table {
+            .table {
                 flex: 1;
                 width: 100%;
 
+                align-self: stretch;
+
+                display: flex;
+                flex-direction: column;
+
+                .row {
+                    flex: 1;
+                    display: flex;
+
+                    justify-content: center;
+                    align-items: stretch;
+
+                    div {
+                        width: 25%;
+                        box-sizing: border-box;
+                    }
+                }
+
                 .item-center {
-                    text-align: center;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                .item-start {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
                 }
 
                 .ratio {
-                    width: 6vw;
+                    flex: 1;
 
                     .bar {
                         height: 12px;
@@ -97,6 +123,7 @@ $skill-border-radius: 24px;
                         text-align: center;
                     }
 
+                    // Hint
                     img + div {
                         @extend .transition100;
 
@@ -125,6 +152,8 @@ $skill-border-radius: 24px;
                             border-radius: 16px;
                             padding-left: 16px;
                             padding-right: 16px;
+
+                            width: 200%;
 
                             p {
                                 color: $white;
