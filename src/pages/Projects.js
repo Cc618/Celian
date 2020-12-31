@@ -16,11 +16,11 @@ import google_play_badge from '../res/google_play_badge.png';
 
 // TODO : Add used languages section ?
 
-// title tags icon image description trailing
+// title tags icon image description trailing link
 function ProjectCard(props) {
   return (
     <div className="project-wrapper">
-      <div className="project-card">
+      <div className="project-card" onClick={() => window.open(props.link)}>
         <div className="header">
           <h4>{props.title}</h4>
           <div className="spacer" />
@@ -52,10 +52,12 @@ function Projects(props) {
 
         {/* TODO : Translate */}
         <ProjectCard title="Quick-Shop" tags={["Flutter", "Mobile App"]}
-          icon={dart} image={quick_shop} description={description} />
+          icon={dart} image={quick_shop} description={description}
+          link="https://github.com/Cc618/Quick-Shop" />
 
         <ProjectCard title="Os2020" tags={["C", "Assembly", "OS"]}
-          icon={c} image={os2020} description={description} />
+          icon={c} image={os2020} description={description}
+          link="https://github.com/Cc618/Os2020" />
 
       </div>
       <Dots leftColor="accent" rightColor="grey" />

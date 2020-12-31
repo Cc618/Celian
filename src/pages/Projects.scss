@@ -67,7 +67,7 @@ $project-fab-size: 64px;
 }
 
 .project-card {
-    @extend .card24;
+    @extend .card16;
     @extend .transition200;
 
     box-sizing: border-box;
@@ -80,6 +80,8 @@ $project-fab-size: 64px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    cursor: pointer;
 
     // Header
     .header {
@@ -131,6 +133,8 @@ $project-fab-size: 64px;
         justify-content: center;
 
         .image {
+            @extend .transition150;
+
             aspect-ratio: 1 / 1;
             max-width: 100%;
             max-height: 100%;
@@ -148,6 +152,7 @@ $project-fab-size: 64px;
             top: -50%;
 
             .image-fab {
+                @extend .transition200;
                 @extend .shadow8;
 
                 position: absolute;
@@ -168,6 +173,23 @@ $project-fab-size: 64px;
     }
 }
 
+// Animatables
+.image-fab {
+    opacity: 0;
+}
+
+.image {
+    opacity: 100%;
+}
+
 .project-card:hover {
     @extend .shadow32;
+
+    .image {
+        opacity: 20%;
+    }
+
+    .image-fab {
+        opacity: 100%;
+    }
 }
