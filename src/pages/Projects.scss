@@ -1,6 +1,8 @@
 @import "../common/style.scss";
 @import "../widgets/Dots.scss";
 
+$project-card-radius: 48px;
+
 .Projects {
     .bg {
         box-sizing: border-box;
@@ -12,14 +14,8 @@
         .project-wrapper {
             width: 50%;
             box-sizing: border-box;
-        }
 
-        .blue {
-            background-color: lightblue;
-        }
-
-        .green {
-            background-color: lightgreen;
+            padding: 48px;
         }
     }
 
@@ -38,7 +34,8 @@
     .bg-accent {
         background-color: $accent;
 
-        height: #{66 * 2vh};
+        // TODO : Update height
+        height: #{75 * 2vh};
 
         padding-top: #{$ndots / 2}vw;
         padding-bottom: #{$ndots / 2}vw;
@@ -63,6 +60,31 @@
             font-size: 36px;
         }
     }
+}
 
+.project-card {
+    @extend .card16;
+    @extend .transition200;
 
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+
+    padding: $project-card-radius;
+    border-radius: $project-card-radius;
+
+    display: flex;
+    flex-direction: column;
+
+    .header {
+        display: flex;
+    }
+
+    .icon {
+        height: 48px;
+    }
+}
+
+.project-card:hover {
+    @extend .shadow24;
 }
