@@ -4,6 +4,7 @@ import res_dart from '../res/flutter.png';
 // TODO : C not C++ icon
 import res_c from '../res/cpp.png';
 import res_cpp from '../res/cpp.png';
+import res_html from '../res/html5.png';
 import res_python from '../res/python.png';
 import res_julia from '../res/julia.png';
 import res_quick_shop from '../res/quick_shop.jpg';
@@ -13,7 +14,7 @@ import res_feature_changer from '../res/feature_changer.png';
 import res_pytorch_collections from '../res/pytorch_collections.gif';
 import res_google_play_badge from '../res/google_play_badge.png';
 
-let lang = "en";
+let lang = "fr";
 
 // TODO : Projects button in content page ? Home button in footer ?
 
@@ -110,58 +111,55 @@ const fullData = {
         // Projects
         "projects_data": [
             {
-                title: "Quick-Shop",
-                tags: ["Flutter", "Mobile App"],
-                icon: "dart",
-                image: "quick_shop",
-                // TODO:
-                description: "Lorem ipsum...",
-                link: "https://github.com/Cc618/Quick-Shop"
+                title: "Alpha",
+                tags: ["Julia", "Programming Language"],
+                icon: "julia",
+                image: "alpha",
+                description: "Compiled programming language made entirely in Julia. Contains also a Lexer and Parser generator like Flex and Bison and a Vim plugin.",
+                link: "https://github.com/Cc618/Alpha"
             },
             {
                 title: "Os2020",
                 tags: ["C", "Assembly", "OS"],
                 icon: "c",
                 image: "os2020",
-                // TODO:
-                description: "Lorem ipsum...",
+                description: "32 bits Operating System. Written in C and assembly, it provides a custom bootloader, a libc and a Fat32 file system driver.",
                 link: "https://github.com/Cc618/Os2020"
             },
             {
-                title: "Quick-Shop",
-                tags: ["Flutter", "Mobile App"],
-                icon: "dart",
-                image: "quick_shop",
-                // TODO:
-                description: "Lorem ipsum...",
-                link: "https://github.com/Cc618/Quick-Shop"
+                title: "Feature-Changer",
+                tags: ["Python", "AI"],
+                icon: "python",
+                image: "feature_changer",
+                description: "Convolutional autoencoder able to change image attributes. It can modify hair color, add glasses and more.",
+                link: "https://github.com/Cc618/Feature-Changer"
+            },
+            {
+                title: "PyTorch-Collections",
+                tags: ["Python", "AI"],
+                icon: "python",
+                image: "pytorch_collections",
+                description: "A collection of deep learning algorithms made with PyTorch. Inspired by several research papers, it includes mostly image processing and reinforcement learning algorithms.",
+                link: "https://github.com/Cc618/PyTorch-Collections"
             },
             {
                 title: "Quick-Shop",
                 tags: ["Flutter", "Mobile App"],
                 icon: "dart",
                 image: "quick_shop",
-                // TODO:
-                description: "Lorem ipsum...",
+                description: "Shopping list mobile application. Produced with the Flutter framework in Dart. Available also on the Google Play Store.",
                 link: "https://github.com/Cc618/Quick-Shop"
+                // TODO : Get it on google play badge
             },
             {
-                title: "Quick-Shop",
-                tags: ["Flutter", "Mobile App"],
-                icon: "dart",
-                image: "quick_shop",
-                // TODO:
-                description: "Lorem ipsum...",
-                link: "https://github.com/Cc618/Quick-Shop"
-            },
-            {
-                title: "Quick-Shop",
-                tags: ["Flutter", "Mobile App"],
-                icon: "dart",
-                image: "quick_shop",
-                // TODO:
-                description: "Lorem ipsum...",
-                link: "https://github.com/Cc618/Quick-Shop"
+                title: "This Website !",
+                tags: ["Web", "Design"],
+                icon: "html",
+                // TODO : Update image
+                image: "resume",
+                description: "Online resume made in HTML / JS / SASS with React JS.",
+                // TODO : Update github link
+                link: "https://github.com/Cc618/Cc618"
             },
         ],
         // Footer
@@ -218,58 +216,55 @@ const fullData = {
         // Projects
         "projects_data": [
             {
-                title: "Quick-Shop",
-                tags: ["Flutter", "Mobile App"],
-                icon: "dart",
-                image: "quick_shop",
-                // TODO:
-                description: "Lorem ipsum...",
-                link: "https://github.com/Cc618/Quick-Shop"
+                title: "Alpha",
+                tags: ["Julia", "Langage de Programmation"],
+                icon: "julia",
+                image: "alpha",
+                description: "Langage de programmation compilé créé entièrement en Julia. Possède un générateur de Parser et Lexer similaire à Flex et Bison ainsi qu'un plugin Vim.",
+                link: "https://github.com/Cc618/Alpha"
             },
             {
                 title: "Os2020",
-                tags: ["C", "Assembly", "OS"],
+                tags: ["C", "Assembleur", "OS"],
                 icon: "c",
                 image: "os2020",
-                // TODO:
-                description: "Lorem ipsum...",
+                description: "OS 32 bits. Réalisé en C et en assembleur, il contient un bootloader personnalisé ainsi qu'une libc et un driver Fat32.",
                 link: "https://github.com/Cc618/Os2020"
             },
             {
-                title: "Quick-Shop",
-                tags: ["Flutter", "Mobile App"],
-                icon: "dart",
-                image: "quick_shop",
-                // TODO:
-                description: "Lorem ipsum...",
-                link: "https://github.com/Cc618/Quick-Shop"
+                title: "Feature-Changer",
+                tags: ["Python", "IA"],
+                icon: "python",
+                image: "feature_changer",
+                description: "Autoencoder convolutionnel permettant de changer les traits d'une image. Capable de modifier la couleur de cheveux, d'ajouter des lunettes et plus.",
+                link: "https://github.com/Cc618/Feature-Changer"
+            },
+            {
+                title: "PyTorch-Collections",
+                tags: ["Python", "IA"],
+                icon: "python",
+                image: "pytorch_collections",
+                description: "Collection d'algorithmes de deep learning réalisés avec PyTorch. Inspiré par divers articles de recherche, il inclu principalement des algorithmes de traitement d'image et de reinforcement learning.",
+                link: "https://github.com/Cc618/PyTorch-Collections"
             },
             {
                 title: "Quick-Shop",
-                tags: ["Flutter", "Mobile App"],
+                tags: ["Flutter", "Appli Mobile"],
                 icon: "dart",
                 image: "quick_shop",
-                // TODO:
-                description: "Lorem ipsum...",
+                description: "Application mobile de liste de courses. Produite grâce au framework Flutter en Dart et disponible sur le Google Play Store.",
                 link: "https://github.com/Cc618/Quick-Shop"
+                // TODO : Get it on google play badge
             },
             {
-                title: "Quick-Shop",
-                tags: ["Flutter", "Mobile App"],
-                icon: "dart",
-                image: "quick_shop",
-                // TODO:
-                description: "Lorem ipsum...",
-                link: "https://github.com/Cc618/Quick-Shop"
-            },
-            {
-                title: "Quick-Shop",
-                tags: ["Flutter", "Mobile App"],
-                icon: "dart",
-                image: "quick_shop",
-                // TODO:
-                description: "Lorem ipsum...",
-                link: "https://github.com/Cc618/Quick-Shop"
+                title: "Ce Site !",
+                tags: ["Web", "Design"],
+                icon: "html",
+                // TODO : Update image
+                image: "resume",
+                description: "CV en ligne fait en HTML / JS / SASS avec React JS.",
+                // TODO : Update github link
+                link: "https://github.com/Cc618/Cc618"
             },
         ],
         // Footer
@@ -282,6 +277,7 @@ const resources = {
     "dart": res_dart,
     "c": res_c,
     "cpp": res_cpp,
+    "html": res_html,
     "python": res_python,
     "julia": res_julia,
     "quick_shop": res_quick_shop,
