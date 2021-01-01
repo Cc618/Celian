@@ -17,7 +17,7 @@ function ProjectCard(props) {
           <img src={props.image} className="image" alt="" />
           <div className="image-fab-wrapper">
             <div className="image-fab">
-              <img src={github} className="image-fab-icon" />
+              <img src={github} className="image-fab-icon" alt="" />
             </div>
           </div>
         </div>

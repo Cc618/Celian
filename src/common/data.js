@@ -1,5 +1,18 @@
 // Content data
 
+import res_dart from '../res/flutter.png';
+// TODO : C not C++ icon
+import res_c from '../res/cpp.png';
+import res_cpp from '../res/cpp.png';
+import res_python from '../res/python.png';
+import res_julia from '../res/julia.png';
+import res_quick_shop from '../res/quick_shop.jpg';
+import res_os2020 from '../res/os2020.gif';
+import res_alpha from '../res/alpha.png';
+import res_feature_changer from '../res/feature_changer.png';
+import res_pytorch_collections from '../res/pytorch_collections.gif';
+import res_google_play_badge from '../res/google_play_badge.png';
+
 let lang = "en";
 
 // TODO : Projects button in content page ? Home button in footer ?
@@ -95,6 +108,62 @@ const fullData = {
             "proj_manag": "Project Management",
         },
         // Projects
+        "projects_data": [
+            {
+                title: "Quick-Shop",
+                tags: ["Flutter", "Mobile App"],
+                icon: "dart",
+                image: "quick_shop",
+                // TODO:
+                description: "Lorem ipsum...",
+                link: "https://github.com/Cc618/Quick-Shop"
+            },
+            {
+                title: "Os2020",
+                tags: ["C", "Assembly", "OS"],
+                icon: "c",
+                image: "os2020",
+                // TODO:
+                description: "Lorem ipsum...",
+                link: "https://github.com/Cc618/Os2020"
+            },
+            {
+                title: "Quick-Shop",
+                tags: ["Flutter", "Mobile App"],
+                icon: "dart",
+                image: "quick_shop",
+                // TODO:
+                description: "Lorem ipsum...",
+                link: "https://github.com/Cc618/Quick-Shop"
+            },
+            {
+                title: "Quick-Shop",
+                tags: ["Flutter", "Mobile App"],
+                icon: "dart",
+                image: "quick_shop",
+                // TODO:
+                description: "Lorem ipsum...",
+                link: "https://github.com/Cc618/Quick-Shop"
+            },
+            {
+                title: "Quick-Shop",
+                tags: ["Flutter", "Mobile App"],
+                icon: "dart",
+                image: "quick_shop",
+                // TODO:
+                description: "Lorem ipsum...",
+                link: "https://github.com/Cc618/Quick-Shop"
+            },
+            {
+                title: "Quick-Shop",
+                tags: ["Flutter", "Mobile App"],
+                icon: "dart",
+                image: "quick_shop",
+                // TODO:
+                description: "Lorem ipsum...",
+                link: "https://github.com/Cc618/Quick-Shop"
+            },
+        ],
         // Footer
         "made_with": "Made with",
     },
@@ -147,9 +216,80 @@ const fullData = {
             "proj_manag": "Gestion de Projets",
         },
         // Projects
+        "projects_data": [
+            {
+                title: "Quick-Shop",
+                tags: ["Flutter", "Mobile App"],
+                icon: "dart",
+                image: "quick_shop",
+                // TODO:
+                description: "Lorem ipsum...",
+                link: "https://github.com/Cc618/Quick-Shop"
+            },
+            {
+                title: "Os2020",
+                tags: ["C", "Assembly", "OS"],
+                icon: "c",
+                image: "os2020",
+                // TODO:
+                description: "Lorem ipsum...",
+                link: "https://github.com/Cc618/Os2020"
+            },
+            {
+                title: "Quick-Shop",
+                tags: ["Flutter", "Mobile App"],
+                icon: "dart",
+                image: "quick_shop",
+                // TODO:
+                description: "Lorem ipsum...",
+                link: "https://github.com/Cc618/Quick-Shop"
+            },
+            {
+                title: "Quick-Shop",
+                tags: ["Flutter", "Mobile App"],
+                icon: "dart",
+                image: "quick_shop",
+                // TODO:
+                description: "Lorem ipsum...",
+                link: "https://github.com/Cc618/Quick-Shop"
+            },
+            {
+                title: "Quick-Shop",
+                tags: ["Flutter", "Mobile App"],
+                icon: "dart",
+                image: "quick_shop",
+                // TODO:
+                description: "Lorem ipsum...",
+                link: "https://github.com/Cc618/Quick-Shop"
+            },
+            {
+                title: "Quick-Shop",
+                tags: ["Flutter", "Mobile App"],
+                icon: "dart",
+                image: "quick_shop",
+                // TODO:
+                description: "Lorem ipsum...",
+                link: "https://github.com/Cc618/Quick-Shop"
+            },
+        ],
         // Footer
         "made_with": "Fait avec",
     },
+};
+
+// Get resource from id
+const resources = {
+    "dart": res_dart,
+    "c": res_c,
+    "cpp": res_cpp,
+    "python": res_python,
+    "julia": res_julia,
+    "quick_shop": res_quick_shop,
+    "os2020": res_os2020,
+    "alpha": res_alpha,
+    "feature_changer": res_feature_changer,
+    "pytorch_collections": res_pytorch_collections,
+    "google_play_badge": res_google_play_badge,
 };
 
 let data = genData();
@@ -166,3 +306,4 @@ function genData() {
 export default changeLang;
 export {data};
 export {lang};
+export {resources};
