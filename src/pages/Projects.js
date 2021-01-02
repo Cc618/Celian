@@ -5,6 +5,9 @@ import {data, resources} from '../common/data';
 import Dots from '../widgets/Dots';
 import ProjectCard from '../widgets/ProjectCard';
 import github from '../res/github_light.png';
+import html from '../res/html5.png';
+import css from '../res/css3.png';
+import reactjs from '../res/react.svg';
 
 // TODO : Add used languages section ?
 
@@ -36,9 +39,12 @@ function Projects(props) {
         {/* TODO : Link to current github */}
         <a href="https://github.com/Cc618"><img className="github" src={github} alt="" /></a>
         <h4>{data.copyright}</h4>
-        <div>
+        <div className="made-with">
           {/* TODO : Images */}
-          <p>{data.made_with} HTML, CSS & React</p>
+          <p>{data.made_with}</p>
+          <img src={html} alt="html5" />
+          <img src={css} alt="css3" />
+          <img src={reactjs} alt="React JS" />
         </div>
       </footer>
     </div>

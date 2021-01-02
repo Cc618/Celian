@@ -3,8 +3,7 @@ import {data} from '../common/data';
 import github from '../res/github_light.png';
 import google_play from '../res/google_play_badge.png';
 
-// TODO : View on github hint ?
-// title tags icon image description trailing link
+// title tags icon image description google_play link
 function ProjectCard(props) {
   return (
     <div className="project-wrapper">

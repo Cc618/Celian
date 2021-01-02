@@ -4,6 +4,8 @@
 
 // TODO : Change layout on tiny width devices
 
+$footer-height: 64px;
+
 .Projects {
     .bg {
         box-sizing: border-box;
@@ -56,9 +58,37 @@
         align-items: center;
         justify-content: space-between;
 
+        // TODO : Left, center, right align (copyright not in center)
+
+        .github {
+            @extend .transition150;
+
+            height: $footer-height;
+            transform: scale(1);
+
+        }
+
+        .github:hover {
+            transform: scale(1.15);
+        }
+
         h4 {
             font-weight: 300;
             font-size: 36px;
+        }
+
+        .made-with {
+            display: flex;
+            align-items: flex-end;
+
+            p {
+                margin: 4px 8px 4px 4px;
+            }
+
+            img {
+                margin-right: 8px;
+                height: $footer-height;
+            }
         }
     }
 }
