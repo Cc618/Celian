@@ -148,8 +148,8 @@ const fullData = {
                 icon: "dart",
                 image: "quick_shop",
                 description: "Shopping list mobile application. Produced with the Flutter framework in Dart. Available also on the Google Play Store.",
-                link: "https://github.com/Cc618/Quick-Shop"
-                // TODO : Get it on google play badge
+                link: "https://github.com/Cc618/Quick-Shop",
+                google_play: "https://play.google.com/store/apps/details?id=com.cc.quick_shop"
             },
             {
                 title: "This Website !",
@@ -253,8 +253,8 @@ const fullData = {
                 icon: "dart",
                 image: "quick_shop",
                 description: "Application mobile de liste de courses. Produite grâce au framework Flutter en Dart et disponible sur le Google Play Store.",
-                link: "https://github.com/Cc618/Quick-Shop"
-                // TODO : Get it on google play badge
+                link: "https://github.com/Cc618/Quick-Shop",
+                google_play: "https://play.google.com/store/apps/details?id=com.cc.quick_shop"
             },
             {
                 title: "Ce Site !",

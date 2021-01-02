@@ -1,5 +1,6 @@
 import './ProjectCard.scss';
 import github from '../res/github_light.png';
+import google_play from '../res/google_play_badge.png';
 
 // TODO : View on github hint ?
 // title tags icon image description trailing link
@@ -22,7 +23,10 @@ function ProjectCard(props) {
           </div>
         </div>
         <p>{props.description}</p>
-        {/* TODO : trailing : props.trailing !== undefined && */}
+        { props.google_play !== undefined &&
+          <div className="badge-wrapper">
+            <img className="badge" src={google_play} alt="Google Play Link" onClick={() => window.open(props.google_play)} />
+          </div> }
       </div>
     </div>
   );

@@ -17,6 +17,7 @@ function mkProject(content, key) {
     icon={resources[content.icon]}
     image={resources[content.image]}
     description={content.description}
+    google_play={content.google_play}
     link={content.link} />);
 };
 

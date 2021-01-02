@@ -112,6 +112,25 @@ $project-fab-size: 64px;
             }
         }
     }
+
+    .badge-wrapper {
+        height: 10%;
+
+        .badge {
+            @extend .transition150;
+
+            transform: scale(1);
+            transform-origin: center;
+
+            aspect-ratio: 1 / 1;
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .badge:hover {
+            transform: scale(1.2);
+        }
+    }
 }
 
 // Animatables
