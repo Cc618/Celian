@@ -1,4 +1,5 @@
 import './ProjectCard.scss';
+import {data} from '../common/data';
 import github from '../res/github_light.png';
 import google_play from '../res/google_play_badge.png';
 
@@ -19,6 +20,12 @@ function ProjectCard(props) {
           <div className="image-fab-wrapper">
             <div className="image-fab">
               <img src={github} className="image-fab-icon" alt="" />
+            </div>
+
+            <div className="hint-wrapper">
+              <div className="hint-card">
+                <p>{data.github_page}</p>
+              </div>
             </div>
           </div>
         </div>

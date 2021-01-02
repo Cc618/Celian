@@ -109,6 +109,7 @@ const fullData = {
             "proj_manag": "Project Management",
         },
         // Projects
+        "github_page": "GitHub page",
         "projects_data": [
             {
                 title: "Alpha",
@@ -214,6 +215,7 @@ const fullData = {
             "proj_manag": "Gestion de Projets",
         },
         // Projects
+        "github_page": "Page GitHub",
         "projects_data": [
             {
                 title: "Alpha",

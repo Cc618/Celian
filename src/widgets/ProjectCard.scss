@@ -107,8 +107,32 @@ $project-fab-size: 64px;
                 border-radius: 50%;
 
                 display: flex;
+                flex-direction: column;
                 align-items: center;
                 justify-content: center;
+            }
+
+            .hint-wrapper {
+                position: absolute;
+            }
+
+            .hint-card {
+                @extend .transition200;
+                @extend .shadow16;
+
+                position: relative;
+
+                background-color: $grey800;
+                border-radius: 16px;
+                padding: 4px 16px 4px 16px;
+
+                // width: 200%;
+
+                p {
+                    color: $white;
+                    font-size: 12px;
+                    white-space: nowrap;
+                }
             }
         }
     }
@@ -138,8 +162,12 @@ $project-fab-size: 64px;
     opacity: 100%;
 }
 
-.image-fab {
+.image-fab, .hint-card {
     opacity: 0;
+}
+
+.hint-card {
+    top: $project-fab-size;
 }
 
 .image-fab-icon {
@@ -157,8 +185,12 @@ $project-fab-size: 64px;
         opacity: 20%;
     }
 
-    .image-fab {
+    .image-fab, .hint-card {
         opacity: 100%;
+    }
+
+    .hint-card {
+        top: $project-fab-size * .85;
     }
 
     .image-fab-icon {
