@@ -162,11 +162,11 @@ $project-fab-size: 64px;
     opacity: 100%;
 }
 
-.image-fab, .hint-card {
+.image-fab, .project-card .hint-card {
     opacity: 0;
 }
 
-.hint-card {
+.project-card .hint-card {
     top: $project-fab-size;
 }
 
