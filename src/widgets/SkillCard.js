@@ -2,6 +2,7 @@
 
 import './SkillCard.scss';
 import {data} from '../common/data';
+import Bar from '../widgets/Bar';
 import python from '../res/python.png';
 import cpp from '../res/cpp.png';
 import flutter from '../res/flutter.png';
@@ -43,7 +44,7 @@ function IconSkillRow(props) {
       </div>
       <div className="item-start">
         <div className="ratio">
-          <div className="bar" style={{width: `${props.ratio * 100}%`, backgroundColor: props.ratioColor}} />
+          <Bar ratio={props.ratio} color={props.ratioColor} />
         </div>
       </div>
       <div className="item-center hint">

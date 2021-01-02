@@ -1,0 +1,9 @@
+@import "../common/style.scss";
+
+// width and background-color set in JS
+.bar {
+    @extend .transition250;
+
+    height: 12px;
+    border-radius: 8px;
+}
