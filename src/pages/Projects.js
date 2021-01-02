@@ -37,10 +37,17 @@ function Projects(props) {
       <Dots leftColor="black" rightColor="accent" />
       <footer>
         {/* TODO : Link to current github */}
+        <div>
+
         <a href="https://github.com/Cc618"><img className="github" src={github} alt="" /></a>
+        </div>
+        <div>
+
         <h4>{data.copyright}</h4>
+        </div>
         <div className="made-with">
           {/* TODO : Images */}
+          <div className="spacer" />
           <p>{data.made_with}</p>
           <img src={html} alt="html5" />
           <img src={css} alt="css3" />

@@ -58,7 +58,9 @@ $footer-height: 64px;
         align-items: center;
         justify-content: space-between;
 
-        // TODO : Left, center, right align (copyright not in center)
+        > div {
+            flex: 1;
+        }
 
         .github {
             @extend .transition150;
@@ -75,11 +77,18 @@ $footer-height: 64px;
         h4 {
             font-weight: 300;
             font-size: 36px;
+
+            justify-self: center;
+            text-align: center;
         }
 
         .made-with {
             display: flex;
             align-items: flex-end;
+
+            .spacer {
+                flex: 1;
+            }
 
             p {
                 margin: 4px 8px 4px 4px;
