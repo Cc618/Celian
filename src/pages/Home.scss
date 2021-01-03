@@ -141,6 +141,22 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    min-height: 75vh;
+
+    > div {
+        flex: 1;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h1, h2 {
+        text-align: center;
+        margin: 0;
+    }
 }
 
 .picture {
@@ -152,6 +168,8 @@
 
 .picture-card {
     @extend .card8;
+
+    flex: 2;
 
     // Full white like the picture
     background-color: #ffffff;
