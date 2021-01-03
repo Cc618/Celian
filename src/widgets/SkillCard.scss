@@ -7,7 +7,7 @@ $skill-border-radius: 24px;
     height: 50%;
     box-sizing: border-box;
 
-    padding: 24px;
+    padding: 2vw;
 
     display: flex;
     flex-direction: row;
@@ -175,10 +175,18 @@ $skill-border-radius: 24px;
                     }
                 }
             }
+
         }
     }
 
     .skill-card:hover {
         @extend .shadow16;
+    }
+}
+
+
+@media (min-width: 1920px) {
+    .table {
+        padding: 2vh 0 2vh 0;
     }
 }

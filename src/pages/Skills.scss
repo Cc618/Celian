@@ -7,8 +7,14 @@
     color: $black;
 
     box-sizing: border-box;
-    padding: 24px;
+    padding: 2vw;
 
     display: flex;
     flex-wrap: wrap;
+}
+
+@media (min-width: 1920px) {
+    .Skills {
+        padding: 4vw;
+    }
 }
