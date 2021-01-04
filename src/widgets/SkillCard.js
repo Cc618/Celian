@@ -49,7 +49,7 @@ function IconSkillRow(props) {
       </div>
       <div className="item-center hint">
         <img src={props.softIcon} alt="" />
-        <div>
+        <div className="hint-wrapper">
           <div className="hint-card">
             <p>{props.softHint}</p>
           </div>

@@ -46,6 +46,10 @@ $skill-border-radius: 24px;
 
                 margin: 0 0 8px 48px;
 
+                @media (min-height: 900px) {
+                    margin-bottom: 16px;
+                }
+
                 font-size: 32px;
                 font-weight: 400;
             }
@@ -78,7 +82,7 @@ $skill-border-radius: 24px;
                     flex: 1;
                     line-height: #{18 * 1.5px};
 
-                    @media (max-height: 720px) {
+                    @media (max-height: 900px) {
                         line-height: #{18 * 1.2px};
                     }
 
@@ -149,6 +153,8 @@ $skill-border-radius: 24px;
     }
 
     .hint {
+        position: relative;
+
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -162,39 +168,39 @@ $skill-border-radius: 24px;
         img + div {
             @extend .transition100;
 
-            top: -8px;
+            top: 48px;
             opacity: 0%;
             pointer-events: none;
+            z-index: 100;
         }
 
         img:hover + div {
             opacity: 90%;
         }
 
-        div {
-            position: relative;
+        .hint-wrapper {
+            position: absolute;
 
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            // TODO : Not clean
+            min-width: 75%;
 
             .hint-card {
                 @extend .shadow16;
 
-                position: absolute;
+                position: relative;
 
                 background-color: $grey800;
                 border-radius: 16px;
-                padding-left: 16px;
-                padding-right: 16px;
+                padding: 4px 16px 4px 16px;
 
-                // TODO : Not working now
-                width: 200%;
+                // TODO : Not clean
+                min-width: 100%;
 
                 p {
                     color: $white;
                     font-size: 12px;
                     white-space: nowrap;
+                    text-align: center;
                 }
             }
         }
