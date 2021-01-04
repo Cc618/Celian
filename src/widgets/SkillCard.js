@@ -55,7 +55,7 @@ function IconSkillRow(props) {
           </div>
         </div>
       </div>
-      <div><p>{props.skill}</p></div>
+      <div className="skill-layout"><p className="skill-text">{props.skill}</p></div>
     </div>
   );
 }

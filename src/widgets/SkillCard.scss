@@ -129,6 +129,17 @@ $skill-border-radius: 24px;
                 .ratio {
                     flex: 1;
                 }
+
+                .skill-layout {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: stretch;
+                    justify-content: center;
+
+                    .skill-text {
+                        margin: 0;
+                    }
+                }
             }
         }
     }
