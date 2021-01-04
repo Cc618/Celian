@@ -13,7 +13,13 @@
     flex-wrap: wrap;
 }
 
-@media (min-width: 1920px) {
+@media (max-height: 720px) {
+    .Skills {
+        padding: 8px;
+    }
+}
+
+@media (min-height: 1080px) {
     .Skills {
         padding: 3vw;
     }
