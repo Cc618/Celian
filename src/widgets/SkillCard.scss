@@ -51,7 +51,7 @@ $skill-border-radius: 24px;
 
                 margin: 0 0 8px 48px;
 
-                @media (min-height: 900px) {
+                @media (min-height: 900px), (orientation: portrait) {
                     margin-bottom: 16px;
                 }
 
@@ -73,6 +73,12 @@ $skill-border-radius: 24px;
 
                 width: 100%;
                 box-sizing: border-box;
+
+                // Mobile phones / low res
+                @media (orientation: portrait) and (max-width: 480px),
+                        (orientation: landscape) and(max-width: 1024px) {
+                    padding-inline-start: 8px;
+                }
 
                 // TODO : Useless now
                 li.compact {
