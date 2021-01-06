@@ -48,7 +48,7 @@ function Home(props) {
           <IconButton image={lang === "en" ? fr : en}
             hint={data.translate}
             onClick={props.onChangeLang} />
-          <div style={{flex: 1}} />
+          <div className="spacer" />
           <IconButton icon="mail" hint={data.mail}
             iconHover="content_copy"
             canCopy="true"

@@ -11,6 +11,11 @@ h1 {
     font-size: 96px;
     letter-spacing: -1.5px;
     font-weight: 100;
+
+    // Mobile phones
+    @media (max-width: 480px) {
+        font-size: 48px;
+    }
 }
 
 h2 {
@@ -19,6 +24,11 @@ h2 {
     font-size: 60px;
     letter-spacing: -0.5px;
     font-weight: 300;
+
+    // Mobile phones
+    @media (max-width: 480px) {
+        font-size: 24px;
+    }
 }
 
 h3 {
@@ -40,7 +50,7 @@ a {
 .button-text {
     @extend .text;
 
-    font-size: 14;
+    font-size: 14px;
     font-weight: medium;
     letter-spacing: 1.25;
 }
