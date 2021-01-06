@@ -42,6 +42,7 @@ function IconSkillRow(props) {
           </div>
         </div>
       </div>
+      {/* TODO : No bar on mobile */}
       <div className="item-start">
         <div className="ratio">
           <Bar ratio={props.ratio} color={props.ratioColor} />

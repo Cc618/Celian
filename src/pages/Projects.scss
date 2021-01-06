@@ -22,6 +22,11 @@ $footer-height: 64px;
 
             padding: 3vh 4vw;
 
+
+            @media (orientation: portrait) {
+                width: 100%;
+            }
+
             @media (max-height: 900px) {
                 padding: 2vh 2vw;
             }
@@ -33,10 +38,18 @@ $footer-height: 64px;
 
         height: $project-card-height;
 
+        @media (orientation: portrait) {
+            height: #{2 * $project-card-height};
+        }
+
         padding-bottom: #{$ndots / 2}vw;
 
         .project-wrapper {
             height: 100%;
+
+            @media (orientation: portrait) {
+                height: 50%;
+            }
         }
     }
 
@@ -46,11 +59,19 @@ $footer-height: 64px;
         // TODO : Update height
         height: #{$project-card-height * 2};
 
+        @media (orientation: portrait) {
+            height: #{4 * $project-card-height};
+        }
+
         padding-top: #{$ndots / 2}vw;
         padding-bottom: #{$ndots / 2}vw;
 
         .project-wrapper {
             height: 50%;
+
+            @media (orientation: portrait) {
+                height: 25%;
+            }
         }
     }
 

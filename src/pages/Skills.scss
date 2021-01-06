@@ -11,6 +11,10 @@
 
     display: flex;
     flex-wrap: wrap;
+
+    @media (orientation: portrait) {
+        height: 200vh;
+    }
 }
 
 @media (max-height: 720px) {
