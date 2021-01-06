@@ -14,11 +14,17 @@ $footer-height: 64px;
         flex-wrap: wrap;
         align-items: center;
 
+        z-index: -100;
+
         .project-wrapper {
             width: 50%;
             box-sizing: border-box;
 
-            padding: 48px 96px;
+            padding: 3vh 4vw;
+
+            @media (max-height: 900px) {
+                padding: 2vh 2vw;
+            }
         }
     }
 

@@ -27,6 +27,8 @@ $project-fab-size: 64px;
 
     cursor: pointer;
 
+    z-index: 10;
+
     // Header
     .header {
         display: flex;
@@ -128,8 +130,6 @@ $project-fab-size: 64px;
                 background-color: $grey800;
                 border-radius: 16px;
                 padding: 4px 16px 4px 16px;
-
-                // width: 200%;
 
                 p {
                     color: $white;
