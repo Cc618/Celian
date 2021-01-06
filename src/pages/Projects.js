@@ -35,6 +35,7 @@ function Projects(props) {
         { data.projects_data.slice(2).map((content, i) => mkProject(content, i)) }
       </div>
       <Dots leftColor="black" rightColor="accent" />
+      <div className="footer-spacer" />
       <footer>
         <div>
           {/* TODO : Link to current github */}

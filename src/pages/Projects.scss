@@ -75,11 +75,18 @@ $footer-height: 64px;
         }
     }
 
+    // Used to avoid the Dots bottom overflow with footer
+    .footer-spacer {
+        padding-top: 5vw;
+
+        background-color: $black;
+    }
+
     footer {
         color: $white;
         background-color: $black;
 
-        padding: 5vw 24px 24px 24px;
+        padding: 24px;
 
         display: flex;
         align-items: center;
@@ -94,7 +101,6 @@ $footer-height: 64px;
 
             height: $footer-height;
             transform: scale(1);
-
         }
 
         .github:hover {
@@ -104,6 +110,7 @@ $footer-height: 64px;
         h4 {
             font-weight: 300;
             font-size: 36px;
+            margin: 8px 8px;
 
             justify-self: center;
             text-align: center;
