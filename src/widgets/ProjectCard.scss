@@ -29,6 +29,10 @@ $project-fab-size: 64px;
 
     z-index: 10;
 
+    @media (orientation: portrait) and (max-width: 599px) {
+        padding: #{$project-card-radius * 3 / 4};
+    }
+
     // Header
     .header {
         display: flex;
