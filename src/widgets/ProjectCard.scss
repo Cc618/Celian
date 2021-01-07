@@ -34,7 +34,6 @@ $project-fab-size: 64px;
         display: flex;
         align-items: center;
 
-        // TODO : Padding
         padding-bottom: 8px;
 
         h4 {
@@ -44,6 +43,10 @@ $project-fab-size: 64px;
 
             padding: 0;
             margin: 0;
+
+            @media (orientation: landscape) and (max-width: 1200px) {
+                font-size: 24px;
+            }
         }
 
         .tag {
@@ -56,6 +59,12 @@ $project-fab-size: 64px;
             margin: 0 8px;
 
             text-align: center;
+
+            @media (orientation: landscape) and (max-width: 1200px) {
+                margin: 0 4px;
+                padding: 4px 8px;
+                font-size: 10px;
+            }
         }
 
         .spacer {
@@ -66,6 +75,11 @@ $project-fab-size: 64px;
             height: 48px;
 
             padding-left: 8px;
+
+            @media (orientation: landscape) and (max-width: 1200px) {
+                height: 36px;
+                padding-left: 4px;
+            }
         }
     }
 
