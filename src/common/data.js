@@ -16,37 +16,6 @@ import res_google_play_badge from '../res/google_play_badge.png';
 
 let lang = "fr";
 
-// TODO : Projects button in content page ? Home button in footer ?
-
-/* TODO
-## Experiences
-- Stage Webdyn : Decrire + link to app
-- Projets Epita ?
-
-## Cursus
-- Actuellement 2e annee epita
-- Diplomes
-- Lycee
-- Concours lyceen
-- Epita
-- Projets Epita ?
-
-## Passions
-- Prog depuis 5 ans
-- IA
-- Competitive programming
-- Applis mobiles
-- Lecture articles scientifique
-- MAO
-- Learning new skills
-
-## TODO : Skills
-+ Languages : French = mother tongue, English = Good command, C1
-+ Team work (Epita projects)
-+ Organization
-+ Motivation
-*/
-
 // Shared data between all languages
 const sharedData = {
     // Misc
