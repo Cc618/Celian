@@ -96,6 +96,10 @@ $footer-height: 64px;
 
         > div {
             flex: 1;
+
+            @media (orientation: portrait) {
+                flex: 0;
+            }
         }
 
         .github {
@@ -103,6 +107,10 @@ $footer-height: 64px;
 
             height: $footer-height;
             transform: scale(1);
+
+            @media (orientation: portrait) {
+                height: 36px;
+            }
         }
 
         .github:hover {
@@ -116,23 +124,56 @@ $footer-height: 64px;
 
             justify-self: center;
             text-align: center;
+
+            @media (orientation: portrait) {
+                font-size: 24px;
+            }
+        }
+
+        .subtitle {
+            margin: 0;
+
+            font-size: 24px;
+
+            @media (orientation: portrait) {
+                font-size: 12px;
+            }
         }
 
         .made-with {
             display: flex;
             align-items: flex-end;
 
+            @media (orientation: portrait) {
+                flex-direction: column;
+                align-items: center;
+            }
+
             .spacer {
                 flex: 1;
+
+                @media (orientation: portrait) {
+                    flex: 0;
+                }
             }
 
             p {
                 margin: 4px 8px 4px 4px;
+
+                @media (orientation: portrait) {
+                    width: 0;
+                    height: 0;
+                    opacity: 0;
+                }
             }
 
             img {
                 margin-right: 8px;
                 height: $footer-height;
+
+                @media (orientation: portrait) {
+                    height: 36px;
+                }
             }
         }
     }

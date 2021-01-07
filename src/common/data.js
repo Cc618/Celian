@@ -56,7 +56,7 @@ const sharedData = {
     "mail": "celian.pro.78@gmail.com",
     "phone": "(+33) 06 61 24 71 01",
     // Footer
-    "copyright": "Célian Raimbault - 2021",
+    "copyright_year": "2021",
 };
 
 // Language specific data
@@ -165,6 +165,10 @@ const fullData = {
         ],
         // Footer
         "made_with": "Made with",
+        "copyright": {
+            "name": "Celian Raimbault",
+            "year": sharedData.copyright_year,
+        },
     },
     "fr": {
         // Home
@@ -271,6 +275,10 @@ const fullData = {
         ],
         // Footer
         "made_with": "Fait avec",
+        "copyright": {
+            "name": "Célian Raimbault",
+            "year": sharedData.copyright_year,
+        },
     },
 };
 

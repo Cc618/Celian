@@ -44,11 +44,11 @@ function Projects(props) {
         </div>
 
         <div>
-          <h4>{data.copyright}</h4>
+          <h4>{data.copyright.name}</h4>
+          <h4 className="subtitle">{data.copyright.year}</h4>
         </div>
 
         <div className="made-with">
-          {/* TODO : Images */}
           <div className="spacer" />
           <p>{data.made_with}</p>
           <img src={html} alt="html5" />
