@@ -70,10 +70,10 @@ function Home(props) {
           <img alt="" className="picture" src={picture} />
         </div>
 
-        <div>
+        <div className="title-wrapper">
           <h1>Célian Raimbault</h1>
         </div>
-        <div>
+        <div className="subtitle-wrapper">
           <h2>{data.job}</h2>
         </div>
       </div>

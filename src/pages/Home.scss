@@ -183,6 +183,27 @@
         text-align: center;
         margin: 0;
     }
+
+    .title-wrapper {
+        margin-top: 8vh;
+
+        @media (orientation: landscape) and (max-height: 900px) {
+            margin-top: 4vh;
+        }
+    }
+
+    .subtitle-wrapper {
+        margin-bottom: 8vh;
+
+
+        @media (orientation: landscape) and (max-height: 900px) {
+            margin-bottom: 4vh;
+        }
+    }
+
+    @media (orientation: portrait) {
+        margin-top: 4vh;
+    }
 }
 
 .picture {
