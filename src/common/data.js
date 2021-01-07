@@ -53,6 +53,7 @@ const fullData = {
                     "A Level: Science",
                     "Attendee to the general high school contest related to math",
                     "Scientific high school, option IT",
+                    "French : native, English : B2 (autonomous)",
                 ],
             },
             {
@@ -163,12 +164,12 @@ const fullData = {
                     "Diplôme National du Brevet",
                     "Participation à l’épreuve de maths du concours général des lycéens",
                     "Terminale S option SI spé ISN au lycée Charles de Gaulle à Poissy",
+                    "Français : natif, Anglais : B2 (autonome)",
                 ],
             },
             {
                 "title": "Activités",
                 "items": [
-                    // TODO : Too much items : overflow (either rm items or 2 bars layout)
                     "Passion et pratique de l’informatique et des maths depuis 5 ans",
                     "Compétitions de programmation (<a href=\"https://codingcompetitions.withgoogle.com/kickstart\">Google Kickstart</a>)",
                     "Création d’intelligences artificielles",
