@@ -42,7 +42,7 @@ function IconSkillRow(props) {
           </div>
         </div>
       </div>
-      <div className="item-start">
+      <div className="item-start ratio-wrapper">
         <div className="ratio">
           <Bar ratio={props.ratio} color={props.ratioColor} />
         </div>
