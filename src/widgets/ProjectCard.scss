@@ -44,7 +44,8 @@ $project-fab-size: 64px;
             padding: 0;
             margin: 0;
 
-            @media (orientation: landscape) and (max-width: 1200px) {
+            @media (orientation: landscape) and (max-width: 1200px),
+                    (orientation: portrait) {
                 font-size: 24px;
             }
         }
@@ -60,7 +61,8 @@ $project-fab-size: 64px;
 
             text-align: center;
 
-            @media (orientation: landscape) and (max-width: 1200px) {
+            @media (orientation: landscape) and (max-width: 1200px),
+                    (orientation: portrait) {
                 margin: 0 4px;
                 padding: 4px 8px;
                 font-size: 10px;
@@ -76,7 +78,8 @@ $project-fab-size: 64px;
 
             padding-left: 8px;
 
-            @media (orientation: landscape) and (max-width: 1200px) {
+            @media (orientation: landscape) and (max-width: 1200px),
+                    (orientation: portrait) {
                 height: 36px;
                 padding-left: 4px;
             }
