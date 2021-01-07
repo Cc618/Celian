@@ -60,15 +60,25 @@ $skill-border-radius: 24px;
 
             h4 {
                 color: $accent;
+                font-size: 32px;
+                font-weight: 400;
 
                 margin: 0 0 8px 48px;
+
+                @media (orientation: portrait) {
+                    text-align: center;
+                    margin: 0 0 8px 16px;
+                    align-self: stretch;
+                }
+
+                @media (max-width: 599px) {
+                    font-size: 24px;
+                }
 
                 @media (min-height: 900px), (orientation: portrait) {
                     margin-bottom: 16px;
                 }
 
-                font-size: 32px;
-                font-weight: 400;
             }
 
             ul {

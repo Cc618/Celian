@@ -26,7 +26,6 @@ function mkProject(content, key) {
 
 // TODO : Get it on google play max height (see on portrait mode)
 function Projects(props) {
-  // TODO
   return (
     <div className="Projects" id="projects">
       <div className="bg bg-grey">
