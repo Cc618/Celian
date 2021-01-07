@@ -13,7 +13,7 @@
     flex-wrap: wrap;
 
     @media (orientation: portrait) {
-        height: 200vh;
+        height: unset;
     }
 }
 

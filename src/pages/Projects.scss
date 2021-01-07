@@ -39,7 +39,8 @@ $footer-height: 64px;
         height: $project-card-height;
 
         @media (orientation: portrait) {
-            height: #{2 * $project-card-height};
+            // height: #{2 * $project-card-height};
+            height: unset;
         }
 
         padding-bottom: #{$ndots / 2}vw;
@@ -60,7 +61,8 @@ $footer-height: 64px;
         height: #{$project-card-height * 2};
 
         @media (orientation: portrait) {
-            height: #{4 * $project-card-height};
+            // height: #{4 * $project-card-height};
+            height: unset;
         }
 
         padding-top: #{$ndots / 2}vw;
