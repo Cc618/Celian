@@ -134,10 +134,24 @@
 
     text-align: center;
     white-space: nowrap;
+
+    // Can't hover on touch screens
+    @media (orientation: portrait) {
+        transition-delay: 500ms;
+    }
 }
 
 .icon-card:hover + .hint {
     opacity: 100%;
+}
+
+.icon-card:active + .hint {
+    opacity: 100%;
+
+    // Instant anim on touch screens
+    @media (orientation: portrait) {
+        transition: unset;
+    }
 }
 
 // Copied ! text
