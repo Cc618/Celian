@@ -279,7 +279,7 @@ function genData() {
     return { ...fullData[lang], ...sharedData };
 }
 
-export default changeLang;
+export {changeLang};
 export {data};
 export {lang};
 export {resources};

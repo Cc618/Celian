@@ -102,15 +102,7 @@ $skill-border-radius: 24px;
                     padding-inline-start: 8px;
                 }
 
-                // TODO : Useless now
-                li.compact {
-                    height: 25%;
-                    width: 50%;
-                    box-sizing: border-box;
-                }
-
                 li {
-                    // TODO : Customize dot ?
                     font-size: 18px;
                     flex: 1;
                     line-height: #{18 * 1.5px};
@@ -119,11 +111,7 @@ $skill-border-radius: 24px;
                         line-height: #{18 * 1.2px};
                     }
 
-                    // TODO : Not working
-                    vertical-align: middle;
-
                     a {
-                        // TODO : Visited color affected ?
                         color: $primary;
                     }
                 }
@@ -233,7 +221,6 @@ $skill-border-radius: 24px;
         .hint-wrapper {
             position: absolute;
 
-            // TODO : Not clean
             min-width: 75%;
 
             .hint-card {
@@ -245,7 +232,6 @@ $skill-border-radius: 24px;
                 border-radius: 16px;
                 padding: 4px 16px 4px 16px;
 
-                // TODO : Not clean
                 min-width: 100%;
 
                 p {

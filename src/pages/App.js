@@ -5,11 +5,11 @@ import React from 'react';
 import Home from './Home';
 import Skills from './Skills';
 import Projects from './Projects';
-import changeLang from '../common/data';
+import {changeLang, lang} from '../common/data';
 
 class App extends React.Component {
     render() {
-        return <div>
+        return <div lang={lang}>
             <Home onChangeLang={() => {
                 changeLang();
                 this.setState({});

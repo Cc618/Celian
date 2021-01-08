@@ -9,8 +9,6 @@ import html from '../res/html5.png';
 import css from '../res/css3.png';
 import reactjs from '../res/react.svg';
 
-// TODO : Add used languages section ?
-
 // Creates a project widget
 function mkProject(content, key) {
   return (<ProjectCard

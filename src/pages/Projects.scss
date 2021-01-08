@@ -2,8 +2,6 @@
 @import "../widgets/Dots.scss";
 @import "../widgets/ProjectCard.scss";
 
-// TODO : Change layout on tiny width devices
-
 $footer-height: 64px;
 
 .Projects {
@@ -57,11 +55,9 @@ $footer-height: 64px;
     .bg-accent {
         background-color: $accent;
 
-        // TODO : Update height
         height: #{$project-card-height * 2};
 
         @media (orientation: portrait) {
-            // height: #{4 * $project-card-height};
             height: unset;
         }
 

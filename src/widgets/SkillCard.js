@@ -1,5 +1,3 @@
-// TODO : Language skill card
-
 import './SkillCard.scss';
 import {data} from '../common/data';
 import Bar from '../widgets/Bar';
