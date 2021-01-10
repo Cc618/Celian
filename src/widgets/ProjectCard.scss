@@ -181,7 +181,7 @@ $project-fab-size: 64px;
 
 // Animatables
 .image {
-    opacity: 100%;
+    opacity: 1;
 }
 
 .image-fab, .project-card .hint-card {
@@ -204,11 +204,11 @@ $project-fab-size: 64px;
     top: -2px;
 
     .image {
-        opacity: 20%;
+        opacity: .2;
     }
 
     .image-fab, .hint-card {
-        opacity: 100%;
+        opacity: 1;
     }
 
     .hint-card {
