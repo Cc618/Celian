@@ -21,6 +21,7 @@ const sharedData = {
     // Misc
     "url_github": "https://github.com/Cc618",
     "url_linkedin": "https://www.linkedin.com/in/c%C3%A9lian-raimbault-53269a1b2",
+    "url_resume_github": "https://github.com/Cc618/Celian",
     // Home
     "mail": "celian.pro.78@gmail.com",
     "phone": "(+33) 06 61 24 71 01",
@@ -128,8 +129,7 @@ const fullData = {
                 icon: "html",
                 image: "resume",
                 description: "Online resume made in HTML / JS / SASS with React JS.",
-                // TODO : Update github link
-                link: "https://github.com/Cc618/Cc618"
+                link: sharedData.url_resume_github
             },
         ],
         // Footer
@@ -237,8 +237,7 @@ const fullData = {
                 icon: "html",
                 image: "resume",
                 description: "CV en ligne fait en HTML / JS / SASS avec React JS.",
-                // TODO : Update github link
-                link: "https://github.com/Cc618/Cc618"
+                link: sharedData.url_resume_github
             },
         ],
         // Footer

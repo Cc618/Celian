@@ -36,8 +36,7 @@ function Projects(props) {
       <div className="footer-spacer" />
       <footer>
         <div>
-          {/* TODO : Link to current github */}
-          <a href="https://github.com/Cc618"><img className="github" src={github} alt="" /></a>
+          <a href={data.url_resume_github}><img className="github" src={github} alt="" /></a>
         </div>
 
         <div>
