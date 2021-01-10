@@ -106,7 +106,7 @@
     }
 }
 
-.icon-card:hover {
+.icon-card:hover, .icon-card:active {
     top: -4px;
 
     .idle {
@@ -166,11 +166,13 @@
     transform: scale(1);
 }
 
-.icon-card:active ~ .copied {
-    opacity: 100%;
-    transition-delay: 0ms;
-    transition-duration: 0ms;
-    transform: scale(1.25);
+@media (orientation: landscape) {
+    .icon-card:active ~ .copied {
+        opacity: 100%;
+        transition-delay: 0ms;
+        transition-duration: 0ms;
+        transform: scale(1.25);
+    }
 }
 
 // --- Content ---
