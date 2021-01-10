@@ -1,8 +1,7 @@
 // Content data
 
 import res_dart from '../res/flutter.png';
-// TODO : C not C++ icon
-import res_c from '../res/cpp.png';
+import res_c from '../res/c.png';
 import res_cpp from '../res/cpp.png';
 import res_html from '../res/html5.png';
 import res_python from '../res/python.png';

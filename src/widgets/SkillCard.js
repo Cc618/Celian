@@ -70,7 +70,7 @@ function IconSkillCard(props) {
               <IconSkillRow langIcon={python} langHint="Python" ratio={1}
                 ratioColor="#F44336" softIcon={linux} softHint="Linux"
                 skill={data.icon_skills.oop} />
-              <IconSkillRow langIcon={cpp} langHint="C++" ratio={1}
+              <IconSkillRow langIcon={cpp} langHint="C / C++" ratio={1}
                 ratioColor="#9C27B0" softIcon={vim} softHint="Vim"
                 skill={data.icon_skills.func_prog} />
               <IconSkillRow langIcon={flutter} langHint="Dart / Flutter" ratio={6 / 10}
