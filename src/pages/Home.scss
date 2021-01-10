@@ -102,7 +102,7 @@
 
         position: absolute;
 
-        opacity: 0%;
+        opacity: 0;
     }
 }
 
@@ -110,11 +110,11 @@
     top: -4px;
 
     .idle {
-        opacity: 0%;
+        opacity: 0;
     }
 
     .onhover {
-        opacity: 100%;
+        opacity: 1;
     }
 }
 
@@ -124,7 +124,7 @@
     @extend .transition200;
 
     color: $black;
-    opacity: 0%;
+    opacity: 0;
 
     border-radius: 12px;
     position: absolute;
@@ -142,11 +142,11 @@
 }
 
 .icon-card:hover + .hint {
-    opacity: 100%;
+    opacity: 1;
 }
 
 .icon-card:active + .hint {
-    opacity: 100%;
+    opacity: 1;
 
     // Instant anim on touch screens
     @media (orientation: portrait) {
@@ -168,7 +168,7 @@
 
 @media (orientation: landscape) {
     .icon-card:active ~ .copied {
-        opacity: 100%;
+        opacity: 1;
         transition-delay: 0ms;
         transition-duration: 0ms;
         transform: scale(1.25);
