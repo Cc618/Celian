@@ -12,6 +12,7 @@ import res_alpha from '../res/alpha.png';
 import res_feature_changer from '../res/feature_changer.png';
 import res_pytorch_collections from '../res/pytorch_collections.gif';
 import res_google_play_badge from '../res/google_play_badge.png';
+import res_resume from '../res/resume.png';
 
 let lang = "fr";
 
@@ -125,7 +126,6 @@ const fullData = {
                 title: "This Website !",
                 tags: ["Web", "Design"],
                 icon: "html",
-                // TODO : Update image
                 image: "resume",
                 description: "Online resume made in HTML / JS / SASS with React JS.",
                 // TODO : Update github link
@@ -235,7 +235,6 @@ const fullData = {
                 title: "Ce Site !",
                 tags: ["Web", "Design"],
                 icon: "html",
-                // TODO : Update image
                 image: "resume",
                 description: "CV en ligne fait en HTML / JS / SASS avec React JS.",
                 // TODO : Update github link
@@ -265,6 +264,7 @@ const resources = {
     "feature_changer": res_feature_changer,
     "pytorch_collections": res_pytorch_collections,
     "google_play_badge": res_google_play_badge,
+    "resume": res_resume,
 };
 
 let data = genData();
