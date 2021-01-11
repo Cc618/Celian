@@ -51,10 +51,9 @@ const fullData = {
                 "title": "Education",
                 "items": [
                     "Actually in second year after graduation at <a href=\"https://www.epita.fr\">EPITA</a>",
-                    "A Level: Science",
+                    "A Level: Science, IT option",
                     "Attendee to the general high school contest related to math",
-                    "Scientific high school, option IT",
-                    "French : native, English : B2 (autonomous)",
+                    "French: native, English: B2 (autonomous)",
                 ],
             },
             {
@@ -159,10 +158,8 @@ const fullData = {
                 "title": "Cursus",
                 "items": [
                     "Actuellement en 2e année de classe préparatoire à <a href=\"https://www.epita.fr\">EPITA</a>",
-                    "Baccalauréat S mention bien",
-                    "Diplôme National du Brevet",
+                    "Baccalauréat S spé ISN mention bien",
                     "Participation à l’épreuve de maths du concours général des lycéens",
-                    "Terminale S option SI spé ISN au lycée Charles de Gaulle à Poissy",
                     "Français : natif, Anglais : B2 (autonome)",
                 ],
             },
