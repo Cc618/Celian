@@ -44,7 +44,7 @@ const fullData = {
             {
                 "title": "Experiences",
                 "items": [
-                    "Two months internship at <a href=\"https://www.webdyn.com/en/\">Webdyn</a> in 2020. The goal was to create a mobile application to configure WebdynEasy hardware. Made with Flutter in Dart, this application is available on the <a href=\"https://play.google.com/store/apps/details?id=com.webdyn.WebdynEasy\">Google Play Store</a>"
+                    "Two months internship at <a href=\"https://www.webdyn.com/en/\">Webdyn</a> in 2020. Webdyn is a multinational company specialized in remote water, gas and electricity meters. The goal was to create a mobile application to configure WebdynEasy hardware especially on its installation by a technician. Made with Flutter in Dart, it provides QR Code scanning, Bluetooth Low Energy communication with the gateway and includes a test mode used in the certification process. This application is available on the <a href=\"https://play.google.com/store/apps/details?id=com.webdyn.WebdynEasy\">Google Play Store</a>"
                 ],
             },
             {
@@ -151,7 +151,7 @@ const fullData = {
             {
                 "title": "Expériences",
                 "items": [
-                    "Stage de deux mois à <a href=\"https://www.webdyn.com/en/\">Webdyn</a> en 2020. Le but a été de créer une application mobile permettant la configuration des boîtiers WebdynEasy. Faite avec Flutter en Dart, l'application est disponible sur le <a href=\"https://play.google.com/store/apps/details?id=com.webdyn.WebdynEasy\">Google Play Store</a>"
+                    "Stage de deux mois à <a href=\"https://www.webdyn.com/en/\">Webdyn</a> en 2020. Webdyn est une entreprise multinationale spécialisée dans les compteurs connectés d'eau, d'électricité et de gaz. Le but était de créer une application mobile permettant la configuration des boîtiers WebdynEasy notamment lors de la pose du compteur par un technicien. Faite avec Flutter en Dart, elle permet de lire des QR Codes, de communiquer en Bluetooth Low Energy avec l'appareil et dispose d'un mode test simplifiant la procédure de certification. L'application est disponible sur le <a href=\"https://play.google.com/store/apps/details?id=com.webdyn.WebdynEasy\">Google Play Store</a>"
                 ],
             },
             {
