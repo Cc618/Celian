@@ -60,7 +60,7 @@ const fullData = {
                 "title": "Activities",
                 "items": [
                     "Passionate in IT and math",
-                    "Programming since 5 years",
+                    "Programming since middle school",
                     "Competitive programming (<a href=\"https://codingcompetitions.withgoogle.com/kickstart\">Google Kickstart</a>)",
                     "Artificial Intelligence",
                     "Mobile apps",
@@ -151,22 +151,22 @@ const fullData = {
             {
                 "title": "Expériences",
                 "items": [
-                    "Stage de deux mois à <a href=\"https://www.webdyn.com/en/\">Webdyn</a> en 2020. Le but a été de créer une application mobile permettant la configuration des boitiers WebdynEasy. Faite avec Flutter en Dart, l'application est disponible sur le <a href=\"https://play.google.com/store/apps/details?id=com.webdyn.WebdynEasy\">Google Play Store</a>"
+                    "Stage de deux mois à <a href=\"https://www.webdyn.com/en/\">Webdyn</a> en 2020. Le but a été de créer une application mobile permettant la configuration des boîtiers WebdynEasy. Faite avec Flutter en Dart, l'application est disponible sur le <a href=\"https://play.google.com/store/apps/details?id=com.webdyn.WebdynEasy\">Google Play Store</a>"
                 ],
             },
             {
                 "title": "Cursus",
                 "items": [
                     "Actuellement en 2e année de classe préparatoire à <a href=\"https://www.epita.fr\">EPITA</a>",
-                    "Baccalauréat S spé ISN mention bien",
+                    "Baccalauréat S spé ISN mention bien (2019)",
                     "Participation à l’épreuve de maths du concours général des lycéens",
-                    "Français : natif, Anglais : B2 (autonome)",
+                    "Français : langue maternelle, Anglais : B2 (autonome)",
                 ],
             },
             {
                 "title": "Activités",
                 "items": [
-                    "Passion et pratique de l’informatique et des maths depuis 5 ans",
+                    "Passion et pratique de l’informatique et des maths depuis le collège",
                     "Compétitions de programmation (<a href=\"https://codingcompetitions.withgoogle.com/kickstart\">Google Kickstart</a>)",
                     "Création d’intelligences artificielles",
                     "Conception d’applications mobiles",
