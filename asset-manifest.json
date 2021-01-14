@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/Celian/static/css/main.2f0c855c.chunk.css",
+    "main.js": "/Celian/static/js/main.676c9803.chunk.js",
+    "main.js.map": "/Celian/static/js/main.676c9803.chunk.js.map",
+    "runtime-main.js": "/Celian/static/js/runtime-main.8e896edf.js",
+    "runtime-main.js.map": "/Celian/static/js/runtime-main.8e896edf.js.map",
+    "static/js/2.7c16756d.chunk.js": "/Celian/static/js/2.7c16756d.chunk.js",
+    "static/js/2.7c16756d.chunk.js.map": "/Celian/static/js/2.7c16756d.chunk.js.map",
+    "static/js/3.d57a51eb.chunk.js": "/Celian/static/js/3.d57a51eb.chunk.js",
+    "static/js/3.d57a51eb.chunk.js.map": "/Celian/static/js/3.d57a51eb.chunk.js.map",
+    "index.html": "/Celian/index.html",
+    "static/css/main.2f0c855c.chunk.css.map": "/Celian/static/css/main.2f0c855c.chunk.css.map",
+    "static/js/2.7c16756d.chunk.js.LICENSE.txt": "/Celian/static/js/2.7c16756d.chunk.js.LICENSE.txt",
+    "static/media/alpha.f4043fe6.png": "/Celian/static/media/alpha.f4043fe6.png",
+    "static/media/c.e877bb92.png": "/Celian/static/media/c.e877bb92.png",
+    "static/media/cpp.d98727bd.png": "/Celian/static/media/cpp.d98727bd.png",
+    "static/media/feature_changer.dc02fa05.png": "/Celian/static/media/feature_changer.dc02fa05.png",
+    "static/media/flutter.4b556ae1.png": "/Celian/static/media/flutter.4b556ae1.png",
+    "static/media/google_play_badge.f902960a.png": "/Celian/static/media/google_play_badge.f902960a.png",
+    "static/media/linux.e48a7cd8.png": "/Celian/static/media/linux.e48a7cd8.png",
+    "static/media/os2020.e9dd839f.gif": "/Celian/static/media/os2020.e9dd839f.gif",
+    "static/media/picture.0362c7e8.jpg": "/Celian/static/media/picture.0362c7e8.jpg",
+    "static/media/pytorch_collections.840e869d.gif": "/Celian/static/media/pytorch_collections.840e869d.gif",
+    "static/media/quick_shop.897cefef.jpg": "/Celian/static/media/quick_shop.897cefef.jpg",
+    "static/media/react.fff4fd51.svg": "/Celian/static/media/react.fff4fd51.svg",
+    "static/media/resume.e8e02b06.png": "/Celian/static/media/resume.e8e02b06.png",
+    "static/media/vim.9b4d4533.png": "/Celian/static/media/vim.9b4d4533.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8e896edf.js",
+    "static/js/2.7c16756d.chunk.js",
+    "static/css/main.2f0c855c.chunk.css",
+    "static/js/main.676c9803.chunk.js"
+  ]
+}
