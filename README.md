@@ -10,5 +10,5 @@ My [online resume](https://cc618.github.io/Celian).
 Made with HTML, SASS and ReactJS.
 
 ## License
-A (CUSTOM license)[LICENSE] is used for this project.
+A [CUSTOM license](LICENSE) is used for this project.
 Roughly, do not copy or redistribute any part of this project, this project is used only for EDUCATIONAL PURPOSES.
