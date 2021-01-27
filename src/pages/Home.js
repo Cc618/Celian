@@ -17,7 +17,8 @@ function IconButton(props) {
         {props.iconHover !== undefined && <i className="material-icons onhover">{props.iconHover}</i>}
         {props.image !== undefined && <img alt="" src={props.image} />}
       </button>
-      {props.hint !== undefined && <p className="hint">{props.hint}</p>}
+      {props.hint !== undefined && <p className={"hint" + (props.isOdd !== undefined ?
+        " hint-odd" : "")}>{props.hint}</p>}
       {props.canCopy !== undefined && <p className="copied">{data.copied}</p>}
     </div>
   );
@@ -56,6 +57,7 @@ function Home(props) {
           <IconButton icon="call" hint={data.phone}
             iconHover="content_copy"
             canCopy="true"
+            isOdd="true"
             onClick={() => clipCopy(data.phone)} />
           <IconButton image={github}
             hint="GitHub"

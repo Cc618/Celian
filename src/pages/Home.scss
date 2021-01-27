@@ -136,8 +136,14 @@
     white-space: nowrap;
 
     // Can't hover on touch screens
-    @media (orientation: portrait) {
-        transition-delay: 500ms;
+    @media (hover: none), (-moz-touch-enabled: 1) {
+        transition-delay: 5s;
+    }
+}
+
+@media (hover: none), (-moz-touch-enabled: 1) {
+    .icon-card + .hint-odd {
+        top: #{48 * 1.5 + 32}px;
     }
 }
 
@@ -149,7 +155,8 @@
     opacity: 1;
 
     // Instant anim on touch screens
-    @media (orientation: portrait) {
+    // TODO : Tablet test
+    @media (hover: none), (-moz-touch-enabled: 1) {
         transition: unset;
     }
 }
@@ -166,7 +173,8 @@
     transform: scale(1);
 }
 
-@media (orientation: landscape) {
+// Non touch screen
+@media (hover: hover), (-moz-touch-enabled: 0) {
     .icon-card:active ~ .copied {
         opacity: 1;
         transition-delay: 0ms;
