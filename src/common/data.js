@@ -36,7 +36,7 @@ const fullData = {
         "translate_lang": "Version française",
         "translate": "Translate",
         "copied": "Copied !",
-        "job": "Software Developer",
+        "job": "IT Student",
         "background": "Background",
         "projects": "Projects",
         // Skills
@@ -144,7 +144,7 @@ const fullData = {
         "translate": "Traduire",
         "copied": "Copié !",
 
-        "job": "Développeur Logiciel",
+        "job": "Etudiant en Informatique",
         "background": "Parcours",
         "projects": "Projets",
         "skills": [
