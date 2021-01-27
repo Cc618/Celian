@@ -73,7 +73,7 @@ const fullData = {
         ],
         "icon_skills": {
             "title": "Skills",
-            "oop": "OOP",
+            "oop": "Object Oriented Programming",
             "func_prog": "Functional Programming",
             "data_struct": "Data Structures",
             "proj_manag": "Project Management",
@@ -179,7 +179,7 @@ const fullData = {
         ],
         "icon_skills": {
             "title": "Compétences",
-            "oop": "POO",
+            "oop": "Programmation Orientée Objet",
             "func_prog": "Programmation Fonctionelle",
             "data_struct": "Structures de Données",
             "proj_manag": "Gestion de Projets",
