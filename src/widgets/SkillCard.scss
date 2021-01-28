@@ -254,7 +254,6 @@ $skill-border-radius: 24px;
             }
 
             // Icons
-            // TODO : Update size depending on the device
             .icon-wrapper {
                 height: 48px;
 
@@ -262,12 +261,15 @@ $skill-border-radius: 24px;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+
+                @media (orientation: portrait) and (max-width: 599px) {
+                    height: 36px;
+                }
             }
 
             img {
                 height: 100%;
             }
-
         }
 
         // Hint
@@ -291,11 +293,16 @@ $skill-border-radius: 24px;
                 opacity: .9;
             }
 
+            // For touch devices
+            img:active + .hint-wrapper {
+                opacity: .9;
+                transition-duration: 0s;
+            }
+
             .hint-wrapper {
                 position: absolute;
 
                 min-width: 6vw;
-
             }
 
             .hint-card {
@@ -305,9 +312,10 @@ $skill-border-radius: 24px;
 
                 background-color: $grey800;
                 border-radius: 16px;
-                padding: 4px 16px 4px 16px;
 
                 min-width: 100%;
+                box-sizing: border-box;
+                padding: 4px 16px 4px 16px;
 
                 p {
                     color: $white;
