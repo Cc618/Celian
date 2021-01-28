@@ -28,6 +28,7 @@ function IconSkillRow(props) {
           <p>{props.title}</p>
         </div>
       </div>
+      {/* TODO : Animation */}
       <div className="icon-card-list">
         {props.textContent ?
           props.items.map((v) => <p>{v}</p>) :

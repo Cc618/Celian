@@ -90,7 +90,7 @@ const fullData = {
                 "text_content": false
             },
             {
-                "title": "A l'aise",
+                "title": "Comfortable",
                 "items": [
                     {
                         "title": "Dart / Flutter",
@@ -112,7 +112,7 @@ const fullData = {
                 "text_content": false
             },
             {
-                "title": "Compétences",
+                "title": "Skills",
                 "items": [
                     "Oriented Object Programming",
                     "Functional Programming",
