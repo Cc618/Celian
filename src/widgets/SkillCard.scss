@@ -188,62 +188,6 @@ $skill-border-radius: 24px;
         @extend .shadow16;
     }
 
-    .hint {
-        position: relative;
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        img {
-            height: 48px;
-            text-align: center;
-
-            @media (orientation: portrait) and (max-width: 599px) {
-                height: 36px;
-            }
-        }
-
-        // Hint
-        img + div {
-            @extend .transition100;
-
-            top: 48px;
-            opacity: 0;
-            pointer-events: none;
-            z-index: 100;
-        }
-
-        img:hover + div {
-            opacity: .9;
-        }
-
-        .hint-wrapper {
-            position: absolute;
-
-            min-width: 6vw;
-
-            .hint-card {
-                @extend .shadow16;
-
-                position: relative;
-
-                background-color: $grey800;
-                border-radius: 16px;
-                padding: 4px 16px 4px 16px;
-
-                min-width: 100%;
-
-                p {
-                    color: $white;
-                    font-size: 12px;
-                    white-space: nowrap;
-                    text-align: center;
-                }
-            }
-        }
-    }
-
     .content.icon-skill-card,
     .skill-card.icon-skill-card {
         padding-left: 0;
@@ -324,21 +268,52 @@ $skill-border-radius: 24px;
                 height: 100%;
             }
 
-            // Hint
-            .icon-card-hint-wrapper {
-                display: relative;
+        }
+
+        // Hint
+        .hint {
+            position: relative;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            img + .hint-wrapper {
+                @extend .transition100;
+
+                top: 48px;
+                opacity: 0;
+                pointer-events: none;
+                z-index: 100;
             }
 
-            .icon-card-hint {
-                display: absolute;
+            img:hover + .hint-wrapper {
+                opacity: .9;
+            }
+
+            .hint-wrapper {
+                position: absolute;
+
+                min-width: 6vw;
+
+            }
+
+            .hint-card {
+                @extend .shadow16;
+
+                position: relative;
 
                 background-color: $grey800;
                 border-radius: 16px;
                 padding: 4px 16px 4px 16px;
 
+                min-width: 100%;
+
                 p {
                     color: $white;
-                    margin: 4px 4px;
+                    font-size: 12px;
+                    white-space: nowrap;
+                    text-align: center;
                 }
             }
         }

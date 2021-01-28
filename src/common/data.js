@@ -72,13 +72,51 @@ const fullData = {
                 ],
             },
         ],
-        "icon_skills": {
-            "title": "Skills",
-            "oop": "Object Oriented Programming",
-            "func_prog": "Functional Programming",
-            "data_struct": "Data Structures",
-            "proj_manag": "Project Management",
-        },
+        // TODO : Add pytorch + translate...
+        "icon_skills": [
+            {
+                "title": "Performant",
+                "items": [
+                    {
+                        "title": "C / C++",
+                        "src": "cpp"
+                    },
+                    {
+                        "title": "Python",
+                        "src": "python"
+                    }
+                ],
+                "text_content": false
+            },
+            {
+                "title": "A l'aise",
+                "items": [
+                    {
+                        "title": "Dart / Flutter",
+                        "src": "dart"
+                    },
+                    {
+                        "title": "Julia",
+                        "src": "julia"
+                    },
+                    {
+                        "title": "Git",
+                        "src": "git"
+                    }
+                ],
+                "text_content": false
+            },
+            {
+                "title": "Compétences",
+                "items": [
+                    "Oriented Object Programming",
+                    "Functional Programming",
+                    "Data Structures",
+                    "Project Management"
+                ],
+                "text_content": true
+            }
+        ],
         // Projects
         "github_page": "GitHub page",
         "projects_data": [
@@ -178,13 +216,50 @@ const fullData = {
                 ],
             },
         ],
-        "icon_skills": {
-            "title": "Compétences",
-            "oop": "Programmation Orientée Objet",
-            "func_prog": "Programmation Fonctionelle",
-            "data_struct": "Structures de Données",
-            "proj_manag": "Gestion de Projets",
-        },
+        "icon_skills": [
+            {
+                "title": "Performant",
+                "items": [
+                    {
+                        "title": "C / C++",
+                        "src": "cpp"
+                    },
+                    {
+                        "title": "Python",
+                        "src": "python"
+                    }
+                ],
+                "text_content": false
+            },
+            {
+                "title": "A l'aise",
+                "items": [
+                    {
+                        "title": "Dart / Flutter",
+                        "src": "dart"
+                    },
+                    {
+                        "title": "Julia",
+                        "src": "julia"
+                    },
+                    {
+                        "title": "Git",
+                        "src": "git"
+                    }
+                ],
+                "text_content": false
+            },
+            {
+                "title": "Compétences",
+                "items": [
+                    "Programmation Orientée Objet",
+                    "Programmation Fonctionelle",
+                    "Structures de Données",
+                    "Gestion de Projets"
+                ],
+                "text_content": true
+            }
+        ],
         // Projects
         "github_page": "Page GitHub",
         "projects_data": [
