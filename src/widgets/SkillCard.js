@@ -1,14 +1,5 @@
 import './SkillCard.scss';
-import {data} from '../common/data';
-import Bar from '../widgets/Bar';
-import python from '../res/python.png';
-import cpp from '../res/cpp.png';
-import flutter from '../res/flutter.png';
-import julia from '../res/julia.png';
-import linux from '../res/linux.png';
-import vim from '../res/vim.png';
-import vscode from '../res/vscode.png';
-import git from '../res/git.png';
+import {data, resources} from '../common/data';
 
 function SkillCard(props) {
   let skill = props.skill;
@@ -28,7 +19,7 @@ function SkillCard(props) {
   );
 }
 
-// langIcon, langHint, ratio, ratioColor, softIcon, softHint, skill
+// title, items, textContent
 function IconSkillRow(props) {
   return (
     <div className="icon-card-row">
@@ -38,10 +29,25 @@ function IconSkillRow(props) {
         </div>
       </div>
       <div className="icon-card-list">
-        <p>Object Oriented Programming</p>
-        <p>Functional Programming</p>
-        <p>Data Structures</p>
-        <p>Project Management</p>
+        {props.textContent ?
+          props.items.map((v) => <p>{v}</p>) :
+          // TODO : Hint
+          props.items.map((v) =>
+            <div className="icon-wrapper hint">
+              <img src={resources[v.src]} alt="" />
+
+              <div className="hint-wrapper">
+               <div className="hint-card">
+                 <p>{v.title}</p>
+               </div>
+             </div>
+              {/* <div className="icon-card-hint-wrapper">
+                <div className="icon-card-hint">
+                  <p>{v.title}</p>
+                </div>
+              </div> */}
+            </div>)
+        }
       </div>
     </div>
   );
@@ -76,6 +82,53 @@ function IconSkillRow(props) {
 
 // Bottom right card
 function IconSkillCard(props) {
+  // TODO : Translate
+  // TODO : Add pytorch etc...
+  let content = [
+    {
+      title: "Performant",
+      items: [
+        {
+          title: "C / C++",
+          src: "cpp"
+        },
+        {
+          title: "Python",
+          src: "python"
+        }
+      ],
+      text_content: false
+    },
+    {
+      title: "A l'aise",
+      items: [
+        {
+          title: "Dart / Flutter",
+          src: "dart"
+        },
+        {
+          title: "Julia",
+          src: "julia"
+        },
+        {
+          title: "Git",
+          src: "git"
+        },
+      ],
+      text_content: false
+    },
+    {
+      title: "Compétences",
+      items: [
+        "Oriented Object Programming",
+        "Functional Programming",
+        "Data Structures",
+        "Project Management"
+      ],
+      text_content: true
+    }
+  ];
+
   return (
     <div className="SkillCard">
       <div className="skill-card icon-skill-card">
@@ -83,10 +136,8 @@ function IconSkillCard(props) {
           {/* TODO : Remove ? */}
           {/* <h4>{data.icon_skills.title}</h4> */}
           <div className="icon-card-content">
-            {/* TODO : Translate */}
-            <IconSkillRow title="Performant" />
-            <IconSkillRow title="A l'aise" />
-            <IconSkillRow title="Compétences" />
+            {content.map((v) => <IconSkillRow title={v.title}
+              textContent={v.text_content} items={v.items} />)}
           </div>
         </div>
       </div>

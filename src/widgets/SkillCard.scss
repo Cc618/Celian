@@ -221,7 +221,7 @@ $skill-border-radius: 24px;
         .hint-wrapper {
             position: absolute;
 
-            min-width: 75%;
+            min-width: 6vw;
 
             .hint-card {
                 @extend .shadow16;
@@ -269,7 +269,6 @@ $skill-border-radius: 24px;
 
             height: 50%;
             margin: auto;
-            // padding: 8px 0;
 
             .wrapper {
                 @extend .shadow4;
@@ -305,9 +304,42 @@ $skill-border-radius: 24px;
                 flex: 1;
             }
 
-            p {
+            > p {
                 text-align: center;
                 margin: 0;
+            }
+
+            // Icons
+            // TODO : Update size depending on the device
+            .icon-wrapper {
+                height: 48px;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            img {
+                height: 100%;
+            }
+
+            // Hint
+            .icon-card-hint-wrapper {
+                display: relative;
+            }
+
+            .icon-card-hint {
+                display: absolute;
+
+                background-color: $grey800;
+                border-radius: 16px;
+                padding: 4px 16px 4px 16px;
+
+                p {
+                    color: $white;
+                    margin: 4px 4px;
+                }
             }
         }
     }
