@@ -55,7 +55,7 @@ const fullData = {
                     "Actually in second year after graduation at <a href=\"https://www.epita.fr\">EPITA</a>",
                     "A Level: Science, IT option",
                     "Attendee to the general high school contest related to math",
-                    "French: native, English: B2 (autonomous)",
+                    "French: native, English: B2, 800 TOEIC points (autonomous)",
                 ],
             },
             {
@@ -204,7 +204,7 @@ const fullData = {
                     "Actuellement en 2e année de classe préparatoire à <a href=\"https://www.epita.fr\">EPITA</a>",
                     "Baccalauréat S spé ISN mention bien (2019)",
                     "Participation à l’épreuve de maths du concours général des lycéens",
-                    "Français : langue maternelle, Anglais : B2 (autonome)",
+                    "Français : langue maternelle, Anglais : B2, 800 points TOEIC (autonome)",
                 ],
             },
             {
