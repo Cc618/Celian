@@ -34,7 +34,6 @@ function IconSkillRow(props) {
           props.items.map((v) =>
             <div className="icon-wrapper hint">
               <img src={resources[v.src]} alt="" />
-
               <div className="hint-wrapper">
                <div className="hint-card">
                  <p>{v.title}</p>

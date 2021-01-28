@@ -7,6 +7,7 @@ import res_html from '../res/html5.png';
 import res_python from '../res/python.png';
 import res_julia from '../res/julia.png';
 import res_git from '../res/git.png';
+import res_linux from '../res/linux.png';
 import res_quick_shop from '../res/quick_shop.jpg';
 import res_os2020 from '../res/os2020.gif';
 import res_alpha from '../res/alpha.png';
@@ -102,6 +103,10 @@ const fullData = {
                     {
                         "title": "Git",
                         "src": "git"
+                    },
+                    {
+                        "title": "Linux / Bash",
+                        "src": "linux"
                     }
                 ],
                 "text_content": false
@@ -245,6 +250,10 @@ const fullData = {
                     {
                         "title": "Git",
                         "src": "git"
+                    },
+                    {
+                        "title": "Linux / Bash",
+                        "src": "linux"
                     }
                 ],
                 "text_content": false
@@ -331,6 +340,7 @@ const resources = {
     "python": res_python,
     "julia": res_julia,
     "git": res_git,
+    "linux": res_linux,
     "quick_shop": res_quick_shop,
     "os2020": res_os2020,
     "alpha": res_alpha,
