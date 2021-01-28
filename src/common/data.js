@@ -143,7 +143,7 @@ const fullData = {
         "translate_lang": "English version",
         "translate": "Traduire",
         "copied": "Copié !",
-
+        // TODO : Developpement logiciel ?
         "job": "Etudiant en Informatique",
         "background": "Parcours",
         "projects": "Projets",

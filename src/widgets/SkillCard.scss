@@ -243,6 +243,74 @@ $skill-border-radius: 24px;
             }
         }
     }
+
+    .content.icon-skill-card,
+    .skill-card.icon-skill-card {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .icon-card-content {
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+
+        .icon-card-row {
+            flex: 1;
+
+            display: flex;
+        }
+
+        .icon-card-title {
+            flex: 1;
+            box-sizing: border-box;
+
+            height: 50%;
+            margin: auto;
+            // padding: 8px 0;
+
+            .wrapper {
+                @extend .shadow4;
+
+                background-color: $accent;
+                // border-radius: 0 50% 50% 0;
+                border-top-right-radius: 100vh;
+                border-bottom-right-radius: 100vh;
+
+                width: 100%;
+                height: 100%;
+                box-sizing: border-box;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            p {
+                color: $white;
+                margin: 0;
+                font-size: 18px;
+            }
+        }
+
+        .icon-card-list {
+            flex: 3;
+
+            display: flex;
+            align-items: center;
+
+            > * {
+                flex: 1;
+            }
+
+            p {
+                text-align: center;
+                margin: 0;
+            }
+        }
+    }
 }
 
 @media (min-width: 1920px) {
