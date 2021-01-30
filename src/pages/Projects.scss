@@ -37,7 +37,6 @@ $footer-height: 64px;
         height: $project-card-height;
 
         @media (orientation: portrait) {
-            // height: #{2 * $project-card-height};
             height: unset;
         }
 
@@ -52,6 +51,24 @@ $footer-height: 64px;
         }
     }
 
+    .bg-secondary {
+        @extend .bg-grey;
+
+        background-color: $accent;
+    }
+
+    .bg-next {
+        padding-top: #{$ndots / 2}vw;
+        padding-bottom: #{$ndots / 2}vw;
+
+        height: #{$project-card-height * 1.2};
+
+        @media (orientation: portrait) {
+            height: unset;
+        }
+    }
+
+    // TODO : Useless now
     .bg-accent {
         background-color: $accent;
 

@@ -29,10 +29,14 @@ function Projects(props) {
           { data.projects_data.slice(0, 2).map((content, i) => mkProject(content, i)) }
       </div>
       <Dots leftColor="accent" rightColor="grey" />
-      <div className="bg bg-accent">
-        { data.projects_data.slice(2).map((content, i) => mkProject(content, i)) }
+      <div className="bg bg-secondary bg-next">
+        { data.projects_data.slice(2, 4).map((content, i) => mkProject(content, i)) }
       </div>
-      <Dots leftColor="black" rightColor="accent" />
+      <Dots leftColor="grey" rightColor="accent" />
+      <div className="bg bg-grey bg-next">
+        { data.projects_data.slice(4).map((content, i) => mkProject(content, i)) }
+      </div>
+      <Dots leftColor="black" rightColor="grey" />
       <div className="footer-spacer" />
       <footer>
         <div>
