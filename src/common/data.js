@@ -88,7 +88,7 @@ const fullData = {
                         "src": "python"
                     },
                     {
-                        "title": "Pytorch",
+                        "title": "PyTorch",
                         "src": "pytorch"
                     }
                 ],
@@ -241,7 +241,7 @@ const fullData = {
                         "src": "python"
                     },
                     {
-                        "title": "Pytorch",
+                        "title": "PyTorch",
                         "src": "pytorch"
                     }
                 ],
