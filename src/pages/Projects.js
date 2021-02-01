@@ -54,6 +54,8 @@ function Projects(props) {
           <img src={html} alt="html5" />
           <img src={css} alt="css3" />
           <img src={reactjs} alt="React JS" />
+          <i className="material-icons info-copyright"
+            onClick={() => alert(data.resources_copyright)}>copyright</i>
         </div>
       </footer>
     </div>

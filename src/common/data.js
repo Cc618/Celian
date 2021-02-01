@@ -30,6 +30,7 @@ const sharedData = {
     "phone": "(+33) 06 61 24 71 01",
     // Footer
     "copyright_year": "2021",
+    "resources_copyright": "- Flutter and the related logo are trademarks of Google LLC. We are not endorsed by or affiliated with Google LLC.\n- PyTorch, the PyTorch logo and any related marks are trademarks of Facebook, Inc.\n- Logos of git are under Creative Commons Attribution 3.0 license (https://git-scm.com/downloads/logos)"
 };
 
 // Language specific data
@@ -338,11 +339,9 @@ const fullData = {
         "copyright": {
             "name": "Célian Raimbault",
             "year": sharedData.copyright_year,
-        },
-    },
+        }
+    }
 };
-
-// TODO : Copyrights
 
 // Get resource from id
 const resources = {
