@@ -52,31 +52,6 @@ function IconSkillRow(props) {
        </div>
      </div>
   );
-
-  // return (
-  //   <div className="icon-card-row">
-  //     <div className="icon-card-title">
-  //       <div className="wrapper">
-  //         <p>{props.title}</p>
-  //       </div>
-  //     </div>
-  //     {/* TODO : Animation */}
-  //     <div className="icon-card-list">
-  //       {props.textContent ?
-  //         props.items.map((v) => <p>{v}</p>) :
-  //         props.items.map((v) =>
-  //           <div className="icon-wrapper hint">
-  //             <img src={resources[v.src]} alt="" />
-  //             <div className="hint-wrapper">
-  //              <div className="hint-card">
-  //                <p>{v.title}</p>
-  //              </div>
-  //            </div>
-  //           </div>)
-  //       }
-  //     </div>
-  //   </div>
-  // );
 }
 
 // Bottom right card
@@ -97,19 +72,6 @@ function IconSkillCard(props) {
         </div>
       </div>
     </div>);
-
-  // return (
-  //   <div className="SkillCard">
-  //     <div className="skill-card icon-skill-card">
-  //       <div className="content icon-skill-card">
-  //         <div className="icon-card-content">
-  //           {content.map((v) => <IconSkillRow title={v.title}
-  //             textContent={v.text_content} items={v.items} />)}
-  //         </div>
-  //       </div>
-  //     </div>
-  //   </div>
-  // );
 }
 
 export {SkillCard, IconSkillCard};

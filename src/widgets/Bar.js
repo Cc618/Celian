@@ -1,7 +1,6 @@
 import './Bar.scss';
 import React from 'react';
 
-// TODO : Background
 // ratio color bgColor
 class Bar extends React.Component {
   constructor(props) {

@@ -68,28 +68,6 @@ $footer-height: 64px;
         }
     }
 
-    // TODO : Useless now
-    .bg-accent {
-        background-color: $accent;
-
-        height: #{$project-card-height * 2};
-
-        @media (orientation: portrait) {
-            height: unset;
-        }
-
-        padding-top: #{$ndots / 2}vw;
-        padding-bottom: #{$ndots / 2}vw;
-
-        .project-wrapper {
-            height: 50%;
-
-            @media (orientation: portrait) {
-                height: 25%;
-            }
-        }
-    }
-
     // Used to avoid the Dots bottom overflow with footer
     .footer-spacer {
         padding-top: 5vw;
