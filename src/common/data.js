@@ -39,7 +39,7 @@ const fullData = {
         "translate_lang": "Version française",
         "translate": "Translate",
         "copied": "Copied !",
-        "job": "IT Student",
+        "job": "Computer Engineering Student",
         "background": "Background",
         "projects": "Projects",
         // Skills
@@ -193,8 +193,7 @@ const fullData = {
         "translate_lang": "English version",
         "translate": "Traduire",
         "copied": "Copié !",
-        // TODO : Developpement logiciel ?
-        "job": "Etudiant en Informatique",
+        "job": "Etudiant Ingénieur en Informatique",
         "background": "Parcours",
         "projects": "Projets",
         "skills": [
