@@ -29,7 +29,7 @@ function IconSkillRow(props) {
     <div className={"icon-card-row" + greyBgClass}>
       {!props.textContent && <div className="icon-card-prefix">
         <p>{props.title}</p>
-        <div className="ratio">
+        <div className={"ratio" + greyBgClass}>
           <Bar ratio={props.ratio} color={isGrey ? "#FF6E40" : "#64B5F6"}
             bgColor={isGrey ? "#EEEEEE" : "#FAFAFA"} />
         </div>

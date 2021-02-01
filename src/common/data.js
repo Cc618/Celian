@@ -6,6 +6,7 @@ import res_cpp from '../res/cpp.png';
 import res_html from '../res/html5.png';
 import res_python from '../res/python.png';
 import res_julia from '../res/julia.png';
+import res_pytorch from '../res/pytorch.png';
 import res_git from '../res/git.png';
 import res_linux from '../res/linux.png';
 import res_quick_shop from '../res/quick_shop.jpg';
@@ -224,7 +225,7 @@ const fullData = {
         "icon_skills": [
             {
                 "title": "Performant",
-                "ratio": .8,
+                "ratio": .9,
                 "items": [
                     {
                         "title": "C / C++",
@@ -233,14 +234,18 @@ const fullData = {
                     {
                         "title": "Python",
                         "src": "python"
-                    }
+                    },
+                    {
+                        "title": "Pytorch",
+                        "src": "pytorch"
+                    },
                 ],
                 "text_content": false
             },
             {
                 // TODO : Update
                 "title": "A l'aise",
-                "ratio": .6,
+                "ratio": .7,
                 "items": [
                     {
                         "title": "Dart / Flutter",
@@ -334,6 +339,8 @@ const fullData = {
     },
 };
 
+// TODO : Copyrights
+
 // Get resource from id
 const resources = {
     "dart": res_dart,
@@ -342,6 +349,7 @@ const resources = {
     "html": res_html,
     "python": res_python,
     "julia": res_julia,
+    "pytorch": res_pytorch,
     "git": res_git,
     "linux": res_linux,
     "quick_shop": res_quick_shop,

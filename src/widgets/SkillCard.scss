@@ -318,6 +318,14 @@ $skill-border-radius: 24px;
 
 
         ////////////////////////////////
+        .ratio {
+            background-color: $grey;
+            border-radius: 8px;
+        }
+        .ratio.grey-bg {
+            background-color: $white;
+        }
+
         // todo : merge
         .icon-card-row {
             border-radius: 24px;
