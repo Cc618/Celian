@@ -74,10 +74,10 @@ const fullData = {
                 ],
             },
         ],
-        // TODO : Add pytorch + translate...
         "icon_skills": [
             {
-                "title": "Performant",
+                "title": "Experienced",
+                "ratio": .9,
                 "items": [
                     {
                         "title": "C / C++",
@@ -86,12 +86,17 @@ const fullData = {
                     {
                         "title": "Python",
                         "src": "python"
+                    },
+                    {
+                        "title": "Pytorch",
+                        "src": "pytorch"
                     }
                 ],
                 "text_content": false
             },
             {
-                "title": "Comfortable",
+                "title": "Intermediate",
+                "ratio": .7,
                 "items": [
                     {
                         "title": "Dart / Flutter",
@@ -224,7 +229,7 @@ const fullData = {
         ],
         "icon_skills": [
             {
-                "title": "Performant",
+                "title": "Maîtrise",
                 "ratio": .9,
                 "items": [
                     {
@@ -238,13 +243,12 @@ const fullData = {
                     {
                         "title": "Pytorch",
                         "src": "pytorch"
-                    },
+                    }
                 ],
                 "text_content": false
             },
             {
-                // TODO : Update
-                "title": "A l'aise",
+                "title": "Fonctionnel",
                 "ratio": .7,
                 "items": [
                     {
@@ -270,7 +274,7 @@ const fullData = {
                 "title": "Compétences",
                 "items": [
                     "Programmation Orientée Objet",
-                    "Programmation Fonctionelle",
+                    "Programmation Fonctionnelle",
                     "Structures de Données",
                     "Gestion de Projets"
                 ],
