@@ -224,6 +224,7 @@ const fullData = {
         "icon_skills": [
             {
                 "title": "Performant",
+                "ratio": .8,
                 "items": [
                     {
                         "title": "C / C++",
@@ -237,7 +238,9 @@ const fullData = {
                 "text_content": false
             },
             {
+                // TODO : Update
                 "title": "A l'aise",
+                "ratio": .6,
                 "items": [
                     {
                         "title": "Dart / Flutter",
