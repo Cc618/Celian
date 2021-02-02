@@ -147,7 +147,6 @@
     }
 }
 
-// TODO : Can see hints on touch devices by clicking
 .icon-card:hover + .hint {
     opacity: 1;
 }
@@ -156,7 +155,6 @@
     opacity: 1;
 
     // Instant anim on touch screens
-    // TODO : Tablet test
     @media (hover: none), (-moz-touch-enabled: 1) {
         transition: unset;
     }
