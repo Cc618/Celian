@@ -2,7 +2,7 @@
 @import "../widgets/Dots.scss";
 
 $project-card-radius: 48px;
-$project-card-height: 85vh;
+$project-card-height: 90vh;
 $project-fab-size: 64px;
 
 .project-card {
@@ -167,7 +167,6 @@ $project-fab-size: 64px;
             transform: scale(1);
             transform-origin: center;
 
-            aspect-ratio: 1 / 1;
             max-width: 100%;
             max-height: 64px;
         }
