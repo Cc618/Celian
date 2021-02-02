@@ -1,5 +1,5 @@
 # Célian Raimbault
-My [online resume](https://cc618.github.io/Celian).
+My [online resume / portfolio](https://cc618.github.io/Celian).
 
 ## Screenshots
 ![Home section](src/res/screen_home.png)
