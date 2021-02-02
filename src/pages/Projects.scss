@@ -164,6 +164,7 @@ $footer-height: 64px;
 
                 @media (orientation: portrait) {
                     height: 36px;
+                    margin-right: 0;
                 }
             }
         }
@@ -172,6 +173,10 @@ $footer-height: 64px;
     .info-copyright {
         color: $grey;
         cursor: pointer;
-        margin-left: 4px;
+
+        @media (orientation: landscape) {
+            margin-left: 4px;
+        }
     }
+
 }
