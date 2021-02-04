@@ -57,6 +57,7 @@ $print-home-width: #{.3 * $print-width};
         flex-direction: column;
 
         bottom: #{.1 * $print-height};
+        left: 8px;
 
         div.print-hide {
             position: absolute;
@@ -255,7 +256,7 @@ $print-home-width: #{.3 * $print-width};
         }
 
         @media print {
-            margin-top: 48px;
+            margin-top: 16px;
         }
     }
 

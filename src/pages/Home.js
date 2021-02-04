@@ -42,6 +42,7 @@ function NavButton(props) {
   );
 }
 
+// TODO : Print : Replace github / linkedin hints by links
 function Home(props) {
   return (
     <div className="Home">
