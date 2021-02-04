@@ -3,6 +3,7 @@
 @import 'shadows.scss';
 @import 'anim.scss';
 @import 'widgets.scss';
+@import 'print.scss';
 
 body, html {
   width: 100%;
@@ -12,12 +13,12 @@ body, html {
   align-items: center;
   justify-content: center;
 
+  font-family: 'Roboto', sans-serif;
+  background-color: $white;
+
   scroll-behavior: smooth;
   overflow-x: hidden;
   overflow-y: scroll;
-
-  font-family: 'Roboto', sans-serif;
-  background-color: $white;
 
   // Disable scrollbar
   -ms-overflow-style: none;
@@ -25,8 +26,12 @@ body, html {
   ::-webkit-scrollbar {
     display: none;
   }
-}
 
+  @media print {
+    overflow: visible;
+    max-width: 100vw;
+  }
+}
 
 i {
   color: $black;
@@ -41,3 +46,13 @@ i {
   align-items: center;
   justify-content: center;
 }
+
+@page {
+  orientation: portrait;
+  margin: 0;
+  size: A4;
+}
+
+// @media print {
+//   width: ;
+// }
