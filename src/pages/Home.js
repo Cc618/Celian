@@ -11,7 +11,7 @@ import fr from '../res/fr.png';
 // Icon buttons within the header
 function IconButton(props) {
   return (
-    <div className="icon-button">
+    <div className={"icon-button" + (props.printHide === undefined ? "" : " print-hide")}>
       <button className="icon-card" onClick={props.onClick}>
         {props.icon !== undefined && <i className="material-icons idle">{props.icon}</i>}
         {props.iconHover !== undefined && <i className="material-icons onhover">{props.iconHover}</i>}
@@ -48,8 +48,9 @@ function Home(props) {
       <header>
           <IconButton image={lang === "en" ? fr : en}
             hint={data.translate}
-            onClick={props.onChangeLang} />
-          <div className="spacer" />
+            onClick={props.onChangeLang}
+            printHide={true} />
+          <div className="spacer print-hide" />
           <IconButton icon="mail" hint={data.mail}
             iconHover="content_copy"
             canCopy="true"

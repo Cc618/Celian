@@ -49,6 +49,17 @@ $print-home-width: #{.3 * $print-width};
             flex: 0;
         }
     }
+
+    @media print {
+        position: absolute;
+        align-items: flex-start;
+        flex-direction: column;
+
+        div.print-hide {
+            position: absolute;
+            opacity: 0;
+        }
+    }
 }
 
 .icon-button {
@@ -57,6 +68,10 @@ $print-home-width: #{.3 * $print-width};
     align-items: center;
     justify-items: center;
     position: relative;
+
+    @media print {
+        padding-bottom: 10mm;
+    }
 }
 
 .icon-card {
@@ -145,6 +160,11 @@ $print-home-width: #{.3 * $print-width};
     // Can't hover on touch screens
     @media (hover: none), (-moz-touch-enabled: 1) {
         transition-delay: 5s;
+    }
+
+    @media print {
+        opacity: 1;
+        left: 8px;
     }
 }
 
