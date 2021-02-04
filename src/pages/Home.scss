@@ -17,6 +17,7 @@ $print-home-width: #{.3 * $print-width};
     @media print {
         width: $print-home-width;
         height: $print-height;
+        justify-content: flex-start;
     }
 }
 
@@ -54,6 +55,8 @@ $print-home-width: #{.3 * $print-width};
         position: absolute;
         align-items: flex-start;
         flex-direction: column;
+
+        bottom: #{.1 * $print-height};
 
         div.print-hide {
             position: absolute;
@@ -227,11 +230,21 @@ $print-home-width: #{.3 * $print-width};
         flex-direction: column;
         align-items: center;
         justify-content: center;
+
+        @media print {
+            flex: unset;
+        }
     }
 
     h1, h2 {
         text-align: center;
         margin: 0;
+
+        @media print {
+            text-align: left;
+            padding: 8px;
+            padding-left: 16px;
+        }
     }
 
     .title-wrapper {
@@ -239,6 +252,10 @@ $print-home-width: #{.3 * $print-width};
 
         @media (orientation: landscape) and (max-height: 900px) {
             margin-top: 4vh;
+        }
+
+        @media print {
+            margin-top: 48px;
         }
     }
 
@@ -248,6 +265,10 @@ $print-home-width: #{.3 * $print-width};
         @media (orientation: landscape) and (max-height: 900px) {
             margin-bottom: 4vh;
         }
+
+        @media print {
+            margin-bottom: 8px;
+        }
     }
 
     @media (orientation: portrait) {
@@ -255,7 +276,11 @@ $print-home-width: #{.3 * $print-width};
     }
 
     @media print {
+        min-height: unset;
         width: $print-home-width;
+        max-height: #{.75 * $print-height};
+
+        justify-content: flex-start;
     }
 }
 

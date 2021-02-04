@@ -15,6 +15,12 @@ h1 {
     @media (max-width: 480px) {
         font-size: 48px;
     }
+
+    @media print {
+        font-size: 32px;
+
+        font-weight: 200;
+    }
 }
 
 h2 {
@@ -27,6 +33,11 @@ h2 {
     // Mobile phones
     @media (max-width: 480px) {
         font-size: 24px;
+    }
+
+    @media print {
+        font-size: 20px;
+        font-weight: 400;
     }
 }
 
