@@ -1,0 +1,27 @@
+// Rules for printing
+
+$print-width: 210mm;
+$print-height: 297mm;
+
+@media print {
+    // Be careful of the priority
+    .print-hide {
+        opacity: 0;
+    }
+}
+
+// Show only when printing
+// Be careful of the priority
+.print-show {
+    opacity: 0;
+
+    @media print {
+        opacity: 1;
+    }
+}
+
+@page {
+    size: A4 portrait;
+    margin: 0;
+    padding: 0;
+}
