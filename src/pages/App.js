@@ -14,8 +14,9 @@ class App extends React.Component {
                 changeLang();
                 this.setState({});
             }} />
-            <Skills />
-            <Projects />
+            {/* TODO */}
+            {/* <Skills /> */}
+            {/* <Projects /> */}
 		</div>;
     }
 }

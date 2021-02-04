@@ -29,7 +29,9 @@ body, html {
 
   @media print {
     overflow: visible;
-    max-width: 100vw;
+
+    width: $print-width;
+    height: $print-height;
   }
 }
 
@@ -45,14 +47,11 @@ i {
   display: flex;
   align-items: center;
   justify-content: center;
-}
 
-@page {
-  orientation: portrait;
-  margin: 0;
-  size: A4;
-}
+  @media print {
+    width: $print-width;
+    height: $print-height;
 
-// @media print {
-//   width: ;
-// }
+    box-sizing: border-box;
+  }
+}

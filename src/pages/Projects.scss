@@ -8,6 +8,8 @@ $footer-height: 64px;
     .bg {
         box-sizing: border-box;
 
+        max-width: 100vw;
+
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -22,7 +24,7 @@ $footer-height: 64px;
 
 
             @media (orientation: portrait) {
-                width: 100%;
+                width: 100vw;
             }
 
             @media (max-height: 900px) {

@@ -15,6 +15,11 @@
     @media (orientation: portrait) {
         height: unset;
     }
+
+    @media print {
+        width: $print-width;
+        height: $print-height;
+    }
 }
 
 @media (max-height: 720px) {

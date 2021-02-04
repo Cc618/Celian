@@ -1,5 +1,7 @@
 @import "../common/style.scss";
 
+$print-home-width: #{.3 * $print-width};
+
 // --- Page ---
 .Home {
     @extend .page;
@@ -11,6 +13,11 @@
     display: flex;
     flex-direction: column;
     align-items: stretch;
+
+    @media print {
+        width: $print-home-width;
+        height: $print-height;
+    }
 }
 
 // --- Header ---
@@ -218,7 +225,6 @@
     .subtitle-wrapper {
         margin-bottom: 8vh;
 
-
         @media (orientation: landscape) and (max-height: 900px) {
             margin-bottom: 4vh;
         }
@@ -227,6 +233,10 @@
     @media (orientation: portrait) {
         margin-top: 4vh;
     }
+
+    @media print {
+        width: $print-home-width;
+    }
 }
 
 .picture {
@@ -234,6 +244,12 @@
     height: 33vh;
 
     border-radius: 50%;
+
+    @media print {
+        width: 100%;
+        height: unset;
+        box-sizing: border-box;
+    }
 }
 
 .picture-card {
@@ -246,6 +262,12 @@
 
     border-radius: 50%;
     padding: 6px;
+
+    @media print {
+        max-width: $print-home-width;
+        max-height: $print-home-width;
+        box-sizing: border-box;
+    }
 }
 
 // --- Nav ---

@@ -29,7 +29,7 @@ function IconButton(props) {
 // - link
 function NavButton(props) {
   return (
-    <div className="nav-button-wrapper">
+    <div className="nav-button-wrapper print-hide">
       <div className="nav-button"
         onClick={() => document.querySelector(props.link).scrollIntoView({behavior: 'smooth'})}>
         <p>{props.title}</p>
