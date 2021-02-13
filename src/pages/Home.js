@@ -70,8 +70,10 @@ function Home(props) {
       </header>
 
       <div className="content">
-        <div className="picture-card">
-          <img alt="" className="picture" src={picture} />
+        <div className="picture-wrapper">
+          <div className="picture-card">
+            <img alt="" className="picture" src={picture} />
+          </div>
         </div>
 
         <div className="title-wrapper">

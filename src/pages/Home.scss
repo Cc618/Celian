@@ -301,8 +301,6 @@ $print-home-width: #{.3 * $print-width};
 .picture-card {
     @extend .card8;
 
-    flex: 2;
-
     // Full white like the picture
     background-color: #ffffff;
 
@@ -312,6 +310,15 @@ $print-home-width: #{.3 * $print-width};
     @media print {
         max-width: $print-home-width;
         max-height: $print-home-width;
+        box-sizing: border-box;
+    }
+}
+
+.picture-wrapper {
+    flex: 2;
+
+    @media print {
+        padding: 8px;
         box-sizing: border-box;
     }
 }
