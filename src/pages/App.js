@@ -1,6 +1,7 @@
 // Wraps main pages
 
 import '../common/style.scss';
+import './App.scss';
 import React from 'react';
 import Home from './Home';
 import Skills from './Skills';
@@ -9,13 +10,13 @@ import {changeLang, lang} from '../common/data';
 
 class App extends React.Component {
     render() {
-        return <div lang={lang}>
+        return <div className="app-layout" lang={lang}>
             <Home onChangeLang={() => {
                 changeLang();
                 this.setState({});
             }} />
+            <Skills />
             {/* TODO */}
-            {/* <Skills /> */}
             {/* <Projects /> */}
 		</div>;
     }

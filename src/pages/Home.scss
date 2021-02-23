@@ -1,6 +1,8 @@
 @import "../common/style.scss";
 
-$print-home-width: #{.3 * $print-width};
+$print-home-width: #{.25 * $print-width};
+
+// TODO : Email address overflow
 
 // --- Page ---
 .Home {

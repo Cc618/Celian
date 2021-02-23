@@ -19,6 +19,7 @@
     @media print {
         width: $print-width;
         height: $print-height;
+        padding: 0;
     }
 }
 
