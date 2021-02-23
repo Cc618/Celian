@@ -2,6 +2,8 @@
 
 $skill-border-radius: 24px;
 
+// TODO : Remove bar animation on print
+
 .SkillCard {
     width: 50%;
     height: 50%;
@@ -19,6 +21,10 @@ $skill-border-radius: 24px;
 
     @media (orientation: landscape) and (max-height: 768px) {
         padding: 2vh 1vw;
+    }
+
+    @media print {
+        padding: 8px;
     }
 
     .skill-card {
@@ -43,6 +49,10 @@ $skill-border-radius: 24px;
             @media (max-width: 480px) {
                 width: 0;
             }
+
+            @media print {
+                width: 24px;
+            }
         }
 
         .content {
@@ -56,6 +66,10 @@ $skill-border-radius: 24px;
 
             @media (max-width: 480px) {
                 padding: 8px;
+            }
+
+            @media print {
+                padding: 0;
             }
 
             h4 {
@@ -79,6 +93,12 @@ $skill-border-radius: 24px;
                     margin-bottom: 16px;
                 }
 
+                @media print {
+                    text-align: center;
+                    margin: 0 0 8px 8px;
+                    align-self: stretch;
+                    font-size: 24px;
+                }
             }
 
             ul {
@@ -114,6 +134,12 @@ $skill-border-radius: 24px;
                     @media (orientation: portrait) {
                         margin-top: 4px;
                         margin-bottom: 4px;
+                    }
+
+                    @media print {
+                        line-height: 18px;
+                        font-size: 14px;
+                        margin: 0;
                     }
 
                     a {
