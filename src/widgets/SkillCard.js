@@ -62,7 +62,7 @@ function IconSkillCard(props) {
     <div className="SkillCard">
       <div className="skill-card">
         <div className="decoration" />
-        <div className="content">
+        <div className="content icon-content">
           <h4>{data.icon_skills.title}</h4>
           <div className="icon-card-content">
             {content.map((v, i) => <IconSkillRow key={i} title={v.title}

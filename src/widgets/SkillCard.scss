@@ -148,6 +148,12 @@ $skill-border-radius: 24px;
                 }
             }
         }
+
+        @media print {
+            .content.icon-content {
+                padding-left: 16px;
+            }
+        }
     }
 
     .skill-card:hover {
@@ -211,8 +217,8 @@ $skill-border-radius: 24px;
             align-items: center;
         }
 
-        @media (orientation: portrait) {
-            .icon-card-list {
+        .icon-card-list {
+            @media (orientation: portrait) {
                 flex-wrap: wrap;
 
                 > * {
@@ -226,7 +232,17 @@ $skill-border-radius: 24px;
                     margin-bottom: 8px;
                 }
             }
+
+            @media print {
+                flex-wrap: nowrap;
+
+                > * {
+                    min-width: unset;
+                }
+            }
         }
+
+
 
         // Hint
         .hint {

@@ -1,5 +1,6 @@
 import './Bar.scss';
 import React from 'react';
+import App from '../pages/App';
 
 // ratio color bgColor
 class Bar extends React.Component {
@@ -40,7 +41,7 @@ class Bar extends React.Component {
       <div ref={this.ref}
         className="bar"
         style={{
-          width: this.state.visible ? `${this.props.ratio * 100}%` : '0',
+          width: App.printMode || this.state.visible ? `${this.props.ratio * 100}%` : '0',
           backgroundColor: this.props.color}} />
     );
   }

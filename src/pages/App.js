@@ -9,6 +9,8 @@ import Projects from './Projects';
 import {changeLang, lang} from '../common/data';
 
 class App extends React.Component {
+    static printMode = false;
+
     render() {
         return <div className="app-layout" lang={lang}>
             <Home onChangeLang={() => {
