@@ -17,6 +17,8 @@ import res_pytorch_collections from '../res/pytorch_collections.gif';
 import res_google_play_badge from '../res/google_play_badge.png';
 import res_resume from '../res/resume.png';
 
+// TODO : Ireland
+
 let lang = "fr";
 
 // Shared data between all languages

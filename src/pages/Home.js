@@ -7,6 +7,7 @@ import github from '../res/github.png';
 import linkedin from '../res/linkedin.png';
 import en from '../res/en.png';
 import fr from '../res/fr.png';
+import App from './App';
 
 // Icon buttons within the header
 function IconButton(props) {
@@ -44,6 +45,8 @@ function NavButton(props) {
 
 // TODO : Print : Replace github / linkedin hints by links
 function Home(props) {
+  const printSplitChars = 20;
+
   return (
     <div className="Home">
       <header>
@@ -62,10 +65,14 @@ function Home(props) {
             isOdd="true"
             onClick={() => clipCopy(data.phone)} />
           <IconButton image={github}
-            hint="GitHub"
+            hint={App.printMode ?
+              <a href={data.url_github}>GitHub</a>
+              : "GitHub"}
             onClick={() => window.open(data.url_github)} />
           <IconButton image={linkedin}
-            hint="LinkedIn"
+            hint={App.printMode ?
+              <a href={data.url_linkedin}>LinkedIn</a>
+              : "LinkedIn"}
             onClick={() => window.open(data.url_linkedin)} />
       </header>
 

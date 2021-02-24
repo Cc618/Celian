@@ -172,6 +172,11 @@ $print-home-width: #{.25 * $print-width};
     @media print {
         opacity: 1;
         left: 8px;
+        font-size: 12px;
+
+        a {
+            color: $primary;
+        }
     }
 }
 
