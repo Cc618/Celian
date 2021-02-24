@@ -16,6 +16,14 @@
         height: unset;
     }
 
+    @media (max-height: 720px) {
+        padding: 8px;
+    }
+
+    @media (min-height: 1080px) {
+        padding: 3vw;
+    }
+
     @media print {
         width: $print-width;
         height: $print-height;
@@ -23,14 +31,3 @@
     }
 }
 
-@media (max-height: 720px) {
-    .Skills {
-        padding: 8px;
-    }
-}
-
-@media (min-height: 1080px) {
-    .Skills {
-        padding: 3vw;
-    }
-}
