@@ -211,6 +211,10 @@ $skill-border-radius: 24px;
 
         .icon-card-list-text {
             align-items: stretch;
+
+            @media print {
+                font-size: 14px;
+            }
         }
 
         .icon-card-list-icons {
