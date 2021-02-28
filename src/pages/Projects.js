@@ -8,6 +8,7 @@ import github from '../res/github_light.png';
 import html from '../res/html5.png';
 import css from '../res/css3.png';
 import reactjs from '../res/react.svg';
+import App from './App';
 
 // Creates a project widget
 function mkProject(content, key) {
@@ -21,6 +22,10 @@ function mkProject(content, key) {
     google_play={content.google_play}
     link={content.link} />);
 };
+
+function Footer() {
+
+}
 
 function Projects(props) {
   return (
@@ -37,8 +42,8 @@ function Projects(props) {
         { data.projects_data.slice(4).map((content, i) => mkProject(content, i)) }
       </div>
       <Dots leftColor="black" rightColor="grey" />
-      <div className="footer-spacer" />
-      <footer>
+      {!App.printMode && <div className="footer-spacer" />}
+      {!App.printMode && (<footer>
         <div>
           <a href={data.url_resume_github}><img className="github" src={github} alt="" /></a>
         </div>
@@ -57,7 +62,7 @@ function Projects(props) {
           <i className="material-icons info-copyright"
             onClick={() => alert(data.resources_copyright)}>copyright</i>
         </div>
-      </footer>
+      </footer>)}
     </div>
   );
 }

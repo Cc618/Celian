@@ -1,8 +1,11 @@
 // Horizontal dots transition
 
 import './Dots.scss';
+import App from '../pages/App';
 
 function Dots(props) {
+  if (App.printMode) return (null);
+
   let npairs = 5;
   let dots = [];
 

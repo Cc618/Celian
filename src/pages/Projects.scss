@@ -29,6 +29,10 @@ $footer-height: 64px;
             @media (max-height: 900px) {
                 padding: 2vh 2vw;
             }
+
+            @media print {
+                width: 50%;
+            }
         }
     }
 
@@ -49,6 +53,16 @@ $footer-height: 64px;
             @media (orientation: portrait) {
                 height: 50%;
             }
+
+            // TODO
+            @media print {
+                height: unset; // #{100vh / 3};
+            }
+        }
+
+        // TODO
+        @media print {
+            height: 25%; // #{100vh / 4};
         }
     }
 
@@ -56,6 +70,10 @@ $footer-height: 64px;
         @extend .bg-grey;
 
         background-color: $accent;
+
+        @media print {
+            background-color: $grey;
+        }
     }
 
     .bg-next {
@@ -67,7 +85,14 @@ $footer-height: 64px;
         @media (orientation: portrait) {
             height: unset;
         }
+
+        // TODO
+        @media print {
+            height: unset;
+        }
     }
+
+    // TODO : Remove footer on print
 
     // Used to avoid the Dots bottom overflow with footer
     .footer-spacer {
@@ -179,5 +204,4 @@ $footer-height: 64px;
             margin-left: 4px;
         }
     }
-
 }
