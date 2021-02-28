@@ -58,6 +58,7 @@ const fullData = {
                 "items": [
                     "Actually in second year after graduation at <a href=\"https://www.epita.fr\">EPITA</a>",
                     "A Level: Science, IT option",
+                    "Study abroad semester at Griffith College in Ireland (2021)",
                     "Attendee to the general high school contest related to math",
                     "French: native, English: B2, 800 TOEIC points (autonomous)",
                 ],
@@ -211,6 +212,7 @@ const fullData = {
                 "items": [
                     "Actuellement en 2e année de classe préparatoire à <a href=\"https://www.epita.fr\">EPITA</a>",
                     "Baccalauréat S spé ISN mention bien (2019)",
+                    "Semestre académique en Irlande à Griffith College en 2021",
                     "Participation à l’épreuve de maths du concours général des lycéens",
                     "Français : langue maternelle, Anglais : B2, 800 points TOEIC (autonome)",
                 ],
@@ -219,13 +221,13 @@ const fullData = {
                 "title": "Activités",
                 "items": [
                     "Passion et pratique de l’informatique et des maths depuis le collège",
-                    "Compétitions de programmation (<a href=\"https://codingcompetitions.withgoogle.com/kickstart\">Google Kickstart</a>)",
+                    "Nombreuses compétitions de programmation (<a href=\"https://codingcompetitions.withgoogle.com/kickstart\">Google Kickstart</a> / <a href=\"https://leetcode.com\">Leetcode</a>)",
                     "Création d’intelligences artificielles",
                     "Conception d’applications mobiles",
                     "Lecture d’articles scientifiques en anglais",
                     "Création de musique électronique",
                     "Voyages (Irlande, Japon, France...)",
-                    "Bénévolat (couverture photo sportives et du chef patissier François Faidy)",
+                    "Bénévolat (couverture photo d'événements sportifs)",
                 ],
             },
         ],

@@ -82,14 +82,7 @@ $footer-height: 64px;
         @media (orientation: portrait) {
             height: unset;
         }
-
-        // TODO
-        @media print {
-            height: unset;
-        }
     }
-
-    // TODO : Remove footer on print
 
     // Used to avoid the Dots bottom overflow with footer
     .footer-spacer {

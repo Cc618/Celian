@@ -9,6 +9,8 @@ import en from '../res/en.png';
 import fr from '../res/fr.png';
 import App from './App';
 
+// TODO : PDF button
+
 // Icon buttons within the header
 function IconButton(props) {
   return (
