@@ -13,11 +13,13 @@ class App extends React.Component {
 
     render() {
         return <div className="app-layout" lang={lang}>
-            <Home onChangeLang={() => {
-                changeLang();
-                this.setState({});
-            }} />
-            <Skills />
+            <div className="section">
+                <Home onChangeLang={() => {
+                    changeLang();
+                    this.setState({});
+                }} />
+                <Skills />
+            </div>
             <Projects />
 		</div>;
     }
