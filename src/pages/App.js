@@ -18,8 +18,7 @@ class App extends React.Component {
                 this.setState({});
             }} />
             <Skills />
-            {/* TODO */}
-            {/* <Projects /> */}
+            <Projects />
 		</div>;
     }
 }
