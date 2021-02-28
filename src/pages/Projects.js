@@ -23,11 +23,14 @@ function mkProject(content, key) {
     link={content.link} />);
 };
 
-function Footer() {
-
-}
-
 function Projects(props) {
+  if (App.printMode)
+    return <div className="Projects" id="projects">
+      <div className="bg bg-grey">
+        { data.projects_data.map((content, i) => mkProject(content, i)) }
+      </div>
+    </div>;
+
   return (
     <div className="Projects" id="projects">
       <div className="bg bg-grey">
@@ -42,8 +45,8 @@ function Projects(props) {
         { data.projects_data.slice(4).map((content, i) => mkProject(content, i)) }
       </div>
       <Dots leftColor="black" rightColor="grey" />
-      {!App.printMode && <div className="footer-spacer" />}
-      {!App.printMode && (<footer>
+      <div className="footer-spacer" />
+      <footer>
         <div>
           <a href={data.url_resume_github}><img className="github" src={github} alt="" /></a>
         </div>
@@ -62,7 +65,7 @@ function Projects(props) {
           <i className="material-icons info-copyright"
             onClick={() => alert(data.resources_copyright)}>copyright</i>
         </div>
-      </footer>)}
+      </footer>
     </div>
   );
 }

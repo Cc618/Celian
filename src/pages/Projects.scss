@@ -29,10 +29,6 @@ $footer-height: 64px;
             @media (max-height: 900px) {
                 padding: 2vh 2vw;
             }
-
-            @media print {
-                width: 50%;
-            }
         }
     }
 
@@ -41,11 +37,15 @@ $footer-height: 64px;
 
         height: $project-card-height;
 
+        padding-bottom: #{$ndots / 2}vw;
+
         @media (orientation: portrait) {
             height: unset;
         }
 
-        padding-bottom: #{$ndots / 2}vw;
+        @media print {
+            height: 100vh;
+        }
 
         .project-wrapper {
             height: 100%;
@@ -54,15 +54,12 @@ $footer-height: 64px;
                 height: 50%;
             }
 
-            // TODO
             @media print {
-                height: unset; // #{100vh / 3};
-            }
-        }
+                width: 50%;
+                height: 33vh;
 
-        // TODO
-        @media print {
-            height: 25%; // #{100vh / 4};
+                padding: 8px;
+            }
         }
     }
 

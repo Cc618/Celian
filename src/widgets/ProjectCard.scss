@@ -108,6 +108,12 @@ $project-fab-size: 64px;
             object-fit: contain;
 
             border-radius: #{$project-card-radius / 2};
+
+            // TODO
+            @media print {
+                width: 0;
+                height: 0;
+            }
         }
 
         .image-fab-wrapper {
