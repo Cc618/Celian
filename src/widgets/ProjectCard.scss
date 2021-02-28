@@ -2,6 +2,7 @@
 @import "../widgets/Dots.scss";
 
 $project-card-radius: 48px;
+$project-card-radius-print: 24px;
 $project-card-height: 90vh;
 $project-fab-size: 64px;
 
@@ -31,6 +32,11 @@ $project-fab-size: 64px;
         padding: #{$project-card-radius * 3 / 4};
     }
 
+    @media print {
+        padding: $project-card-radius-print;
+        border-radius: $project-card-radius-print;
+    }
+
     // Header
     .header {
         display: flex;
@@ -49,6 +55,10 @@ $project-fab-size: 64px;
             @media (orientation: landscape) and (max-width: 1200px),
                     (orientation: portrait) {
                 font-size: 24px;
+            }
+
+            @media print {
+                font-size: 20px;
             }
         }
 
@@ -98,6 +108,10 @@ $project-fab-size: 64px;
         align-items: center;
         justify-content: center;
 
+        @media print {
+            height: 50%;
+        }
+
         .image {
             @extend .transition150;
 
@@ -108,12 +122,6 @@ $project-fab-size: 64px;
             object-fit: contain;
 
             border-radius: #{$project-card-radius / 2};
-
-            // TODO
-            @media print {
-                width: 0;
-                height: 0;
-            }
         }
 
         .image-fab-wrapper {

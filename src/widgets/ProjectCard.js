@@ -2,6 +2,7 @@ import './ProjectCard.scss';
 import {data} from '../common/data';
 import github from '../res/github_light.png';
 import google_play from '../res/google_play_badge.png';
+import App from '../pages/App';
 
 // title tags icon image description google_play link
 function ProjectCard(props) {
@@ -29,7 +30,7 @@ function ProjectCard(props) {
           </div>
         </div>
         <p>{props.description}</p>
-        { props.google_play !== undefined &&
+        { props.google_play !== undefined && !App.printMode &&
           <div className="badge-wrapper">
             <img className="badge" src={google_play} alt="Google Play Link" onClick={() => window.open(props.google_play)} />
           </div> }
