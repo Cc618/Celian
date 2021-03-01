@@ -19,8 +19,6 @@ import res_resume from '../res/resume.png';
 import res_print_fr from '../res/print/Célian Raimbault_fr.pdf';
 import res_print_en from '../res/print/Célian Raimbault_fr.pdf';
 
-// TODO : Ireland
-
 let lang = "fr";
 
 // Shared data between all languages
