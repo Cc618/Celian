@@ -16,6 +16,8 @@ import res_feature_changer from '../res/feature_changer.png';
 import res_pytorch_collections from '../res/pytorch_collections.gif';
 import res_google_play_badge from '../res/google_play_badge.png';
 import res_resume from '../res/resume.png';
+import res_print_fr from '../res/print/Célian Raimbault_fr.pdf';
+import res_print_en from '../res/print/Célian Raimbault_fr.pdf';
 
 // TODO : Ireland
 
@@ -40,6 +42,7 @@ const fullData = {
     "en": {
         // Home
         "translate_lang": "Version française",
+        "print_pdf": "Printable version",
         "translate": "Translate",
         "copied": "Copied !",
         "job": "Computer Engineering Student",
@@ -195,6 +198,7 @@ const fullData = {
     "fr": {
         // Home
         "translate_lang": "English version",
+        "print_pdf": "Version imprimable",
         "translate": "Traduire",
         "copied": "Copié !",
         "job": "Etudiant Ingénieur en Informatique",
@@ -367,6 +371,11 @@ const resources = {
     "resume": res_resume,
 };
 
+const printData = {
+    "fr": res_print_fr,
+    "en": res_print_en,
+};
+
 let data = genData();
 
 function changeLang() {
@@ -382,3 +391,4 @@ export {changeLang};
 export {data};
 export {lang};
 export {resources};
+export {printData};

@@ -1,15 +1,13 @@
 // Contact + menu
 
 import './Home.scss';
-import {data, lang} from '../common/data';
+import {data, lang, printData} from '../common/data';
 import picture from '../res/picture.jpg';
 import github from '../res/github.png';
 import linkedin from '../res/linkedin.png';
 import en from '../res/en.png';
 import fr from '../res/fr.png';
 import App from './App';
-
-// TODO : PDF button
 
 // Icon buttons within the header
 function IconButton(props) {
@@ -46,14 +44,16 @@ function NavButton(props) {
 }
 
 function Home(props) {
-  const printSplitChars = 20;
-
   return (
     <div className="Home">
       <header>
           <IconButton image={lang === "en" ? fr : en}
             hint={data.translate}
             onClick={props.onChangeLang}
+            printHide={true} />
+          <IconButton icon="print" hint={data.print_pdf}
+            iconHover="download"
+            onClick={downloadPrintableVersion}
             printHide={true} />
           <div className="spacer print-hide" />
           <IconButton icon="mail" hint={data.mail}
@@ -103,6 +103,10 @@ function Home(props) {
 // Copy to clipboard
 function clipCopy(text) {
   navigator.clipboard.writeText(text);
+}
+
+function downloadPrintableVersion() {
+  window.open(printData[lang]);
 }
 
 export default Home;
