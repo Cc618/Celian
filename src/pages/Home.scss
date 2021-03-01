@@ -104,7 +104,6 @@ $print-home-width: #{.25 * $print-width};
     .material-icons {
         color: $black;
         font-size: 48px;
-
     }
 
     // Mobile phones
@@ -117,6 +116,21 @@ $print-home-width: #{.25 * $print-width};
         .material-icons {
             font-size: 36px;
         }
+    }
+
+    // Tiny width devices
+    @media (max-width: 400px) {
+        img {
+            width: 32px;
+            height: 32px;
+        }
+
+        .material-icons {
+            font-size: 32px;
+        }
+
+        padding: 6px;
+        margin: 4px;
     }
 
     .idle {
