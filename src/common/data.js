@@ -16,8 +16,6 @@ import res_feature_changer from '../res/feature_changer.png';
 import res_pytorch_collections from '../res/pytorch_collections.gif';
 import res_google_play_badge from '../res/google_play_badge.png';
 import res_resume from '../res/resume.png';
-import res_print_fr from '../res/print/Célian Raimbault_fr.pdf';
-import res_print_en from '../res/print/Célian Raimbault_fr.pdf';
 
 let lang = "fr";
 
@@ -370,8 +368,8 @@ const resources = {
 };
 
 const printData = {
-    "fr": res_print_fr,
-    "en": res_print_en,
+    "fr": "https://github.com/Cc618/Celian/raw/main/src/res/print/C%C3%A9lian%20Raimbault_fr.pdf",
+    "en": "https://github.com/Cc618/Celian/raw/main/src/res/print/Celian%20Raimbault_en.pdf",
 };
 
 let data = genData();
