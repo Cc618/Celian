@@ -67,7 +67,7 @@ const fullData = {
                 "items": [
                     "Passionate in IT and math",
                     "Programming since middle school",
-                    "Competitive programming (<a href=\"https://codingcompetitions.withgoogle.com/kickstart\">Google Kickstart</a>)",
+                    "Competitive programming (<a href=\"https://codingcompetitions.withgoogle.com/kickstart\">Google Kickstart</a> / <a href=\"https://leetcode.com\">Leetcode</a>)",
                     "Artificial Intelligence",
                     "Mobile apps",
                     "English research papers reading",
