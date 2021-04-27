@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Celian/static/css/main.5fe382cb.chunk.css",
-    "main.js": "/Celian/static/js/main.3345a80b.chunk.js",
-    "main.js.map": "/Celian/static/js/main.3345a80b.chunk.js.map",
+    "main.js": "/Celian/static/js/main.1949ecec.chunk.js",
+    "main.js.map": "/Celian/static/js/main.1949ecec.chunk.js.map",
     "runtime-main.js": "/Celian/static/js/runtime-main.7944b800.js",
     "runtime-main.js.map": "/Celian/static/js/runtime-main.7944b800.js.map",
     "static/js/2.7c16756d.chunk.js": "/Celian/static/js/2.7c16756d.chunk.js",
@@ -30,6 +30,6 @@
     "static/js/runtime-main.7944b800.js",
     "static/js/2.7c16756d.chunk.js",
     "static/css/main.5fe382cb.chunk.css",
-    "static/js/main.3345a80b.chunk.js"
+    "static/js/main.1949ecec.chunk.js"
   ]
 }
