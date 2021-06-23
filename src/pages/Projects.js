@@ -15,6 +15,7 @@ function mkProject(content, key) {
   return (<ProjectCard
     key={key}
     title={content.title}
+    extra_image={content.extra_image === undefined ? undefined : resources[content.extra_image]}
     tags={content.tags}
     icon={resources[content.icon]}
     image={resources[content.image]}

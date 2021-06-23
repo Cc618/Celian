@@ -141,6 +141,7 @@ const fullData = {
                 tags: ["C++", "Programming Language"],
                 icon: "cpp",
                 image: "riddim",
+                extra_image: "riddim_svg",
                 description: "Interpreted language made in C++ designed for algorithms / data structures",
                 link: "https://github.com/Cc618/Riddim"
             },
@@ -295,7 +296,8 @@ const fullData = {
                 tags: ["C++", "Langage de Programmation"],
                 icon: "cpp",
                 image: "riddim",
-                description: "Langage de programmation interprété, créé en C++ et fait pour les algorithmes et les structures de données. Possède une bibliothèque standard, un garbage collector et générateur de documentation",
+                extra_image: "riddim_svg",
+                description: "Langage de programmation interprété, créé en C++ et fait pour les algorithmes et les structures de données. Il possède une bibliothèque standard, un garbage collector et générateur de documentation",
                 link: "https://github.com/Cc618/Riddim"
             },
             {

@@ -10,6 +10,8 @@ function ProjectCard(props) {
     <div className="project-wrapper">
       <div className="project-card" onClick={() => window.open(props.link)}>
         <div className="header">
+          {props.extra_image !== undefined &&
+            <img src={props.extra_image} className="extra-image" alt="" /> }
           <h4>{props.title}</h4>
           <div className="spacer" />
           {props.tags.map((tag, i) => <p className="tag" key={i}>{tag}</p>)}
