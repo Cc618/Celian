@@ -11,6 +11,8 @@ import res_git from '../res/git.png';
 import res_linux from '../res/linux.png';
 import res_quick_shop from '../res/quick_shop.jpg';
 import res_os2020 from '../res/os2020.gif';
+import res_riddim from '../res/riddim.png';
+import res_riddim_svg from '../res/riddim.svg';
 import res_alpha from '../res/alpha.png';
 import res_feature_changer from '../res/feature_changer.png';
 import res_pytorch_collections from '../res/pytorch_collections.gif';
@@ -135,12 +137,12 @@ const fullData = {
         "github_page": "GitHub page",
         "projects_data": [
             {
-                title: "Alpha",
-                tags: ["Julia", "Programming Language"],
-                icon: "julia",
-                image: "alpha",
-                description: "Compiled programming language made entirely in Julia. Contains also a Lexer and Parser generator like Flex and Bison and a Vim plugin.",
-                link: "https://github.com/Cc618/Alpha"
+                title: "Riddim",
+                tags: ["C++", "Programming Language"],
+                icon: "cpp",
+                image: "riddim",
+                description: "Interpreted language made in C++ designed for algorithms / data structures",
+                link: "https://github.com/Cc618/Riddim"
             },
             {
                 title: "Os2020",
@@ -289,12 +291,12 @@ const fullData = {
         "github_page": "Page GitHub",
         "projects_data": [
             {
-                title: "Alpha",
-                tags: ["Julia", "Langage de Programmation"],
-                icon: "julia",
-                image: "alpha",
-                description: "Langage de programmation compilé créé entièrement en Julia. Possède un générateur de Parser et Lexer similaire à Flex et Bison ainsi qu'un plugin Vim.",
-                link: "https://github.com/Cc618/Alpha"
+                title: "Riddim",
+                tags: ["C++", "Langage de Programmation"],
+                icon: "cpp",
+                image: "riddim",
+                description: "Langage de programmation interprété, créé en C++ et fait pour les algorithmes et les structures de données. Possède une bibliothèque standard, un garbage collector et générateur de documentation",
+                link: "https://github.com/Cc618/Riddim"
             },
             {
                 title: "Os2020",
@@ -361,6 +363,8 @@ const resources = {
     "quick_shop": res_quick_shop,
     "os2020": res_os2020,
     "alpha": res_alpha,
+    "riddim": res_riddim,
+    "riddim_svg": res_riddim_svg,
     "feature_changer": res_feature_changer,
     "pytorch_collections": res_pytorch_collections,
     "google_play_badge": res_google_play_badge,
