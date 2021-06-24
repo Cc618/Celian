@@ -99,11 +99,10 @@ $project-fab-size: 64px;
     }
 
     .extra-image {
-        // TODO : Screens + print
         width: 64px;
         height: 64px;
 
-        @media (orientation: portrait) and (max-width: 599px) {
+        @media print, (orientation: portrait) and (max-width: 599px) {
             width: 48px;
             height: 48px;
         }
