@@ -297,7 +297,7 @@ const fullData = {
                 icon: "cpp",
                 image: "riddim",
                 extra_image: "riddim_svg",
-                description: "Langage de programmation interprété, créé en C++ et fait pour les algorithmes et les structures de données. Il possède une bibliothèque standard, un garbage collector et générateur de documentation.",
+                description: "Langage de programmation interprété, créé en C++ et fait pour les algorithmes et structures de données. Il possède une bibliothèque standard, un garbage collector et générateur de documentation.",
                 link: "https://github.com/Cc618/Riddim"
             },
             {
