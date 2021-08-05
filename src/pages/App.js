@@ -4,6 +4,7 @@ import '../common/style.scss';
 import './App.scss';
 import React from 'react';
 import Home from './Home';
+import Experiences from './Experiences';
 import Skills from './Skills';
 import Projects from './Projects';
 import {changeLang, lang} from '../common/data';
@@ -18,6 +19,7 @@ class App extends React.Component {
                     changeLang();
                     this.setState({});
                 }} />
+                <Experiences />
                 <Skills />
             </div>
             <Projects />

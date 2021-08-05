@@ -1,0 +1,39 @@
+@import "../common/style.scss";
+
+.Experiences {
+    @extend .page;
+
+    background-color: $grey;
+    color: $black;
+
+    box-sizing: border-box;
+    padding: 2vh 2vw;
+
+    @media (orientation: portrait) {
+        height: unset;
+    }
+
+    @media (max-height: 720px) {
+        padding: 8px;
+    }
+
+    @media (min-height: 1080px) {
+        padding: 3vw;
+    }
+
+    @media print {
+        width: $print-width;
+        height: $print-height;
+        padding: 0;
+    }
+}
+
+.experiences-content {
+    margin: auto;
+    max-width: 72em;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}

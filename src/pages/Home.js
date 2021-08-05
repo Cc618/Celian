@@ -93,7 +93,7 @@ function Home(props) {
       </div>
 
       <nav>
-        <NavButton title={data.background} link="#skills" />
+        <NavButton title={data.background} link="#experiences" />
         <NavButton title={data.projects} link="#projects" />
       </nav>
     </div>
