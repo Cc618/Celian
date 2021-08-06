@@ -14,8 +14,10 @@ function ExperienceCard(props) {
           <p dangerouslySetInnerHTML={{__html: props.experience.content}}></p>
         </div>
         <div className="experience-button">
-          {/* TODO : Icon */}
-          <p className="title">PLUS</p>
+          {/* TODO : Click */}
+          <div className="button" onClick={() => {}}>
+            <i className="material-icons">notes</i>
+          </div>
         </div>
       </div>
     </div>

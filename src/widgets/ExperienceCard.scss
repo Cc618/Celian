@@ -20,7 +20,7 @@ $experience-dark: $grey800;
     text-align: center;
     font-size: 1.3em;
 
-    padding: 1em 0;
+    padding: 1.618em 0;
 }
 
 .experience-card {
@@ -84,4 +84,33 @@ $experience-dark: $grey800;
     align-items: center;
 
     min-width: 10em;
+
+    .button {
+        @extend .transition200;
+
+        cursor: pointer;
+
+        padding: .75em;
+
+        border: 2px solid $primary-light;
+        border-radius: 16px;
+    }
+
+    .button > * {
+        @extend .transition200;
+
+        font-size: 2.5em;
+    }
+
+    .button:hover {
+        background-color: $primary-light;
+
+        transform: translateY(-4px);
+
+        > * {
+            color: $white;
+            transform: scale(1.1);
+        }
+    }
 }
+
