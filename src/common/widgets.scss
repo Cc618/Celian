@@ -28,6 +28,7 @@
 
 .hint-card {
     @extend .shadow16;
+    @extend .transition200;
 
     position: relative;
 

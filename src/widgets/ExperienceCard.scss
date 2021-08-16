@@ -129,6 +129,8 @@ $experience-dark: $grey800;
 
     opacity: 0;
 
+    transform: translateY(12px) scale(.96);
+
     .hint-wrapper {
         position: absolute;
 
@@ -139,5 +141,7 @@ $experience-dark: $grey800;
 }
 
 .experience-button:hover + .hint {
-    opacity: 1;
+    opacity: .9;
+
+    transform: translateY(0px);
 }
