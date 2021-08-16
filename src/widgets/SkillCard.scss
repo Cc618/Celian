@@ -244,8 +244,6 @@ $skill-border-radius: 24px;
             }
         }
 
-
-
         // Hint
         .hint {
             position: relative;
@@ -271,32 +269,6 @@ $skill-border-radius: 24px;
             img:active + .hint-wrapper {
                 opacity: .9;
                 transition-duration: 0s;
-            }
-
-            .hint-wrapper {
-                position: absolute;
-
-                min-width: 6vw;
-            }
-
-            .hint-card {
-                @extend .shadow16;
-
-                position: relative;
-
-                background-color: $grey800;
-                border-radius: 16px;
-
-                min-width: 100%;
-                box-sizing: border-box;
-                padding: 4px 16px 4px 16px;
-
-                p {
-                    color: $white;
-                    font-size: 12px;
-                    white-space: nowrap;
-                    text-align: center;
-                }
             }
         }
 

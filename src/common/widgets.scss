@@ -18,3 +18,30 @@
 .raised-button:active {
     background-color: $grey300;
 }
+
+// TODO : Transition on hover
+.hint-wrapper {
+    position: absolute;
+
+    min-width: 6vw;
+}
+
+.hint-card {
+    @extend .shadow16;
+
+    position: relative;
+
+    background-color: $grey800;
+    border-radius: 16px;
+
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 4px 16px 4px 16px;
+
+    p {
+        color: $white;
+        font-size: 12px;
+        white-space: nowrap;
+        text-align: center;
+    }
+}

@@ -35,6 +35,7 @@ $experience-dark: $grey800;
 
     padding: 1em 2em;
 
+    // TODO
     // .decoration {
     //     @extend .shadow4;
 
@@ -78,13 +79,16 @@ $experience-dark: $grey800;
     }
 }
 
-.experience-button {
+.experience-button-wrapper {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
     min-width: 10em;
+}
 
+.experience-button {
     .button {
         @extend .transition200;
 
@@ -114,3 +118,26 @@ $experience-dark: $grey800;
     }
 }
 
+.experience-button-wrapper > .hint {
+    @extend .transition200;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    opacity: 0;
+
+    .hint-wrapper {
+        position: absolute;
+
+        .hint-card {
+            position: relative;
+        }
+    }
+}
+
+.experience-button:hover + .hint {
+    opacity: 1;
+}
