@@ -42,6 +42,13 @@
     animation-duration: 250ms;
 
     overflow-y: hidden;
+
+    @media (max-width: 1200px) {
+        width: 100vw;
+        height: unset;
+
+        max-height: 90vh;
+    }
 }
 
 .popup-top {
@@ -76,6 +83,13 @@
     .popup-close:hover {
         transform: scale(1.2);
     }
+
+    @media (max-height: 720px) {
+        * {
+            padding: 8px;
+            margin: 0;
+        }
+    }
 }
 
 .popup-content {
@@ -101,6 +115,23 @@
     h3 {
         font-size: 1.2em;
         margin: 1em 0 .5em 1em;
+    }
+
+    // Mobile devices
+    @media (max-height: 720px) {
+        padding: 8px;
+
+        h2 {
+            margin: .8em;
+            font-size: 1.2em;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        h3 {
+            font-size: 1.2em;
+            margin: .5em 0 .2em .5em;
+        }
     }
 }
 
