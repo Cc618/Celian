@@ -46,3 +46,123 @@
         text-align: center;
     }
 }
+
+// Popup widget
+.popup-wrapper {
+    @extend .transition250;
+
+    position: absolute;
+
+    width: 100vw;
+    height: 100vh;
+
+    z-index: 200;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgba(0, 0, 0, .12);
+
+    animation-duration: 250ms;
+}
+
+.popup-card {
+    @extend .card16;
+
+    position: relative;
+
+    padding: 16px;
+    margin: 16px;
+
+    width: 50vw;
+    height: 50vh;
+
+    display: flex;
+    flex-direction: column;
+
+    animation-duration: 250ms;
+}
+
+.popup-top {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 8px;
+
+    * {
+        padding: 8px 16px;
+        margin: 0;
+    }
+
+    .popup-title {
+        flex: 1;
+
+        font-size: 1.6em;
+    }
+
+    .popup-close {
+        cursor: pointer;
+    }
+}
+
+.popup-content {
+    flex: 1;
+    box-sizing: border-box;
+    padding: 8px;
+}
+
+.popup-wrapper.popup-hide {
+    animation-name: anim-popup-hide;
+}
+
+.popup-wrapper.popup-show {
+    animation-name: anim-popup-show;
+}
+
+.popup-hide .popup-card {
+    animation-name: anim-popup-close;
+}
+
+.popup-show .popup-card {
+    animation-name: anim-popup-open;
+}
+
+@keyframes anim-popup-open {
+    from {
+        transform: translateY(20px) scale(.98);
+    }
+    to {
+        transform: none;
+    }
+}
+
+@keyframes anim-popup-close {
+    from {
+        transform: none;
+    }
+    to {
+        transform: translateY(20px) scale(.98);
+    }
+}
+
+@keyframes anim-popup-show {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes anim-popup-hide {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
