@@ -8,21 +8,38 @@ import Experiences from './Experiences';
 import Skills from './Skills';
 import Projects from './Projects';
 import {changeLang, lang} from '../common/data';
-import Popup from '../widgets/Popup';
 
-let popupShown = false;
+// Popup shown as main popup
+let currentPopup = null;
 
 class App extends React.Component {
     static printMode = false;
+    static instance = null;
+
+    constructor(props) {
+        super(props);
+
+        App.instance = this;
+    }
+
+    // Shows a new popup
+    static showPopup(popup) {
+        currentPopup = popup;
+
+        App.instance.setState({});
+    }
+
+    // Closes the current popup
+    static closePopup() {
+        currentPopup = null;
+
+        App.instance.setState({});
+    }
 
     render() {
         return <div className="app-layout" lang={lang}>
-            {popupShown &&
-                <Popup title="My Popup" onClosed={() => {
-                    popupShown = false;
-                    this.setState({});
-                }} content={<h1>Hello</h1>} />
-            }
+            {/* Display popup here */}
+            {currentPopup !== null && currentPopup}
 
             <div className="section">
                 <Home onChangeLang={() => {
@@ -32,12 +49,6 @@ class App extends React.Component {
                 <Experiences />
                 <Skills />
             </div>
-
-            {/* TODO : Remove test */}
-            <a onClick={() => {
-                popupShown = true;
-                this.setState({});
-            }}>POPUP</a>
 
             <Projects />
 		</div>;

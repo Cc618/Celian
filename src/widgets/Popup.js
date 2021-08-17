@@ -1,5 +1,6 @@
 import '../common/style.scss';
 import React from 'react';
+import App from '../pages/App';
 
 // Popup transition duration in ms
 const POPUP_CLOSE_DELAY = 250;
@@ -12,7 +13,6 @@ class Popup extends React.Component {
     this.state = {visible: true};
 
     this.title = props.title;
-    this.onClosed = props.onClosed;
     this.content = props.content;
   }
 
@@ -28,8 +28,8 @@ class Popup extends React.Component {
             // Hide with transition
             this.setState({visible: false});
 
-            // Hide and remove inputs
-            window.setTimeout(this.onClosed, POPUP_CLOSE_DELAY);
+            // Remove it after the transition
+            window.setTimeout(App.closePopup, POPUP_CLOSE_DELAY);
           }}>close</i>
         </div>
         <div className="popup-content">

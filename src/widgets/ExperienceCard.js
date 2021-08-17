@@ -1,6 +1,6 @@
 import './ExperienceCard.scss';
-import {data, resources} from '../common/data';
-import Bar from '../widgets/Bar';
+import Popup from '../widgets/Popup';
+import App from '../pages/App';
 
 // TODO : tr
 function ExperienceCard(props) {
@@ -16,8 +16,12 @@ function ExperienceCard(props) {
         </div>
         <div className="experience-button-wrapper">
           <div className="experience-button">
-            {/* TODO : Click */}
-            <div className="button" onClick={() => {}}>
+            <div className="button" onClick={() => {
+              // TODO : Content
+              App.showPopup(<Popup title={props.experience.title} content={
+                  <h1>Hello</h1>
+                } />);
+            }}>
               <i className="material-icons">notes</i>
             </div>
           </div>
