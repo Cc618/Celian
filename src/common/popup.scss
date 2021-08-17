@@ -61,7 +61,9 @@
     .popup-title {
         flex: 1;
 
-        font-size: 1.6em;
+        font-size: 1.8em;
+        font-weight: 300;
+        text-align: center;
     }
 
     .popup-close {
@@ -72,8 +74,26 @@
 .popup-content {
     flex: 1;
     box-sizing: border-box;
-    padding: 8px;
+    padding: 16px;
+
     overflow-y: scroll;
+
+    h2, h3, p {
+        padding: 0;
+        margin: 0;
+    }
+
+    h2 {
+        margin: 2em;
+        font-size: 1.2em;
+        text-align: center;
+        font-weight: 500;
+    }
+
+    h3 {
+        font-size: 1.2em;
+        margin: 1em 0 .5em 1em;
+    }
 }
 
 .popup-wrapper.popup-hide {

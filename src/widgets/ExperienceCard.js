@@ -25,6 +25,8 @@ function ExperienceCard(props) {
                     <p dangerouslySetInnerHTML={{__html: props.experience.personal_contributions}} />
                     <h3>Apports Professionnels</h3>
                     <p dangerouslySetInnerHTML={{__html: props.experience.professional_contributions}} />
+                    <h3>Technologies</h3>
+                    <p dangerouslySetInnerHTML={{__html: props.experience.technologies}} />
                   </div>
                 } />);
             }}>
