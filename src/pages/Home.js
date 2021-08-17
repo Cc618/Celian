@@ -30,7 +30,7 @@ function IconButton(props) {
 // - link
 function NavButton(props) {
   return (
-    <div className="nav-button-wrapper print-hide">
+    <div className={"nav-button-wrapper print-hide" + (props.canHide ? " phone-hide" : "")}>
       <div className="nav-button"
         onClick={() => document.querySelector(props.link).scrollIntoView({behavior: 'smooth'})}>
         <p>{props.title}</p>
@@ -93,7 +93,8 @@ function Home(props) {
       </div>
 
       <nav>
-        <NavButton title={data.background} link="#experiences" />
+        <NavButton title={data.experiences} link="#experiences" />
+        <NavButton title={data.background} link="#skills" canHide={true} />
         <NavButton title={data.projects} link="#projects" />
       </nav>
     </div>

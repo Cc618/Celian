@@ -45,6 +45,7 @@ const fullData = {
         "copied": "Copied !",
         "job": "Computer Engineering Student",
         "background": "Background",
+        "experiences": "Experiences",
         "projects": "Projects",
         // Skills
         "skills": [
@@ -202,6 +203,7 @@ const fullData = {
         "copied": "Copié !",
         "job": "Etudiant Ingénieur en Informatique",
         "background": "Parcours",
+        "experiences": "Expériences",
         "projects": "Projets",
         "skills": [
             {
