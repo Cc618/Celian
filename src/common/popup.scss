@@ -24,7 +24,7 @@
 }
 
 .popup-card {
-    @extend .card16;
+    @extend .card24;
 
     position: relative;
 
@@ -67,7 +67,14 @@
     }
 
     .popup-close {
+        @extend .transition150;
+
         cursor: pointer;
+        transform: none;
+    }
+
+    .popup-close:hover {
+        transform: scale(1.2);
     }
 }
 
@@ -75,6 +82,7 @@
     flex: 1;
     box-sizing: border-box;
     padding: 16px;
+    margin-top: 8px;
 
     overflow-y: scroll;
 
