@@ -17,9 +17,15 @@ function ExperienceCard(props) {
         <div className="experience-button-wrapper">
           <div className="experience-button">
             <div className="button" onClick={() => {
-              // TODO : Content
+              // TODO : Tr
               App.showPopup(<Popup title={props.experience.title} content={
-                  <h1>Hello</h1>
+                  <div>
+                    <h2>{props.experience.description}</h2>
+                    <h3>Apports Personnels</h3>
+                    <p dangerouslySetInnerHTML={{__html: props.experience.personal_contributions}} />
+                    <h3>Apports Professionnels</h3>
+                    <p dangerouslySetInnerHTML={{__html: props.experience.professional_contributions}} />
+                  </div>
                 } />);
             }}>
               <i className="material-icons">notes</i>

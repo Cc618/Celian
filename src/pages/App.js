@@ -12,6 +12,11 @@ import {changeLang, lang} from '../common/data';
 // Popup shown as main popup
 let currentPopup = null;
 
+function setMainOverflowY(value) {
+    document.getElementsByTagName('body')[0].style.overflowY = value;
+    document.getElementsByTagName('html')[0].style.overflowY = value;
+}
+
 class App extends React.Component {
     static printMode = false;
     static instance = null;
@@ -26,12 +31,16 @@ class App extends React.Component {
     static showPopup(popup) {
         currentPopup = popup;
 
+        setMainOverflowY('hidden');
+
         App.instance.setState({});
     }
 
     // Closes the current popup
     static closePopup() {
         currentPopup = null;
+
+        setMainOverflowY('scroll');
 
         App.instance.setState({});
     }

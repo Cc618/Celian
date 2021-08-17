@@ -51,7 +51,7 @@
 .popup-wrapper {
     @extend .transition250;
 
-    position: absolute;
+    position: fixed;
 
     width: 100vw;
     height: 100vh;
@@ -72,6 +72,8 @@
 
     position: relative;
 
+    z-index: 201;
+
     padding: 16px;
     margin: 16px;
 
@@ -82,6 +84,8 @@
     flex-direction: column;
 
     animation-duration: 250ms;
+
+    overflow-y: hidden;
 }
 
 .popup-top {
@@ -113,6 +117,7 @@
     flex: 1;
     box-sizing: border-box;
     padding: 8px;
+    overflow-y: scroll;
 }
 
 .popup-wrapper.popup-hide {
