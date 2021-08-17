@@ -12,6 +12,7 @@ import {changeLang, lang} from '../common/data';
 // Popup shown as main popup
 let currentPopup = null;
 
+// Sets the value of the overflow-y style variable for the main screen
 function setMainOverflowY(value) {
     document.getElementsByTagName('body')[0].style.overflowY = value;
     document.getElementsByTagName('html')[0].style.overflowY = value;
@@ -47,7 +48,7 @@ class App extends React.Component {
 
     render() {
         return <div className="app-layout" lang={lang}>
-            {/* Display popup here */}
+            {/* Display current popup if necessary */}
             {currentPopup !== null && currentPopup}
 
             <div className="section">

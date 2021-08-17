@@ -1,4 +1,5 @@
 import '../common/style.scss';
+import '../common/popup.scss';
 import React from 'react';
 import App from '../pages/App';
 
