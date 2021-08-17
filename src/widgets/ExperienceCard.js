@@ -8,8 +8,6 @@ function ExperienceCard(props) {
     <div className="ExperienceCard">
       <p className="experience-out experience-year">{props.experience.year}</p>
       <div className="experience-card">
-        {/* TODO */}
-        <div className="decoration" />
         <div className="content">
           <h4>{props.experience.title}</h4>
           <p dangerouslySetInnerHTML={{__html: props.experience.content}}></p>

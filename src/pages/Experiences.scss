@@ -9,16 +9,14 @@
     box-sizing: border-box;
     padding: 0 2vw 2vh;
 
-    @media (orientation: portrait) {
-        height: unset;
-    }
+    height: unset;
 
     @media (max-height: 720px) {
-        padding: 8px;
+        padding: 16px;
     }
 
     @media (min-height: 1080px) {
-        padding: 3vw;
+        padding: 2vw;
     }
 
     @media print {

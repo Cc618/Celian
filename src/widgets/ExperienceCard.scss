@@ -35,47 +35,40 @@ $experience-dark: $grey800;
 
     padding: 1em 2em;
 
-    // TODO
-    // .decoration {
-    //     @extend .shadow4;
-
-    //     background-color: $primary;
-    //     width: #{$experience-border-radius * 1.5};
-    //     border-radius: $experience-border-radius;
-
-    //     @media (max-width: 480px) {
-    //         width: 0;
-    //     }
-
-    //     @media print {
-    //         width: 24px;
-    //     }
-    // }
-
-    .content {
-        h4 {
-            font-size: 2em;
-            font-weight: 300;
-            text-align: center;
-            color: $accent;
-
-            margin: 1em;
-        }
-
-        p {
-            text-align: justify;
-            padding: 0 1.618em;
-            margin: 0 0 2em 0;
-            line-height: 1.618em;
-        }
-
-        a {
-            color: $primary;
-        }
+    @media (max-width: 1200px) {
+        padding: 8px;
     }
 
     @media (max-width: 720px) {
         flex-direction: column;
+    }
+}
+
+.experience-card > .content {
+    h4 {
+        font-size: 2em;
+        font-weight: 300;
+        text-align: center;
+        color: $accent;
+
+        margin: 1em;
+    }
+
+    p {
+        text-align: justify;
+        padding: 0 1.618em;
+        margin: 0 0 2em 0;
+        line-height: 1.618em;
+    }
+
+    a {
+        color: $primary;
+    }
+
+    @media (max-width: 1200px) {
+        h4 {
+            margin: .5em;
+        }
     }
 }
 
@@ -86,6 +79,10 @@ $experience-dark: $grey800;
     align-items: center;
 
     min-width: 10em;
+
+    @media (max-width: 720px) {
+        padding-bottom: 16px;
+    }
 }
 
 .experience-button {
