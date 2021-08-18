@@ -6,10 +6,13 @@ import App from '../pages/App';
 function ExperienceCard(props) {
   return (
     <div className="ExperienceCard">
-      <p className="experience-out experience-year">{props.experience.year}</p>
+      <p className="experience-out experience-year print-rm">{props.experience.year}</p>
       <div className="experience-card">
         <div className="content">
-          <h4>{props.experience.title}</h4>
+          <div className="content-title">
+            <h4>{props.experience.title}</h4>
+            <h3 className="print-experience-year print-add">{props.experience.year}</h3>
+          </div>
           <p dangerouslySetInnerHTML={{__html: props.experience.content}}></p>
         </div>
         <div className="experience-button-wrapper print-rm">

@@ -22,7 +22,7 @@ $skill-border-radius: 24px;
     }
 
     @media print {
-        padding: 8px;
+        padding: 0 0 4px 0;
     }
 
     .skill-card {
@@ -97,7 +97,7 @@ $skill-border-radius: 24px;
                     text-align: center;
                     margin: 0 0 8px 8px;
                     align-self: stretch;
-                    font-size: 24px;
+                    font-size: 1.2em;
                 }
             }
 
@@ -202,6 +202,10 @@ $skill-border-radius: 24px;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+
+                @media print {
+                    height: 40px;
+                }
             }
 
             img {
@@ -298,6 +302,19 @@ $skill-border-radius: 24px;
 
             > p {
                 margin: 4px;
+            }
+
+            @media print {
+                flex-direction: row;
+                align-items: center;
+
+                > p {
+                    margin-right: 16px;
+                }
+
+                > .ratio {
+                    flex-grow: 1;
+                }
             }
         }
 

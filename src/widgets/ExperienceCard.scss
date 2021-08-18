@@ -21,11 +21,16 @@ $experience-dark: $grey800;
     font-size: 1.3em;
 
     padding: 1.618em 0;
+}
 
-    @media print {
-        padding: .5em 0;
-        font-size: 1em;
-    }
+.print-experience-year {
+    color: $experience-dark;
+
+    padding: 0 0 0 1em;
+    margin: 0;
+
+    font-size: .7em;
+    font-weight: 600;
 }
 
 .experience-card {
@@ -84,8 +89,9 @@ $experience-dark: $grey800;
     @media print {
         h4 {
             font-weight: 400;
-            font-size: 1.4em;
+            font-size: 1.2em;
             margin: .3em;
+            padding: 0;
         }
 
         p {
@@ -93,6 +99,12 @@ $experience-dark: $grey800;
             line-height: unset;
             font-size: .8em;
             margin: 0 0 8px 0;
+        }
+
+        > .content-title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
     }
 }
