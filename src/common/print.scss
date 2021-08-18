@@ -8,6 +8,10 @@ $print-height: 297mm;
     .print-hide {
         opacity: 0;
     }
+
+    .print-rm {
+        display: none;
+    }
 }
 
 // Show only when printing

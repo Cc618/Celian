@@ -56,8 +56,11 @@ class App extends React.Component {
                     changeLang();
                     this.setState({});
                 }} />
-                <Experiences />
-                <Skills />
+
+                <div className="print-rhs">
+                    <Experiences />
+                    <Skills />
+                </div>
             </div>
 
             <Projects />

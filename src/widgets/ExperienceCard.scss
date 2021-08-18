@@ -21,6 +21,11 @@ $experience-dark: $grey800;
     font-size: 1.3em;
 
     padding: 1.618em 0;
+
+    @media print {
+        padding: .5em 0;
+        font-size: 1em;
+    }
 }
 
 .experience-card {
@@ -34,6 +39,7 @@ $experience-dark: $grey800;
     flex-direction: row;
 
     padding: 1em 2em;
+    margin: 8px;
 
     @media (max-width: 1200px) {
         padding: 8px;
@@ -41,6 +47,10 @@ $experience-dark: $grey800;
 
     @media (max-width: 720px) {
         flex-direction: column;
+    }
+
+    @media print {
+        padding: 8px;
     }
 }
 
@@ -68,6 +78,21 @@ $experience-dark: $grey800;
     @media (max-width: 1200px) {
         h4 {
             margin: .5em;
+        }
+    }
+
+    @media print {
+        h4 {
+            font-weight: 400;
+            font-size: 1.4em;
+            margin: .3em;
+        }
+
+        p {
+            padding: 0 1em;
+            line-height: unset;
+            font-size: .8em;
+            margin: 0 0 8px 0;
         }
     }
 }

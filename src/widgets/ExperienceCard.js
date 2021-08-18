@@ -12,7 +12,7 @@ function ExperienceCard(props) {
           <h4>{props.experience.title}</h4>
           <p dangerouslySetInnerHTML={{__html: props.experience.content}}></p>
         </div>
-        <div className="experience-button-wrapper">
+        <div className="experience-button-wrapper print-rm">
           <div className="experience-button">
             <div className="button" onClick={() => {
               // TODO : Tr

@@ -20,9 +20,8 @@
     }
 
     @media print {
-        width: $print-width;
-        height: $print-height;
-        padding: 0;
+        width: 100%;
+        padding: 8px 0 0 0;
     }
 }
 
@@ -34,4 +33,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+
+    @media print {
+        max-width: unset;
+        height: unset;
+    }
 }
