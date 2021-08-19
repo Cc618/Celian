@@ -107,11 +107,14 @@ $experience-dark: $grey800;
             margin: 0 0 8px 0;
         }
 
-        > .content-title {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+    }
+}
+
+@media print {
+    .content-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 

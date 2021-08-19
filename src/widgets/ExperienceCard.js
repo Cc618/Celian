@@ -8,12 +8,12 @@ function ExperienceCard(props) {
     <div className="ExperienceCard">
       <p className="experience-out experience-year print-rm">{props.experience.year}</p>
       <div className="experience-card">
-        <h4>{props.experience.title}</h4>
+        <div className="content-title">
+          <h4>{props.experience.title}</h4>
+          <h3 className="print-experience-year print-add">{props.experience.year}</h3>
+        </div>
         <div className="experience-card-content">
           <div className="content">
-            <div className="content-title">
-              <h3 className="print-experience-year print-add">{props.experience.year}</h3>
-            </div>
             <p dangerouslySetInnerHTML={{__html: props.experience[`content_${lang}`]}}></p>
           </div>
           <div className="experience-button-wrapper print-rm">
