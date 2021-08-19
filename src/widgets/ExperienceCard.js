@@ -1,7 +1,7 @@
 import './ExperienceCard.scss';
 import Popup from '../widgets/Popup';
 import App from '../pages/App';
-import {data} from '../common/data';
+import {data, lang} from '../common/data';
 
 function ExperienceCard(props) {
   return (
@@ -13,7 +13,7 @@ function ExperienceCard(props) {
             <h4>{props.experience.title}</h4>
             <h3 className="print-experience-year print-add">{props.experience.year}</h3>
           </div>
-          <p dangerouslySetInnerHTML={{__html: props.experience.content}}></p>
+          <p dangerouslySetInnerHTML={{__html: props.experience[`content_${lang}`]}}></p>
         </div>
         <div className="experience-button-wrapper print-rm">
           <div className="experience-button">

@@ -8,7 +8,8 @@ function Experiences() {
   return (
     <div className="Experiences" id="experiences">
       <div className="experiences-content">
-        {experiences.map((experience, i) => <ExperienceCard key={i} experience={experience} index={i} />)}
+        {experiences.map((experience, i) =>
+          <ExperienceCard key={i} experience={experience} index={i} />)}
       </div>
     </div>
   );
