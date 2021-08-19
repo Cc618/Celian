@@ -1,8 +1,8 @@
 import './ExperienceCard.scss';
 import Popup from '../widgets/Popup';
 import App from '../pages/App';
+import {data} from '../common/data';
 
-// TODO : tr
 function ExperienceCard(props) {
   return (
     <div className="ExperienceCard">
@@ -18,15 +18,14 @@ function ExperienceCard(props) {
         <div className="experience-button-wrapper print-rm">
           <div className="experience-button">
             <div className="button" onClick={() => {
-              // TODO : Tr
               App.showPopup(<Popup title={props.experience.title} content={
                   <div>
                     <h2>{props.experience.description}</h2>
-                    <h3>Apports Personnels</h3>
+                    <h3>{data.personal_contributions}</h3>
                     <p dangerouslySetInnerHTML={{__html: props.experience.personal_contributions}} />
-                    <h3>Apports Professionnels</h3>
+                    <h3>{data.professional_contributions}</h3>
                     <p dangerouslySetInnerHTML={{__html: props.experience.professional_contributions}} />
-                    <h3>Technologies</h3>
+                    <h3>{data.technologies}</h3>
                     <p dangerouslySetInnerHTML={{__html: props.experience.technologies}} />
                   </div>
                 } />);

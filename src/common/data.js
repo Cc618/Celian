@@ -47,6 +47,10 @@ const fullData = {
         "background": "Background",
         "experiences": "Experiences",
         "projects": "Projects",
+        // Experiences
+        "personal_contributions": "Personal Contributions",
+        "professional_contributions": "Professional Contributions",
+        "technologies": "Technologies",
         // Skills
         "skills": [
             {
@@ -205,6 +209,11 @@ const fullData = {
         "background": "Parcours",
         "experiences": "Expériences",
         "projects": "Projets",
+        // Experiences
+        "personal_contributions": "Apports Personnels",
+        "professional_contributions": "Apports Professionnels",
+        "technologies": "Technologies",
+        // Skills
         "skills": [
             {
                 "title": "Expériences",
