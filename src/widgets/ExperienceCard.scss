@@ -93,6 +93,12 @@ $experience-dark: $grey800;
         color: $primary;
     }
 
+    @media (max-width: 720px) {
+        p {
+            margin: 0 0 16px 0;
+        }
+    }
+
     @media print {
         p {
             padding: 0 1em;
@@ -122,6 +128,7 @@ $experience-dark: $grey800;
     min-width: 10em;
 
     @media (max-width: 720px) {
+        min-width: 6em;
         padding-bottom: 16px;
         top: 0;
     }
@@ -143,6 +150,10 @@ $experience-dark: $grey800;
         @extend .transition200;
 
         font-size: 2.5em;
+
+        @media (max-width: 720px) {
+            font-size: 2em;
+        }
     }
 
     .button:hover {
