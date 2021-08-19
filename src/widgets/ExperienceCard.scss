@@ -39,10 +39,6 @@ $experience-dark: $grey800;
 
     border-radius: $experience-border-radius;
 
-    flex: 1;
-    display: flex;
-    flex-direction: row;
-
     padding: 1em 2em;
     margin: 8px;
 
@@ -50,16 +46,10 @@ $experience-dark: $grey800;
         padding: 8px;
     }
 
-    @media (max-width: 720px) {
-        flex-direction: column;
-    }
-
     @media print {
         padding: 8px;
     }
-}
 
-.experience-card > .content {
     h4 {
         font-size: 2em;
         font-weight: 300;
@@ -67,8 +57,31 @@ $experience-dark: $grey800;
         color: $accent;
 
         margin: 1em;
-    }
 
+        @media (max-width: 1200px) {
+                margin: .5em;
+        }
+
+        @media print {
+                font-weight: 400;
+                font-size: 1.2em;
+                margin: .3em;
+                padding: 0;
+        }
+    }
+}
+
+.experience-card-content {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+
+    @media (max-width: 720px) {
+        flex-direction: column;
+    }
+}
+
+.experience-card-content > .content {
     p {
         text-align: justify;
         padding: 0 1.618em;
@@ -80,20 +93,7 @@ $experience-dark: $grey800;
         color: $primary;
     }
 
-    @media (max-width: 1200px) {
-        h4 {
-            margin: .5em;
-        }
-    }
-
     @media print {
-        h4 {
-            font-weight: 400;
-            font-size: 1.2em;
-            margin: .3em;
-            padding: 0;
-        }
-
         p {
             padding: 0 1em;
             line-height: unset;
@@ -115,10 +115,15 @@ $experience-dark: $grey800;
     justify-content: center;
     align-items: center;
 
+    // To be centered vertically
+    position: relative;
+    top: -3em;
+
     min-width: 10em;
 
     @media (max-width: 720px) {
         padding-bottom: 16px;
+        top: 0;
     }
 }
 
