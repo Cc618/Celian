@@ -1,4 +1,11 @@
 # Changelog
+## v1.4
+- New layout, experiences page
+- New internship
+- Added popup widgets
+- Updated raw files (e.g. pdf) management
+- Added changelog
+
 ## v1.3 : Riddim update
 - Added [Riddim](https://github.com/Cc618/Riddim) project
 - Added animated svg support for projects
