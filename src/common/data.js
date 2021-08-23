@@ -396,9 +396,15 @@ const resources = {
     "resume": res_resume,
 };
 
+// Prefix where the index is located
+const URL_PREFIX = '/Celian';
+
+// Raw files located in /public
+const URL_RAW = `${URL_PREFIX}/raw`;
+
 const printData = {
-    "fr": "https://github.com/Cc618/Celian/raw/main/src/res/print/C%C3%A9lian%20Raimbault_fr.pdf",
-    "en": "https://github.com/Cc618/Celian/raw/main/src/res/print/Celian%20Raimbault_en.pdf",
+    "fr": `${URL_RAW}/Célian Raimbault_fr.pdf`,
+    "en": `${URL_RAW}/Celian Raimbault_en.pdf`,
 };
 
 let data = genData();
