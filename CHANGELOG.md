@@ -8,8 +8,9 @@
 - Added changelog
 
 ## v1.3 : Riddim update
-- Added [Riddim](https://github.com/Cc618/Riddim) project
-- Added animated svg support for projects
+- Replaced [Alpha](https://github.com/Cc618/Alpha)project by [Riddim](https://github.com/Cc618/Riddim)
+- Updated printable versions
+- Added an extra icon on Riddim's project card
 
 ## v1.2
 - Printable versions (fr / en)
