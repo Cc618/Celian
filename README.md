@@ -33,4 +33,4 @@ A [CUSTOM license](LICENSE) is used for this project.
 Roughly, do not copy or redistribute any part of this project, this project is used only for EDUCATIONAL PURPOSES.
 
 ## Changelog
-See all changes and versions [HERE](CHANGELOG.md)
+See all changes and versions [HERE](CHANGELOG.md).
