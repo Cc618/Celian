@@ -14,6 +14,7 @@ Here is a list of commands to test / build / deploy this website.
 
 ### Testing (debug mode with hot reload)
 ```sh
+npm install # Do this only once (or when dependencies change)
 npm start
 ```
 
@@ -30,3 +31,6 @@ npm run deploy
 ## License
 A [CUSTOM license](LICENSE) is used for this project.
 Roughly, do not copy or redistribute any part of this project, this project is used only for EDUCATIONAL PURPOSES.
+
+## Changelog
+See all changes and versions [HERE](CHANGELOG.md)

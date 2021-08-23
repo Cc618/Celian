@@ -2,6 +2,7 @@
 ## v1.4
 - New layout, experiences page
 - New internship
+- Updated README (layout and screenshots)
 - Added popup widgets
 - Updated raw files (e.g. pdf) management
 - Added changelog
