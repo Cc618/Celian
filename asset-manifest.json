@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Celian/static/css/main.a72ea468.chunk.css",
-    "main.js": "/Celian/static/js/main.ec8fb8d5.chunk.js",
-    "main.js.map": "/Celian/static/js/main.ec8fb8d5.chunk.js.map",
-    "runtime-main.js": "/Celian/static/js/runtime-main.7944b800.js",
-    "runtime-main.js.map": "/Celian/static/js/runtime-main.7944b800.js.map",
-    "static/js/2.7c16756d.chunk.js": "/Celian/static/js/2.7c16756d.chunk.js",
-    "static/js/2.7c16756d.chunk.js.map": "/Celian/static/js/2.7c16756d.chunk.js.map",
-    "static/js/3.93e523ca.chunk.js": "/Celian/static/js/3.93e523ca.chunk.js",
-    "static/js/3.93e523ca.chunk.js.map": "/Celian/static/js/3.93e523ca.chunk.js.map",
+    "main.css": "/Celian/static/css/main.66d9accb.chunk.css",
+    "main.js": "/Celian/static/js/main.5553c578.chunk.js",
+    "main.js.map": "/Celian/static/js/main.5553c578.chunk.js.map",
+    "runtime-main.js": "/Celian/static/js/runtime-main.8dad701e.js",
+    "runtime-main.js.map": "/Celian/static/js/runtime-main.8dad701e.js.map",
+    "static/js/2.6a71f068.chunk.js": "/Celian/static/js/2.6a71f068.chunk.js",
+    "static/js/2.6a71f068.chunk.js.map": "/Celian/static/js/2.6a71f068.chunk.js.map",
+    "static/js/3.083c97bf.chunk.js": "/Celian/static/js/3.083c97bf.chunk.js",
+    "static/js/3.083c97bf.chunk.js.map": "/Celian/static/js/3.083c97bf.chunk.js.map",
     "index.html": "/Celian/index.html",
-    "static/css/main.a72ea468.chunk.css.map": "/Celian/static/css/main.a72ea468.chunk.css.map",
-    "static/js/2.7c16756d.chunk.js.LICENSE.txt": "/Celian/static/js/2.7c16756d.chunk.js.LICENSE.txt",
+    "static/css/main.66d9accb.chunk.css.map": "/Celian/static/css/main.66d9accb.chunk.css.map",
+    "static/js/2.6a71f068.chunk.js.LICENSE.txt": "/Celian/static/js/2.6a71f068.chunk.js.LICENSE.txt",
     "static/media/alpha.f4043fe6.png": "/Celian/static/media/alpha.f4043fe6.png",
     "static/media/c.e877bb92.png": "/Celian/static/media/c.e877bb92.png",
     "static/media/cpp.d98727bd.png": "/Celian/static/media/cpp.d98727bd.png",
@@ -29,9 +29,9 @@
     "static/media/riddim.4412687a.png": "/Celian/static/media/riddim.4412687a.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.7944b800.js",
-    "static/js/2.7c16756d.chunk.js",
-    "static/css/main.a72ea468.chunk.css",
-    "static/js/main.ec8fb8d5.chunk.js"
+    "static/js/runtime-main.8dad701e.js",
+    "static/js/2.6a71f068.chunk.js",
+    "static/css/main.66d9accb.chunk.css",
+    "static/js/main.5553c578.chunk.js"
   ]
 }
