@@ -60,7 +60,7 @@ const fullData = {
                     "A Level: Science, IT option",
                     "Study abroad semester at Griffith College in Ireland (2021)",
                     "Attendee to the general high school contest related to math",
-                    "French: native, English: B2, 800 TOEIC points (autonomous)",
+                    "French: native, English: B2, 870 TOEIC points (autonomous)",
                 ],
             },
             {
@@ -215,7 +215,7 @@ const fullData = {
                     "Baccalauréat S spé ISN mention bien (2019)",
                     "Semestre académique en Irlande à Griffith College en 2021",
                     "Participation à l’épreuve de maths du concours général des lycéens",
-                    "Français : langue maternelle, Anglais : B2, 800 points TOEIC (autonome)",
+                    "Français : langue maternelle, Anglais : B2, 870 points TOEIC (autonome)",
                 ],
             },
             {
