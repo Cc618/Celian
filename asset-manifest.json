@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Celian/static/css/main.66d9accb.chunk.css",
-    "main.js": "/Celian/static/js/main.d6fa431b.chunk.js",
-    "main.js.map": "/Celian/static/js/main.d6fa431b.chunk.js.map",
+    "main.js": "/Celian/static/js/main.eb42c1d2.chunk.js",
+    "main.js.map": "/Celian/static/js/main.eb42c1d2.chunk.js.map",
     "runtime-main.js": "/Celian/static/js/runtime-main.8dad701e.js",
     "runtime-main.js.map": "/Celian/static/js/runtime-main.8dad701e.js.map",
     "static/js/2.6a71f068.chunk.js": "/Celian/static/js/2.6a71f068.chunk.js",
@@ -20,7 +20,7 @@
     "static/media/google_play_badge.f902960a.png": "/Celian/static/media/google_play_badge.f902960a.png",
     "static/media/linux.e48a7cd8.png": "/Celian/static/media/linux.e48a7cd8.png",
     "static/media/os2020.e9dd839f.gif": "/Celian/static/media/os2020.e9dd839f.gif",
-    "static/media/picture.0362c7e8.jpg": "/Celian/static/media/picture.0362c7e8.jpg",
+    "static/media/picture.af931efa.jpg": "/Celian/static/media/picture.af931efa.jpg",
     "static/media/pytorch_collections.840e869d.gif": "/Celian/static/media/pytorch_collections.840e869d.gif",
     "static/media/quick_shop.897cefef.jpg": "/Celian/static/media/quick_shop.897cefef.jpg",
     "static/media/react.fff4fd51.svg": "/Celian/static/media/react.fff4fd51.svg",
@@ -32,6 +32,6 @@
     "static/js/runtime-main.8dad701e.js",
     "static/js/2.6a71f068.chunk.js",
     "static/css/main.66d9accb.chunk.css",
-    "static/js/main.d6fa431b.chunk.js"
+    "static/js/main.eb42c1d2.chunk.js"
   ]
 }
