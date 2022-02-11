@@ -25,13 +25,13 @@ let lang = "fr";
 const sharedData = {
     // Misc
     "url_github": "https://github.com/Cc618",
-    "url_linkedin": "https://www.linkedin.com/in/c%C3%A9lian-raimbault-53269a1b2",
+    "url_linkedin": "https://www.linkedin.com/in/celian-raimbault",
     "url_resume_github": "https://github.com/Cc618/Celian",
     // Home
     "mail": "celian.pro.78@gmail.com",
     "phone": "(+33) 06 61 24 71 01",
     // Footer
-    "copyright_year": "2021",
+    "copyright_year": "2022",
     "resources_copyright": "- Flutter and the related logo are trademarks of Google LLC. We are not endorsed by or affiliated with Google LLC.\n- PyTorch, the PyTorch logo and any related marks are trademarks of Facebook, Inc.\n- Logos of git are under Creative Commons Attribution 3.0 license (https://git-scm.com/downloads/logos)"
 };
 
