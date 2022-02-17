@@ -211,10 +211,10 @@ const fullData = {
             {
                 "title": "Cursus",
                 "items": [
-                    "Actuellement en 1ère année de cycle ingénieur à <a href=\"https://www.epita.fr\">EPITA</a>",
+                    "Actuellement en 3e année à <a href=\"https://www.epita.fr\">EPITA</a>",
                     "Baccalauréat S spé ISN mention bien (2019)",
                     "Semestre académique en Irlande à Griffith College en 2021",
-                    "Participation à l’épreuve de maths du concours général des lycéens",
+                    "Participation à l'épreuve de maths du concours général des lycéens",
                     "Français : langue maternelle, Anglais : B2, 870 points TOEIC (autonome)",
                 ],
             },
