@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Celian/static/css/main.209729bf.css",
-    "main.js": "/Celian/static/js/main.acbc6e2b.js",
+    "main.js": "/Celian/static/js/main.86a81425.js",
     "static/js/787.0ce4fb6d.chunk.js": "/Celian/static/js/787.0ce4fb6d.chunk.js",
     "static/media/quick_shop.jpg": "/Celian/static/media/quick_shop.897cefefd70cab7cc316.jpg",
     "static/media/pytorch_collections.gif": "/Celian/static/media/pytorch_collections.840e869d62e3c2732169.gif",
@@ -20,11 +20,11 @@
     "index.html": "/Celian/index.html",
     "static/media/react.svg": "/Celian/static/media/react.fff4fd514ba20a042d2cd63734178e6a.svg",
     "main.209729bf.css.map": "/Celian/static/css/main.209729bf.css.map",
-    "main.acbc6e2b.js.map": "/Celian/static/js/main.acbc6e2b.js.map",
+    "main.86a81425.js.map": "/Celian/static/js/main.86a81425.js.map",
     "787.0ce4fb6d.chunk.js.map": "/Celian/static/js/787.0ce4fb6d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.209729bf.css",
-    "static/js/main.acbc6e2b.js"
+    "static/js/main.86a81425.js"
   ]
 }
