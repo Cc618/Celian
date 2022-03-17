@@ -2,6 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './pages/App';
 import reportWebVitals from './reportWebVitals';
+import {setLang} from './common/data';
+
+// Query url parameters
+const urlParams = new URLSearchParams(window.location.search);
+
+// Lang param
+const langParam = urlParams.get('lang');
+if (langParam === 'fr' || langParam === 'en') {
+  setLang(langParam);
+}
 
 let renderApp = () =>
   ReactDOM.render(

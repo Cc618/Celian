@@ -410,7 +410,11 @@ const printData = {
 let data = genData();
 
 function changeLang() {
-    lang = lang === "fr" ? "en" : "fr";
+    setLang(lang === "fr" ? "en" : "fr");
+}
+
+function setLang(newLang) {
+    lang = newLang;
     data = genData();
 }
 
@@ -422,5 +426,6 @@ export {changeLang};
 export {data};
 export {experiences};
 export {lang};
+export {setLang};
 export {resources};
 export {printData};
