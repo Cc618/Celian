@@ -56,7 +56,7 @@ const fullData = {
             {
                 "title": "Education",
                 "items": [
-                    "Actually in third year after graduation at <a href=\"https://www.epita.fr\">EPITA</a>",
+                    "Actually in third year at <a href=\"https://www.epita.fr\">EPITA</a>",
                     "A Level: Science, IT option",
                     "Study abroad semester at Griffith College in Ireland (2021)",
                     "Attendee to the general high school contest related to math",
