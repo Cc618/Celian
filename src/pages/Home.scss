@@ -78,6 +78,21 @@ $print-home-width: #{.25 * $print-width};
     }
 }
 
+.icon-button-text {
+    > p {
+        font-size: 2.2em;
+        padding: 0;
+        margin: 0;
+    }
+
+    min-width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .icon-card {
     @extend .raised-button;
 

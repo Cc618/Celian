@@ -17,6 +17,7 @@ function IconButton(props) {
         {props.icon !== undefined && <i className="material-icons idle">{props.icon}</i>}
         {props.iconHover !== undefined && <i className="material-icons onhover">{props.iconHover}</i>}
         {props.image !== undefined && <img alt="" src={props.image} />}
+        {props.text !== undefined && <div className="icon-button-text idle"><p>{props.text}</p></div>}
       </button>
       {props.hint !== undefined && <p className={"hint" + (props.isOdd !== undefined ?
         " hint-odd" : "")}>{props.hint}</p>}
@@ -51,7 +52,7 @@ function Home(props) {
             hint={data.translate}
             onClick={props.onChangeLang}
             printHide={true} />
-          <IconButton icon="print" hint={data.print_pdf}
+          <IconButton text={data.print_pdf} hint={data.print_pdf}
             iconHover="download"
             onClick={downloadPrintableVersion}
             printHide={true} />

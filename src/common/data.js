@@ -40,7 +40,7 @@ const fullData = {
     "en": {
         // Home
         "translate_lang": "Version française",
-        "print_pdf": "Printable version",
+        "print_pdf": "Résumé",
         "translate": "Translate",
         "copied": "Copied !",
         "job": "Computer Engineering Student",
@@ -195,7 +195,7 @@ const fullData = {
     "fr": {
         // Home
         "translate_lang": "English version",
-        "print_pdf": "Version imprimable",
+        "print_pdf": "CV",
         "translate": "Traduire",
         "copied": "Copié !",
         "job": "Etudiant Ingénieur en Informatique",
