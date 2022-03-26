@@ -43,7 +43,7 @@ const fullData = {
         "print_pdf": "Résumé",
         "translate": "Translate",
         "copied": "Copied !",
-        "job": "Computer Engineering Student",
+        "job": "Software Developer Student",
         "background": "Background",
         "experiences": "Experiences",
         "projects": "Projects",
