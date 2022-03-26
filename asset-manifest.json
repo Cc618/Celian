@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/Celian/static/css/main.66d9accb.chunk.css",
-    "main.js": "/Celian/static/js/main.a3a9cd3b.chunk.js",
-    "main.js.map": "/Celian/static/js/main.a3a9cd3b.chunk.js.map",
+    "main.css": "/Celian/static/css/main.e87ebb91.chunk.css",
+    "main.js": "/Celian/static/js/main.41f8b893.chunk.js",
+    "main.js.map": "/Celian/static/js/main.41f8b893.chunk.js.map",
     "runtime-main.js": "/Celian/static/js/runtime-main.8dad701e.js",
     "runtime-main.js.map": "/Celian/static/js/runtime-main.8dad701e.js.map",
     "static/js/2.6a71f068.chunk.js": "/Celian/static/js/2.6a71f068.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.083c97bf.chunk.js": "/Celian/static/js/3.083c97bf.chunk.js",
     "static/js/3.083c97bf.chunk.js.map": "/Celian/static/js/3.083c97bf.chunk.js.map",
     "index.html": "/Celian/index.html",
-    "static/css/main.66d9accb.chunk.css.map": "/Celian/static/css/main.66d9accb.chunk.css.map",
+    "static/css/main.e87ebb91.chunk.css.map": "/Celian/static/css/main.e87ebb91.chunk.css.map",
     "static/js/2.6a71f068.chunk.js.LICENSE.txt": "/Celian/static/js/2.6a71f068.chunk.js.LICENSE.txt",
     "static/media/alpha.f4043fe6.png": "/Celian/static/media/alpha.f4043fe6.png",
     "static/media/c.e877bb92.png": "/Celian/static/media/c.e877bb92.png",
@@ -31,7 +31,7 @@
   "entrypoints": [
     "static/js/runtime-main.8dad701e.js",
     "static/js/2.6a71f068.chunk.js",
-    "static/css/main.66d9accb.chunk.css",
-    "static/js/main.a3a9cd3b.chunk.js"
+    "static/css/main.e87ebb91.chunk.css",
+    "static/js/main.41f8b893.chunk.js"
   ]
 }
