@@ -1,5 +1,7 @@
+> **NOTE** : This website is now hosted on gitlab [here](https://gitlab.com/celian-dev/portfolio)
+
 # Célian Raimbault
-My [online resume / portfolio](https://cc618.github.io/Celian).
+My [online resume / portfolio](https://portfolio.celian.dev).
 
 ## Screenshots
 <p align="center"><img src="src/res/screen_home.png" alt="Home section" title="Home section" /></p>
